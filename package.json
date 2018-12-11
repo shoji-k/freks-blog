@@ -15,5 +15,9 @@
     "react-dom": "^16.5.1",
     "react-typography": "^0.16.18",
     "typography": "^0.16.18"
+  },
+  "devDependencies": {
+    "eslint": "^5.10.0",
+    "eslint-plugin-react": "^7.11.1"
   }
 }
