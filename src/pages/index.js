@@ -3,9 +3,6 @@ import Layout from '../components/Layout'
 
 export default () => (
   <Layout>
-    <h1>freks blog</h1>
-    <div>Hello world!</div>
-
     <div>
       <h3>first title</h3>
       <small>2018-12-11</small>

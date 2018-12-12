@@ -12,6 +12,7 @@ class Layout extends Component {
           padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
         }}
       >
+        <h1>freks blog</h1>
         {this.props.children}
       </div>
     )
