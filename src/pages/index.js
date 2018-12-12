@@ -1,7 +1,8 @@
 import React from 'react'
+import Layout from '../components/Layout'
 
 export default () => (
-  <div>
+  <Layout>
     <h1>freks blog</h1>
     <div>Hello world!</div>
 
@@ -10,5 +11,5 @@ export default () => (
       <small>2018-12-11</small>
       <div>sample</div>
     </div>
-  </div>
+  </Layout>
 )
