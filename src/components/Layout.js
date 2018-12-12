@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'gatsby'
 import { rhythm } from '../utils/typography'
 
 class Layout extends Component {
@@ -12,7 +13,9 @@ class Layout extends Component {
           padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
         }}
       >
-        <h1>freks blog</h1>
+        <Link to="/">
+          <h1>freks blog</h1>
+        </Link>
         {this.props.children}
       </div>
     )
