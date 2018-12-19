@@ -1,5 +1,5 @@
 ---
-title: "Ergodox EZ"
+title: "Ergodox EZ keyboard"
 date: "2018-12-19"
 ---
 
