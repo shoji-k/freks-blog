@@ -6,7 +6,8 @@
     "develop": "gatsby develop",
     "start": "npm run develop",
     "build": "gatsby build",
-    "serve": "gatsby serve"
+    "serve": "gatsby serve",
+    "eslint-check": "eslint --print-config . | eslint-config-prettier-check"
   },
   "dependencies": {
     "gatsby": "^2.0.33",
