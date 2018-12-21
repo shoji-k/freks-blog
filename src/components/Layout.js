@@ -6,9 +6,7 @@ const Header = ({ location }) => {
   const rootPath = `${__PATH_PREFIX__}/`
 
   if (location.pathname == rootPath) {
-    return (
-      <h1>freks blog</h1>
-    )
+    return <h1>freks blog</h1>
   }
 
   return (

@@ -2,7 +2,7 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 
-export default ({ data, location }) => {
+export default function OneBlog({ data, location }) {
   const post = data.markdownRemark
   return (
     <Layout location={location}>
