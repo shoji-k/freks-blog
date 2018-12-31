@@ -1,5 +1,5 @@
 ---
-title: "Renovateをパッケージを新しくする"
+title: "Renovateにパッケージを新しくしてもらう"
 date: "2018-12-28"
 ---
 
