@@ -2,23 +2,23 @@ import React, { Component } from 'react'
 import { Link } from 'gatsby'
 import { rhythm } from '../utils/typography'
 
-const Header = ({ location }) => {
+const Header = ({ location, title }) => {
   const rootPath = `${__PATH_PREFIX__}/`
 
   if (location.pathname == rootPath) {
-    return <h1>freks blog</h1>
+    return <h1>{title}</h1>
   }
 
   return (
     <Link to="/">
-      <h3>freks blog</h3>
+      <h3>{title}</h3>
     </Link>
   )
 }
 
 class Layout extends Component {
   render() {
-    const { location, children } = this.props
+    const { location, title, children } = this.props
     return (
       <div
         style={{
@@ -28,7 +28,7 @@ class Layout extends Component {
           padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
         }}
       >
-        <Header location={location} />
+        <Header location={location} title={title} />
         {children}
       </div>
     )

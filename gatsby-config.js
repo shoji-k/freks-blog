@@ -1,4 +1,10 @@
 module.exports = {
+  siteMetadata: {
+    title: 'freks blog',
+    author: 'shojik',
+    description: 'freks tips, memo, etc..',
+    siteUrl: 'https://blog.freks.jp',
+  },
   plugins: [
     {
       resolve: 'gatsby-plugin-typography',

@@ -3,8 +3,9 @@ import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
 
 export default function Top({ data, location }) {
+  const site = data.site
   return (
-    <Layout location={location}>
+    <Layout location={location} title={site.siteMetadata.title}>
       <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
       {data.allMarkdownRemark.edges.map(({ node }) => (
         <Link to={node.fields.slug} key={node.id}>
@@ -20,6 +21,11 @@ export default function Top({ data, location }) {
 
 export const query = graphql`
   query {
+    site {
+      siteMetadata {
+        title
+      }
+    }
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       totalCount
       edges {
