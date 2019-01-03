@@ -14,6 +14,7 @@ function Seo({ description, lang, meta, keywords, title }) {
             : `%s | ${data.site.siteMetadata.title}`
         const metaDescription =
           description || data.site.siteMetadata.description
+        const siteUrl = data.site.siteMetadata.siteUrl
 
         return (
           <Helmet
@@ -40,6 +41,18 @@ function Seo({ description, lang, meta, keywords, title }) {
                 content: 'website',
               },
               {
+                property: 'og:image',
+                content: `${siteUrl}/logo.png`,
+              },
+              {
+                property: 'og:image:width',
+                content: 498,
+              },
+              {
+                property: 'og:image:height',
+                content: 484,
+              },
+              {
                 name: 'twitter:card',
                 content: 'summary',
               },
@@ -54,6 +67,10 @@ function Seo({ description, lang, meta, keywords, title }) {
               {
                 name: 'twitter:description',
                 content: metaDescription,
+              },
+              {
+                property: 'twitter:image',
+                content: `${siteUrl}/logo.png`,
               },
             ]
               .concat(
@@ -92,6 +109,7 @@ const detailsQuery = graphql`
   query {
     site {
       siteMetadata {
+        siteUrl
         title
         description
         author
