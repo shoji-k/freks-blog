@@ -3,9 +3,10 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Seo from '../components/Seo'
 
-export default function OneBlog({ data, location }) {
-  const post = data.markdownRemark
-  const site = data.site
+export default function OneBlog({
+  data: { site, markdownRemark: post },
+  location,
+}) {
   return (
     <Layout location={location} title={site.siteMetadata.title}>
       <Seo title={post.frontmatter.title} description={post.excerpt} />
