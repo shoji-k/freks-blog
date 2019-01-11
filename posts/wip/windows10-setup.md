@@ -132,6 +132,29 @@ options = "metadata,uid=1000,gid=1000,umask=22"
 
 設定を反映するにはサービス LxssManager の再起動が必要  
 
+### Ubuntu設定
+
+source.listを日本のものに変更
+
+$ sudo apt update
+$ sudo apt upgrade
+
+#### tiemzone
+
+$ sudo dpkg-reconfigure tzdata
+
+で出てきたウィンドウで選ぶ
+
+#### locale
+
+$ sudo install language-pack-ja
+
+だけで日本語が表示できる  
+
+ロケールを英語にするなら
+
+$ sudo update-locale LANG=en_US.UTF-8
+
 ### Ubuntu設定 on WSL(完全に個人用)
 
 symbolic link  
@@ -160,4 +183,5 @@ dircolorの設定リファレンス
 - [Git](/git)
 - [Neovim](/neovim)
 - [Ruby](/ruby-install)
+- tig
 

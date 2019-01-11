@@ -74,4 +74,29 @@ Ricty Diminished
 ## ソフトウェア on WSL
 
 - [Git](/git) install and setting
+- tig
 
+### Ubuntu設定 on WSL(完全に個人用)
+
+symbolic link  
+
+```
+cd ~
+ln -s ws /mnt/c/Users/shoji/ws
+```
+
+ssh設定  
+
+prepare .ssh/config
+set key to proper path
+
+dotfile設定  
+
+```
+cd ~/
+mkdir repos
+cd $_
+git clone git@github.com:shoji-k/dotfiles.git
+cd dotfiles
+./bionic-init.sh
+```
