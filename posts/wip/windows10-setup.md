@@ -132,55 +132,15 @@ options = "metadata,uid=1000,gid=1000,umask=22"
 
 設定を反映するにはサービス LxssManager の再起動が必要  
 
-### Ubuntu設定
+## Ubuntu設定
 
-source.listを日本のものに変更
+[Ubuntu設定](/ubuntu)にまとめてます
 
-$ sudo apt update
-$ sudo apt upgrade
-
-#### tiemzone
-
-$ sudo dpkg-reconfigure tzdata
-
-で出てきたウィンドウで選ぶ
-
-#### locale
-
-$ sudo install language-pack-ja
-
-だけで日本語が表示できる  
-
-ロケールを英語にするなら
-
-$ sudo update-locale LANG=en_US.UTF-8
-
-### Ubuntu設定 on WSL(完全に個人用)
-
-symbolic link  
-
-```
-cd ~
-ln -s ws /mnt/c/Users/shoji/ws
-```
-
-dotfile設定  
-
-```
-cd ~/
-mkdir -p ws/repos
-cd $_
-git clone git@github.com:shoji-k/dotfiles.git
-cd dotfiles
-./xenial-init.sh
-```
-
-dircolorの設定リファレンス  
-[bashの表示色をカスタマイズ \- Qiita](https://qiita.com/soramugi/items/a726bd64330e08daa9e5)  
 
 ## ソフトウェア on WSL
 
 - [Git](/git)
+- [Node](node/)
 - [Neovim](/neovim)
 - [Ruby](/ruby-install)
 - tig

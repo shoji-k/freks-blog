@@ -46,6 +46,7 @@ Windows Defenderを有効にする
 - Line
 - Visual Studio Code
 - Google Drive File Stream [ドライブ ファイル ストリームを導入する \- G Suite 管理者 ヘルプ](https://support.google.com/a/answer/7491144)
+- Google日本語入力
 
 FranzやめてStationにしてみた
 - Station
@@ -67,14 +68,40 @@ Ricty Diminished
   - POWER LINE COMMANDでWSLを有効に
   - Windows StoreからUbuntuをインストール
     - Ubuntuは新しいLTSがでたらバージョンアップしていける
+
 [Initialize a new WSL Linux distro \| Microsoft Docs](https://docs.microsoft.com/en-us/windows/wsl/initialize-distro)をしていく
   - Start MenuからUbuntuを開く
   - sudo apt update && sudo apt upgrade
 
+### Ubuntu設定
+
+source.listを日本のものに変更
+
+$ sudo apt update
+$ sudo apt upgrade
+
+#### timezone
+
+$ sudo dpkg-reconfigure tzdata
+
+で出てきたウィンドウで選ぶ
+
+#### locale
+
+$ sudo install language-pack-ja
+
+だけで日本語が表示できる  
+
+ロケールを英語にするなら
+
+$ sudo update-locale LANG=en_US.UTF-8
+
 ## ソフトウェア on WSL
 
 - [Git](/git) install and setting
+  - gpg
 - tig
+- mosh
 
 ### Ubuntu設定 on WSL(完全に個人用)
 
@@ -100,3 +127,29 @@ git clone git@github.com:shoji-k/dotfiles.git
 cd dotfiles
 ./bionic-init.sh
 ```
+
+### ターミナル
+
+- [goreliu/wsl\-terminal: Terminal emulator for Windows Subsystem for Linux \(WSL\)](https://github.com/goreliu/wsl-terminal)
+
+Releaseからダウンロードして解凍  
+C:\Tool\wsl-terminal に設置  
+open-wsl.exe 実行で起動  
+アップデートは
+
+```
+./cmdtool update
+```
+
+立ち上げてから左上アイコンの右クリック>オプションでフォントを Ricky Diminished Discord に変更
+
+コマンドプロンプトで
+
+```
+wslconfig /l
+```
+
+するとディストリビューション一覧が表示できる  
+
+右クリックのコンテキストメニューに増やすこともできるが好みじゃないのでやっていない  
+

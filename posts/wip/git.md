@@ -22,7 +22,10 @@ $ sudo apt install git
 GPG key
 [Managing commit signature verification \- User Documentation](https://help.github.com/articles/managing-commit-signature-verification/)
 
-### on Ubuntu 18.04 on 2019-01-11
+[Generating a new GPG key \- User Documentation](https://help.github.com/articles/generating-a-new-gpg-key/)
+を参考にGPG keyを作る
+
+### on Ubuntu 18.04
 
 $ dpkg -l gnupg
 
