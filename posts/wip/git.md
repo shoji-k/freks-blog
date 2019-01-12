@@ -25,6 +25,12 @@ GPG key
 [Generating a new GPG key \- User Documentation](https://help.github.com/articles/generating-a-new-gpg-key/)
 を参考にGPG keyを作る
 
+```
+git config --global user.signingkey (key)
+```
+
+の設定をする
+
 ### on Ubuntu 18.04
 
 $ dpkg -l gnupg
