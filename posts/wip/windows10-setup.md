@@ -145,3 +145,12 @@ options = "metadata,uid=1000,gid=1000,umask=22"
 - [Ruby](/ruby-install)
 - tig
 
+## キーマッピング
+
+AutoHotKeyをいれてキーをカスタマイズ
+
+- Ctrl+Enter -> Escに割当て(セパレートキーボード+Vim用)
+
+できたファイルのショートカットをスタートアップに入れておく
+
+Skypeはブラウザ版を使う
