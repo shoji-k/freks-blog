@@ -25,11 +25,27 @@ GPG key
 [Generating a new GPG key \- User Documentation](https://help.github.com/articles/generating-a-new-gpg-key/)
 を参考にGPG keyを作る
 
+gnupg2を使った場合、
+
 ```
-git config --global user.signingkey (key)
+export GPG_TTY=$(tty)
+```
+
+が必要なので実行、.bashrcなどにも書いておく  
+
+```
+git config --global commit.gpgsign true
 ```
 
 の設定をする
+
+commitのときに ```-S``` をつけると署名付きコミットになるが、全て署名付きにしたかったら  
+
+```
+git config --global commit.gpgsign true
+```
+
+ただし、リーナスは推奨してないらしい  
 
 ### on Ubuntu 18.04
 
