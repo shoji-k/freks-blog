@@ -34,6 +34,24 @@ $ sudo apt install xsel
 
 [Nvim documentation: provider-python](https://neovim.io/doc/user/provider.html#provider-python)
 
+```
+$ sudo apt-get install python-dev python-pip python3-dev python3-pip
+$ pip install pynvim
+$ pip3 install pynvim
+```
+
+### rubyのWarning対策
+
+```
+$ gem install neovim
+```
+
+### NodeのWarning対策
+
+```
+$ npm install -g neovim
+```
+
 ## dein.vim
 
 Pluginマネージャーは  

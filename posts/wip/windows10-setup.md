@@ -53,6 +53,8 @@ DellのPCを買ったのでセットアップをまとめました
 - Evernote
 - Clibor
 - Line
+- Office 365
+- Google日本語入力
 
 基本的に開発はWindows Subsystem for Linux(WSL)上で行います  
 

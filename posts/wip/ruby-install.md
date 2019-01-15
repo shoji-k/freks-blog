@@ -36,17 +36,33 @@ $ cd ~/.rbenv
 $ git pull
 ```
 
+## install ruby-build
+
+rbenv installを使うためにはruby-buildが必要  
+[rbenv/ruby\-build: Compile and install Ruby](https://github.com/rbenv/ruby-build#readme)
+
+```
+$ mkdir -p "$(rbenv root)"/plugins
+$ git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby-build
+```
+
+### update ruby-build
+
+```
+$ cd "$(rbenv root)"/plugins/ruby-build && git pull
+```
+
 ## Rubyをインストールする
 
 ```
 $ rbenv install -l
-$ rbenv install 2.0.0-p247
+$ rbenv install 2.6.0
 ```
 
 システム全体で使うRuby versionの指定  
 
 ```
-$ rbenv global 2.0.0-p247
+$ rbenv global 2.6.0
 ```
 
 ## Rubygems

@@ -40,6 +40,7 @@ Windows Defenderを有効にする
 - Google Chrome
 - Google Chrome Canary(仕事用アカウント用)
 - Brave
+  - Evernote extension
 - Slack
 - Evernote
 - Steam
@@ -47,6 +48,7 @@ Windows Defenderを有効にする
 - Visual Studio Code
 - Google Drive File Stream [ドライブ ファイル ストリームを導入する \- G Suite 管理者 ヘルプ](https://support.google.com/a/answer/7491144)
 - Google日本語入力
+- Office 365
 
 FranzやめてStationにしてみた
 - Station
@@ -57,6 +59,10 @@ FranzやめてStationにしてみた
   - Slack(for private)
   - Gmail
   - TweetDeck
+  - Dropbox paper
+
+以前はVivaldiを使ってましたが、Stationに統一してみました  
+Stationに登録しすぎ感もしています  
 
 Google Noto Font
 Ricty Diminished
@@ -72,6 +78,8 @@ Ricty Diminished
 [Initialize a new WSL Linux distro \| Microsoft Docs](https://docs.microsoft.com/en-us/windows/wsl/initialize-distro)をしていく
   - Start MenuからUbuntuを開く
   - sudo apt update && sudo apt upgrade
+
+- sqldeveloper Oracle client用
 
 ### Ubuntu設定
 
