@@ -4,8 +4,6 @@ date: "2019-12-31"
 ---
 XPS 15 9570
 
-
-
 開封
 PC本体と充電ケーブルのみ
 
@@ -18,7 +16,6 @@ PC本体と充電ケーブルのみ
 
 Windows Updateで最新まで2度した
 Dell Updateをなくなるまでする
-  ずっとなくならないのが1つあったが放置
 指紋認証の指を追加
 
 コンピューター名の変更
@@ -39,6 +36,7 @@ Windows Defenderを有効にする
 
 - Google Chrome
 - Google Chrome Canary(仕事用アカウント用)
+- FireFox
 - Brave
   - Evernote extension
 - Slack
@@ -49,6 +47,8 @@ Windows Defenderを有効にする
 - Google Drive File Stream [ドライブ ファイル ストリームを導入する \- G Suite 管理者 ヘルプ](https://support.google.com/a/answer/7491144)
 - Google日本語入力
 - Office 365
+- Zoom
+- Adobe Acrobat Reader
 
 FranzやめてStationにしてみた
 - Station
