@@ -97,8 +97,14 @@ TODO: AutoHot key
 
 Releaseからダウンロードして解凍  
 C:\Tool\wsl-terminal に設置  
-open-wsl.exe 実行で起動  
-アップデートは
+
+open-wsl.exeのショートカットを作って  
+open-wsl.exe -l で起動  
+-l をつけると、シェルのログインディレクトリがカレントディレクトリになります  
+
+参照) [Added \-l param to README\.md · goreliu/wsl\-terminal@7d0a883](https://github.com/goreliu/wsl-terminal/commit/7d0a8832acf00f0678063c4fddd83ecd35102e5e)
+
+アップデートは  
 
 ```
 ./cmdtool update
@@ -113,7 +119,6 @@ wslconfig /l
 ```
 
 するとディストリビューション一覧が表示できる  
-
 右クリックのコンテキストメニューに増やすこともできるが好みじゃないのでやっていない  
 
 ### WSL 設定
