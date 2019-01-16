@@ -1,11 +1,13 @@
 ---
 title: "Rubyのインストール"
-date: "2019-12-31"
+date: "2019-01-15"
 ---
 
 ## rbenv
 
 [rbenv](https://github.com/rbenv/rbenv)を使います  
+
+Ubuntu 18.02で試しました  
 
 Readmeの記載通りにインストール  
 
