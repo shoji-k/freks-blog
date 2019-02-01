@@ -53,6 +53,11 @@ cd ~
 ln -s ws /mnt/c/Users/shoji/ws
 ```
 
+ssh設定  
+
+- prepare .ssh/config
+- set key to proper path
+
 dotfile設定  
 
 ```

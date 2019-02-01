@@ -2,10 +2,14 @@
 title: "XPS 15 9570を買ったのでやったことまとめ"
 date: "2019-12-31"
 ---
+
+
 XPS 15 9570
 
-開封
+## 開封して
 PC本体と充電ケーブルのみ
+
+## 初期設定
 
 電源入れる、Cortanaが話しかけてくるけど、OFFにして進んでいく
 設定一通りすると起動
@@ -14,14 +18,13 @@ PC本体と充電ケーブルのみ
   途中まで実行すると必要な容量がわかる
   16G以上のUSBメモリが必要だったが、ないため後日する
 
-Windows Updateで最新まで2度した
-Dell Updateをなくなるまでする
-指紋認証の指を追加
+Windows Updateで最新まで2度した  
+Dell Updateをなくなるまでする  
+指紋認証の指を追加  
 
 コンピューター名の変更
 
-
-プログラムの削除
+## プログラムの削除
 
 - McAfee
 - McAfee Security
@@ -34,8 +37,25 @@ Dell Updateをなくなるまでする
 Windows Defenderを有効にする
   更新プログラムを更新
 
+## CapsLockにCtrlを割り当てる
+
+[Ctrl2cap](https://technet.microsoft.com/en-us/sysinternals/bb897578.aspx)を使う  
+
+ダウンロードしてexeを実行する  
+管理者権限が必要なので、コマンドプロンプトを右クリック、管理者権限で実行する  
+
+```
+> ctrl2cap.exe /install
+```
+
+## ソフトウェアのインストール
+
+ググって最新を入れます  
+
 - Google Chrome
-- Google Chrome Canary(仕事用アカウント用)
+  - (pin) Dropbox paper
+- Google Chrome Beta(仕事用アカウント用)
+  - 以前はGoogle Chrome Canaryを使ってましたが動かないものがあったりするのでBetaに
 - FireFox
 - Brave
   - Evernote extension
@@ -49,6 +69,13 @@ Windows Defenderを有効にする
 - Office 365
 - Zoom
 - Adobe Acrobat Reader
+- WinMerge
+- Postman
+- Kindle
+
+Skypeはブラウザ版を使う  
+メーラーは基本Gmailをブラウザで  
+企業にもらったメールは以前はThunderbirdでしたが、Windows10標準のメーラーにしてみました
 
 FranzやめてStationにしてみた
 - Station
@@ -59,15 +86,23 @@ FranzやめてStationにしてみた
   - Slack(for private)
   - Gmail
   - TweetDeck
-  - Dropbox paper
 
-以前はVivaldiを使ってましたが、Stationに統一してみました  
-Stationに登録しすぎ感もしています  
+以前はVivaldiにPin留めしてたりしましたが、Stationに統一してみました  
+Dropbox PaperはStationで謎の別ウィンドウが開いて解決策なさそうなので、ChromeにPin留してます  
+Stationに登録しすぎ感はあります  
 
-Google Noto Font
-Ricty Diminished
+- sqldeveloper Oracle client用
 
-- WSL
+### フォント
+
+ダウンロードしてfont追加します  
+
+- Google Noto Font
+- Ricty Diminished
+
+### Windows Subsystem for Linux (WSL)
+
+基本的に開発はWindows Subsystem for Linux(WSL)上で行います  
 
 [Install Windows Subsystem for Linux (WSL) on on Windows 10 | Microsoft Docs](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
 
@@ -79,62 +114,20 @@ Ricty Diminished
   - Start MenuからUbuntuを開く
   - sudo apt update && sudo apt upgrade
 
-- sqldeveloper Oracle client用
-
 ### Ubuntu設定
 
-source.listを日本のものに変更
+[Ubuntu設定](/ubuntu)にまとめてます
 
-$ sudo apt update
-$ sudo apt upgrade
-
-#### timezone
-
-$ sudo dpkg-reconfigure tzdata
-
-で出てきたウィンドウで選ぶ
-
-#### locale
-
-$ sudo install language-pack-ja
-
-だけで日本語が表示できる  
-
-ロケールを英語にするなら
-
-$ sudo update-locale LANG=en_US.UTF-8
-
-## ソフトウェア on WSL
+### ソフトウェア on WSL
 
 - [Git](/git) install and setting
   - gpg
+- [Node](node-install)
+- [Neovim](/neovim)
+- [Ruby](/ruby-install)
+- [PHP](/php-install)
 - tig
 - mosh
-
-### Ubuntu設定 on WSL(完全に個人用)
-
-symbolic link  
-
-```
-cd ~
-ln -s ws /mnt/c/Users/shoji/ws
-```
-
-ssh設定  
-
-prepare .ssh/config
-set key to proper path
-
-dotfile設定  
-
-```
-cd ~/
-mkdir repos
-cd $_
-git clone git@github.com:shoji-k/dotfiles.git
-cd dotfiles
-./bionic-init.sh
-```
 
 ### ターミナル
 
@@ -167,3 +160,43 @@ wslconfig /l
 タスクマネージャーを開いて、スタートアップのタブをクリック  
 
 - Dell Mobile Connect Startup を無効に
+
+## キーマッピング
+
+### AutoHotKey
+
+AutoHotKeyをいれてキーをカスタマイズ
+
+- Ctrl+Enter -> Escに割当て(セパレートキーボード+Vim用)
+
+```
+#NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
+; #Warn  ; Enable warnings to assist with detecting common errors.
+SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
+SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
+
+^Enter::Send, {Esc}
+```
+
+をesc.ahkとして保存  
+できたファイルのショートカットをスタートアップに入れておく  
+
+### Google日本語入力
+
+下のトレイにあるアイコンを右クリック > プロパティ  
+キー設定の選択、編集をクリック  
+
+![google_ime_option](/xps15-install/google_ime_option.png)
+
+下記画像の下4つの設定を追加  
+
+![google_ime_addition](/xps15-install/google_ime_addition.png)
+
+## Windows Defender
+
+スキャンしてほしくないディレクトリを指定  
+yarn installしたディレクトリはウィルススキャンすると重いため除外します  
+
+![windows_defender_exclude](/xps15-install/windows_defender_exclude.png)
+
+
