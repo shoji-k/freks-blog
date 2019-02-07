@@ -1,28 +1,39 @@
 ---
 title: "XPS 15 9570を買ったのでやったことまとめ"
-date: "2019-12-31"
+date: "2019-02-07"
 ---
 
+Dell XPS 15 9570 を年末のクーポンが出たときに買いました  
+届いたのは1/11でした  
 
-XPS 15 9570
+CPU: Core i7-8750H 2.2GHz  
+RAM: 16GB  
+SSD: 512GB  
+Graphic Board: GTX 1050Ti  
+
+でたいていのゲームもできてしまうマシンです  
+
+<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=freks-22&language=ja_JP&o=9&p=8&l=as4&m=amazon&f=ifr&ref=as_ss_li_til&asins=B07GS38QTV&linkId=6848dad1a160e7a7924aac4db67ea029"></iframe>
+
+開封から設定までをまとめてみました  
 
 ## 開封して
 PC本体と充電ケーブルのみ
 
 ## 初期設定
 
-電源入れる、Cortanaが話しかけてくるけど、OFFにして進んでいく
+電源入れる、Cortanaが話しかけてくるけど、OFFにして進んでいく  
 設定一通りすると起動
 
 リカバリーUSBの作成(回復ドライブ)
   途中まで実行すると必要な容量がわかる
   16G以上のUSBメモリが必要だったが、ないため後日する
+  -> 16GBだと何度やっても失敗、32GBのUSBメモリでできました
 
 Windows Updateで最新まで2度した  
 Dell Updateをなくなるまでする  
 指紋認証の指を追加  
-
-コンピューター名の変更
+コンピューター名の変更  
 
 ## プログラムの削除
 
@@ -34,8 +45,8 @@ Dell Updateをなくなるまでする
 - Netflix
 - OneDrive 以前から使ってなかったので削除
 
-Windows Defenderを有効にする
-  更新プログラムを更新
+Windows Defenderを有効にする  
+- 更新プログラムを更新
 
 ## CapsLockにCtrlを割り当てる
 
@@ -59,6 +70,8 @@ Windows Defenderを有効にする
 - FireFox
 - Brave
   - Evernote extension
+  - (pin) Google Play Music
+  - (pin) Feedly
 - Slack
 - Evernote
 - Steam
@@ -66,16 +79,11 @@ Windows Defenderを有効にする
 - Visual Studio Code
 - Google Drive File Stream [ドライブ ファイル ストリームを導入する \- G Suite 管理者 ヘルプ](https://support.google.com/a/answer/7491144)
 - Google日本語入力
-- Office 365
-- Zoom
-- Adobe Acrobat Reader
-- WinMerge
-- Postman
 - Kindle
 
 Skypeはブラウザ版を使う  
 メーラーは基本Gmailをブラウザで  
-企業にもらったメールは以前はThunderbirdでしたが、Windows10標準のメーラーにしてみました
+企業にもらったメールは以前はThunderbirdでしたが、Windows10標準のメーラーにしてみました  
 
 FranzやめてStationにしてみた
 - Station
@@ -89,8 +97,17 @@ FranzやめてStationにしてみた
 
 以前はVivaldiにPin留めしてたりしましたが、Stationに統一してみました  
 Dropbox PaperはStationで謎の別ウィンドウが開いて解決策なさそうなので、ChromeにPin留してます  
-Stationに登録しすぎ感はあります  
+Google Play MusicもStationに入れてましたが、たまに反応しなくなるので、BraveにPin留めしてます  
 
+Stationに登録しすぎ感はあります..  
+
+以下、完全な仕事用  
+
+- Office 365
+- Zoom
+- Adobe Acrobat Reader
+- WinMerge
+- Postman
 - sqldeveloper Oracle client用
 
 ### フォント
@@ -109,6 +126,7 @@ Stationに登録しすぎ感はあります
   - POWER LINE COMMANDでWSLを有効に
   - Windows StoreからUbuntuをインストール
     - Ubuntuは新しいLTSがでたらバージョンアップしていける
+    - 他のはバージョン固定っぽい
 
 [Initialize a new WSL Linux distro \| Microsoft Docs](https://docs.microsoft.com/en-us/windows/wsl/initialize-distro)をしていく
   - Start MenuからUbuntuを開く
@@ -199,4 +217,8 @@ yarn installしたディレクトリはウィルススキャンすると重い�
 
 ![windows_defender_exclude](/xps15-install/windows_defender_exclude.png)
 
+## まとめ
+
+以前と同じような環境にするのに1週間かかりました  
+Ansibleとかにまとめられそうなのもあるけど、頻度が1、2年おきなので、都度ソフトウェアを入れ替えてくのがよさそう  
 
