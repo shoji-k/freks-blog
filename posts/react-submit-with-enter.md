@@ -1,6 +1,6 @@
 ---
 title: "ReactでInputフォームのEnterキーで処理を行う"
-date: "2019-12-31"
+date: "2019-02-09"
 ---
 
 React version 16.4.2 でinputフォームでのEnterキーを押して処理をしたかった際、
@@ -11,7 +11,6 @@ React version 16.4.2 でinputフォームでのEnterキーを押して処理を�
   placeholder="input password"
   name="password"
   onKeyPress={e =>
-    e.preventDefault()
     if (e.key == 'Enter') {
       signIn()
     }
