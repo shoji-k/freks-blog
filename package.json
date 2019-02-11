@@ -8,7 +8,8 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "eslint": "eslint src",
-    "eslint-check": "eslint --print-config . | eslint-config-prettier-check"
+    "eslint-check": "eslint --print-config . | eslint-config-prettier-check",
+    "test": "yarn run cypress run"
   },
   "dependencies": {
     "gatsby": "2.0.118",
@@ -27,6 +28,7 @@
     "typography-theme-ocean-beach": "0.16.18"
   },
   "devDependencies": {
+    "cypress": "3.1.5",
     "eslint": "5.13.0",
     "eslint-config-prettier": "4.0.0",
     "eslint-plugin-prettier": "3.0.1",
