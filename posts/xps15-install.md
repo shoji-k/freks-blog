@@ -81,6 +81,7 @@ Windows Defenderを有効にする
 - Google日本語入力
 - Kindle
 - Gyazo
+- VLC
 
 Skypeはブラウザ版を使う  
 メーラーは基本Gmailをブラウザで  
