@@ -8,7 +8,8 @@ export default function Top({
   data: { site, allMarkdownRemark: posts },
   location,
 }) {
-  const showAll = location.search === '?all'
+  const showAll =
+    process.env.NODE_ENV === 'development' || location.search === '?all'
   const today = moment().startOf('day')
 
   return (
