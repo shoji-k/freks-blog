@@ -4316,7 +4316,7 @@ gatsby-link@^2.0.10:
     "@types/reach__router" "^1.0.0"
     prop-types "^15.6.1"
 
-gatsby-plugin-feed@^2.0.13:
+gatsby-plugin-feed@2.0.13:
   version "2.0.13"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-feed/-/gatsby-plugin-feed-2.0.13.tgz#4a457a81d28cbe1ebb6d944272711b0a0671bbd3"
   integrity sha512-wipPT35r+siQih+rZnKUxGFpA30RstnqtB/2JVuXeTX9ivkIjD697MOEqZTgM/8Y2IiQvr667pmDLukPPcwwuQ==
