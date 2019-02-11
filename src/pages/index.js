@@ -9,11 +9,7 @@ export default function Top({
   location,
 }) {
   const showAll = location.search === '?all'
-  const today = moment()
-    .hour(0)
-    .minute(0)
-    .second(0)
-    .millisecond(0)
+  const today = moment().startOf('day')
 
   return (
     <Layout location={location} title={site.siteMetadata.title}>
