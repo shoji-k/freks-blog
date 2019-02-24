@@ -61,3 +61,10 @@ $ dpkg -l gnupg
 $ git fetch origin
 $ git checkout -b origin/branch_name local_branch_name
 ```
+
+### タグやブランチを指定してcloneする
+
+```
+$ git clone -b tag_name https://sample.co.jp/sample.git
+$ git checkout -b tag_name
+```

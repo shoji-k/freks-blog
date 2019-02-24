@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
+import moment from 'moment'
 import Layout from '../components/Layout'
 import Seo from '../components/Seo'
 
@@ -7,18 +8,30 @@ export default function Top({
   data: { site, allMarkdownRemark: posts },
   location,
 }) {
+  const showAll =
+    process.env.NODE_ENV === 'development' || location.search === '?all'
+  const today = moment().startOf('day')
+
   return (
     <Layout location={location} title={site.siteMetadata.title}>
       <Seo title={site.siteMetadata.title} />
       <h4>{posts.totalCount} Posts</h4>
-      {posts.edges.map(({ node }) => (
-        <Link to={node.fields.slug} key={node.id}>
-          <h3>
-            {node.frontmatter.title}
-            <small style={{ color: '#bbb' }}> - {node.frontmatter.date}</small>
-          </h3>
-        </Link>
-      ))}
+      {posts.edges
+        .filter(
+          ({ node }) =>
+            showAll || today.diff(node.frontmatter.date, 'days') >= 0
+        )
+        .map(({ node }) => (
+          <Link to={node.fields.slug} key={node.id}>
+            <h3>
+              {node.frontmatter.title}
+              <small style={{ color: '#bbb' }}>
+                {' '}
+                - {node.frontmatter.date}
+              </small>
+            </h3>
+          </Link>
+        ))}
     </Layout>
   )
 }

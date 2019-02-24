@@ -80,6 +80,8 @@ Windows Defenderを有効にする
 - Google Drive File Stream [ドライブ ファイル ストリームを導入する \- G Suite 管理者 ヘルプ](https://support.google.com/a/answer/7491144)
 - Google日本語入力
 - Kindle
+- Gyazo
+- VLC
 
 Skypeはブラウザ版を使う  
 メーラーは基本Gmailをブラウザで  
