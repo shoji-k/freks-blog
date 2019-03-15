@@ -4640,7 +4640,7 @@ gatsby-link@^2.0.16:
     "@types/reach__router" "^1.0.0"
     prop-types "^15.6.1"
 
-gatsby-plugin-draft@^0.0.3:
+gatsby-plugin-draft@0.0.3:
   version "0.0.3"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-draft/-/gatsby-plugin-draft-0.0.3.tgz#6f60409290078e8490b2449cba472a24fdb523d0"
   integrity sha512-q9a578YMBBal+auPvoLDHrsRqJHl7RMuL/1VMMba3jm32Y0n6BAPD9TCJG+cfkm3CUIEZwBhEVyqMVrJq7qHkg==
