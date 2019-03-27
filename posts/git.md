@@ -68,3 +68,9 @@ $ git checkout -b origin/branch_name local_branch_name
 $ git clone -b tag_name https://sample.co.jp/sample.git
 $ git checkout -b tag_name
 ```
+
+### リモートブランチを削除する
+
+```
+$ git push origin --delete branch_name
+```
