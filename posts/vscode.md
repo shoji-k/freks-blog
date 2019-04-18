@@ -35,8 +35,10 @@ VSCode を再起動すると Git が使えるようになりました
 ## shortcut
 
 - Ctrl + p -> Go to file
-- Ctrl + shift + p -> Command palatte
+- Ctrl + Shift + p -> Command palatte
 - Shift + Alt + F -> Code format
+
+- Alt + Shift + ↑↓ 行コピー
 
 ## eslint
 
@@ -61,4 +63,4 @@ Prettier Eslint integration にチェックを入れる
 ![prettier setting](/vscode/prettier_setting.png)
 
 整形するときは  
-Ctrl + shit + p, Format Document
+Ctrl + Shift + p, Format Document
