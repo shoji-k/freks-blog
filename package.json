@@ -12,15 +12,15 @@
     "test": "yarn run cypress run"
   },
   "dependencies": {
-    "gatsby": "2.7.1",
+    "gatsby": "2.10.0",
     "gatsby-plugin-draft": "0.0.4",
-    "gatsby-plugin-feed": "2.2.1",
-    "gatsby-plugin-google-analytics": "2.0.20",
-    "gatsby-plugin-react-helmet": "3.0.12",
-    "gatsby-plugin-sitemap": "2.1.0",
-    "gatsby-plugin-typography": "2.2.13",
-    "gatsby-source-filesystem": "2.0.37",
-    "gatsby-transformer-remark": "2.3.12",
+    "gatsby-plugin-feed": "2.3.0",
+    "gatsby-plugin-google-analytics": "2.1.0",
+    "gatsby-plugin-react-helmet": "3.1.0",
+    "gatsby-plugin-sitemap": "2.2.0",
+    "gatsby-plugin-typography": "2.3.0",
+    "gatsby-source-filesystem": "2.1.0",
+    "gatsby-transformer-remark": "2.5.0",
     "react": "16.8.6",
     "react-dom": "16.8.6",
     "react-helmet": "5.2.1",
@@ -30,10 +30,10 @@
   },
   "devDependencies": {
     "cypress": "3.3.1",
-    "eslint": "5.16.0",
-    "eslint-config-prettier": "4.3.0",
+    "eslint": "6.0.0",
+    "eslint-config-prettier": "5.0.0",
     "eslint-plugin-prettier": "3.1.0",
     "eslint-plugin-react": "7.13.0",
-    "prettier": "1.17.1"
+    "prettier": "1.18.2"
   }
 }
