@@ -48,6 +48,7 @@ $ phpenv install 7.3.1
 
 ```
 $ sudo apt install libxml2-dev libbz2-dev libcurl4-openssl-dev libjpeg-dev libpng-dev libxslt-dev libzip-dev autoconf
+$ sudo apt install re2c
 ```
 
 が必要でした  
@@ -57,6 +58,29 @@ $ sudo apt install libxml2-dev libbz2-dev libcurl4-openssl-dev libjpeg-dev libpn
 
 ```
 $ phpenv global 7.3.1
+```
+
+これで php が使えるようになりました
+
+## php 7.3.6 をインストール 2019-06-07 に追記
+
+```
+$ phpenv install -l
+$ phpenv install 7.3.6
+```
+
+足りないもののエラーが出たので
+
+```
+$ sudo apt install libxml2-dev libbz2-dev libcurl4-openssl-dev libjpeg-dev libpng-dev libxslt-dev libzip-dev autoconf re2c bison libtidy-dev
+```
+
+が必要でした
+
+システム全体で使う php version の指定
+
+```
+$ phpenv global 7.3.6
 ```
 
 これで php が使えるようになりました
