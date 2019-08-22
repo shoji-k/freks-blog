@@ -34,7 +34,7 @@ $ composer install
 Docker使うときは
 
 ```
-$ docker run --rm --interactive --tty --volume $PWD:/app composer install
+$ docker run --rm -v $(pwd):/app -it composer install --ignore-platform-reqs
 ```
 
 ## 画面にアクセスしてインストール
