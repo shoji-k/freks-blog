@@ -23,6 +23,20 @@ $ git ch -b 4.0.1
 
 これで手元に用意できました
 
+## composer install
+
+composer installします
+
+```
+$ composer install
+```
+
+Docker使うときは
+
+```
+$ docker run --rm --interactive --tty --volume $PWD:/app composer install
+```
+
 ## 画面にアクセスしてインストール
 
 Web インストールしてみました  
