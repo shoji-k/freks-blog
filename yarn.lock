@@ -5407,10 +5407,10 @@ gatsby-page-utils@^0.0.17:
     micromatch "^3.1.10"
     slash "^3.0.0"
 
-gatsby-plugin-draft@0.0.4:
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-draft/-/gatsby-plugin-draft-0.0.4.tgz#0898305d8d7d7d1f3284f16754b3add650d7d688"
-  integrity sha512-QUH1U71VhSp6Pqk7oyzW2ydQu2begiYxNIT4NZ5SJlE+SVCHvrzd3kbGzWKsio3GEUe1CQsWxlVZ37eWhG7pJg==
+gatsby-plugin-draft@0.0.5:
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-draft/-/gatsby-plugin-draft-0.0.5.tgz#ef41dba4edabab8be6690dcd6e7167ce5be32726"
+  integrity sha512-JzVJEe2dfLI3GuoQDZX1PqenXkBUyx+rbSeVgGS7U4l5i0X/5X5P4Fxs6VJSsdEO5/jemsQs0B0qjNGLyG7lPQ==
   dependencies:
     moment-timezone "^0.5.23"
 
