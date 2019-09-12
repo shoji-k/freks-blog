@@ -103,3 +103,9 @@ localhost                     : ok=2    changed=0    unreachable=0    failed=0  
 ```
 
 ansible コマンドのホスト名の指定が playbook.yml の中でやってます
+
+## Directory layout
+
+ディレクトリ構成は  
+https://docs.ansible.com/ansible/latest/user_guide/playbooks_best_practices.html#id11
+を参照
