@@ -133,6 +133,22 @@ AppBundle\Controller\:
 ここで Controller も Service として呼び出せるようにしていますが、Symfony のコントローラの動きはなんら変わらず利用できます  
 `tags: ['controller.service_arguments']` をつけておくと、`function __construct()` 以外のファンクションでも、Type-hint で Service が呼び出せるようです
 
+### \_defaults: bind
+
+`_defaults` の中に `bind` がありますが
+
+```
+# app/config/services.yml
+services:
+    _defaults:
+        bind:
+            $projectDir: '%kernel.project_dir%'
+```
+
+これは全体で使える変数になります  
+Controller から呼び出すときに \$projectDir` をコンスタクタの引数に指定するだけで呼べます  
+全体で使う Service を指定したりすると、便利そうです
+
 ## サービスパラメータ
 
 固定のパラメータも services.yml に登録でき
