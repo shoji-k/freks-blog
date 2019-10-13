@@ -76,6 +76,13 @@ $ SELECT ST_Contains('POLYGON((0 0, 1 0, 1 1, 0 0))'::GEOMETRY,'LINESTRING(0 0, 
 
 と動作してそうです
 
+ちなみにこのときの PostgreSQL のバージョンは
+
+```
+$ psql --version
+psql (PostgreSQL) 11.2 (Debian 11.2-1.pgdg90+1)
+```
+
 ## Shapefile を取り込んでみる
 
 PostGIS には [Shapefile](https://blog.freks.jp/geospatial-data/) を取り込む shp2pgsql というツールがついているので取り込んでみます
