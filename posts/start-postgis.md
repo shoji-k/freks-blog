@@ -121,7 +121,7 @@ $ shp2pgsql -W cp932 -D -I -s 4612 h27ka27.shp sample_table > h27ka27.sql
 これで SQL ファイルができたので、PostgreSQL に入れてみます
 
 ```
-$ psql -U pguser sampledb < h27ka27.sql
+$ psql -U pguser sampledb -f h27ka27.sql
 ```
 
 これでテーブルができました
