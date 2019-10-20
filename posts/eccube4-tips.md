@@ -25,3 +25,9 @@ Symfony 3.4.22 (kernel: Eccube, env: dev, debug: true)
 ```
 
 [Symfony 3.4 Documentation](https://symfony.com/doc/3.4/)
+
+## コンソールでコマンド一覧を表示
+
+```
+bin/console list
+```
