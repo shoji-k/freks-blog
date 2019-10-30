@@ -59,7 +59,7 @@ git config --global commit.gpgsign true
 
 ```
 $ git fetch origin
-$ git checkout -b origin/branch_name local_branch_name
+$ git checkout -b local_branch_name origin/branch_name
 ```
 
 ### タグやブランチを指定して clone する
@@ -80,3 +80,59 @@ $ git push origin --delete branch_name
 ```
 git archive --format=zip HEAD `git diff --name-only HEAD HEAD^^` -o diff.zip
 ```
+
+### .gitignore を使わずに無視する
+
+自分の手元だけ置きたいファイルがあるけど、.gitignore にも書きたくない場合
+
+`.git/info/exclude` に書くと無視される
+
+例）
+
+$ mkdir .git/info  
+$ vim .git/info/exclude
+
+```
+sample
+```
+
+とすると
+
+\$ touch sample
+
+しても Git は無視してくれる
+
+### 編集したことを無視する
+
+.git 管理しているファイルを、編集したときを、Git に無視してほしいときは
+
+\$ git update-index --assume-unchanged (編集を無視したいファイル)
+
+とする
+
+例）
+
+.my.env は Git 管理されてる
+
+\$ echo 'mysetting=true' >> .my.env
+
+これだと Git に編集されたことが伝わるが
+
+\$ git update-index --assume-unchanged .my.env
+
+すると無視される
+
+設定を戻すには
+
+\$ git update-index --no-assume-unchanged .my.env
+
+設定を確認するには
+
+\$ git ls-files -v
+
+```
+h .my.env
+H test
+```
+
+と h などが小文字で表示される
