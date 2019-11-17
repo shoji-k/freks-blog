@@ -1,6 +1,6 @@
 ---
-title: 'byobu'
-date: '2019-12-31'
+title: 'Byobu tips'
+date: '2019-11-17'
 ---
 
 ## byobu のエスケープシーケンスを使う
