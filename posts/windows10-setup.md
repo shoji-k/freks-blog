@@ -1,22 +1,25 @@
 ---
-title: "Windows10の環境セットアップ"
-date: "2019-01-20"
+title: 'Windows10の環境セットアップ'
+date: '2019-01-20'
 ---
 
-新しいPCを買ったのですが、届く前に今使っているPCのセットアップをまとめました  
+※追記  
+[XPS 15 9570 を買ったのでやったことまとめ \| freks blog](https://blog.freks.jp/xps15-install/) のほうが新しいです
+
+新しい PC を買ったのですが、届く前に今使っている PC のセットアップをまとめました
 
 ## 初めにすること
 
 - Windows Update
-- Dell Update (Dellの場合)
+- Dell Update (Dell の場合)
 - 不要なアプリを削除
 
-### CapsLockにCtrlを割り当てる
+### CapsLock に Ctrl を割り当てる
 
-[Ctrl2cap](https://technet.microsoft.com/en-us/sysinternals/bb897578.aspx)を使う  
+[Ctrl2cap](https://technet.microsoft.com/en-us/sysinternals/bb897578.aspx)を使う
 
-ダウンロードしてexeを実行する  
-管理者権限が必要なので、コマンドプロンプトを右クリック、管理者権限で実行する  
+ダウンロードして exe を実行する  
+管理者権限が必要なので、コマンドプロンプトを右クリック、管理者権限で実行する
 
 ```
 > ctrl2cap.exe /install
@@ -24,7 +27,7 @@ date: "2019-01-20"
 
 ## ソフトウェア
 
-ググって最新を入れます  
+ググって最新を入れます
 
 ### ブラウザ
 
@@ -54,14 +57,14 @@ date: "2019-01-20"
 - Clibor
 - Line
 - Office 365
-- Google日本語入力
+- Google 日本語入力
 - Office 365
 - Zoom
 - Adobe Acrobat Reader
 
-Skypeはブラウザ版を使う  
+Skype はブラウザ版を使う
 
-基本的に開発はWindows Subsystem for Linux(WSL)上で行います  
+基本的に開発は Windows Subsystem for Linux(WSL)上で行います
 
 - WSL
 
@@ -69,17 +72,17 @@ Skypeはブラウザ版を使う
 
 #### 右クリック > 送る へショートカット追加
 
-Windows + R を押して[ファイル名を実行して起動]を起動  
+Windows + R を押して[ファイル名を実行して起動]を起動
 
 ```
 shell:sendto
 ```
 
-で、VS Codeのショートカットを追加  
+で、VS Code のショートカットを追加
 
 #### スタートアップ内の不要なものを削除
 
-Windows + R を押して[ファイル名を実行して起動]を起動  
+Windows + R を押して[ファイル名を実行して起動]を起動
 
 ```
 shell:startup
@@ -87,10 +90,10 @@ shell:startup
 
 で、不要なショートカットを削除
 
-- Google日本語入力
+- Google 日本語入力
 
 Ctrl + Space -> 英数字入力  
-Ctrl + Shift + Space -> かな入力  
+Ctrl + Shift + Space -> かな入力
 
 のショートカットを設定
 
@@ -98,16 +101,16 @@ Ctrl + Shift + Space -> かな入力
 
 - [goreliu/wsl\-terminal: Terminal emulator for Windows Subsystem for Linux \(WSL\)](https://github.com/goreliu/wsl-terminal)
 
-Releaseからダウンロードして解凍  
-C:\Tool\wsl-terminal に設置  
+Release からダウンロードして解凍  
+C:\Tool\wsl-terminal に設置
 
-open-wsl.exeのショートカットを作って  
+open-wsl.exe のショートカットを作って  
 open-wsl.exe -l で起動  
--l をつけると、シェルのログインディレクトリがカレントディレクトリになります  
+-l をつけると、シェルのログインディレクトリがカレントディレクトリになります
 
 参照) [Added \-l param to README\.md · goreliu/wsl\-terminal@7d0a883](https://github.com/goreliu/wsl-terminal/commit/7d0a8832acf00f0678063c4fddd83ecd35102e5e)
 
-アップデートは  
+アップデートは
 
 ```
 ./cmdtool update
@@ -122,14 +125,14 @@ wslconfig /l
 ```
 
 するとディストリビューション一覧が表示できる  
-右クリックのコンテキストメニューに増やすこともできるが好みじゃないのでやっていない  
+右クリックのコンテキストメニューに増やすこともできるが好みじゃないのでやっていない
 
 ### WSL 設定
 
-ディレクトリのパーミッションが777になるので変更する  
-設定ファイルを新規作成する  
+ディレクトリのパーミッションが 777 になるので変更する  
+設定ファイルを新規作成する
 
-$ vim /etc/wsl.conf
+\$ vim /etc/wsl.conf
 
 ```
 [automount]
@@ -140,12 +143,11 @@ options = "metadata,uid=1000,gid=1000,umask=22"
 
 リファレンス [Automatically Configuring WSL – Windows Command Line Tools For Developers](https://blogs.msdn.microsoft.com/commandline/2018/02/07/automatically-configuring-wsl/)
 
-設定を反映するにはサービス LxssManager の再起動が必要  
+設定を反映するにはサービス LxssManager の再起動が必要
 
-## Ubuntu設定
+## Ubuntu 設定
 
-[Ubuntu設定](/ubuntu)にまとめてます
-
+[Ubuntu 設定](/ubuntu)にまとめてます
 
 ## ソフトウェア on WSL
 
@@ -158,8 +160,8 @@ options = "metadata,uid=1000,gid=1000,umask=22"
 
 ## キーマッピング
 
-AutoHotKeyをいれてキーをカスタマイズ
+AutoHotKey をいれてキーをカスタマイズ
 
-- Ctrl+Enter -> Escに割当て(セパレートキーボード+Vim用)
+- Ctrl+Enter -> Esc に割当て(セパレートキーボード+Vim 用)
 
 できたファイルのショートカットをスタートアップに入れておく
