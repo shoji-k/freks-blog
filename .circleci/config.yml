@@ -5,6 +5,5 @@ workflows:
   build:
     jobs:
       - cypress/run:
-          yarn: true
-          start: yarn start
+          start: npm start
           wait-on: 'http://localhost:8000'
