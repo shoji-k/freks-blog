@@ -1,6 +1,6 @@
 ---
 title: 'Intel NUC BLKNUC7I7DNKE を買った'
-date: '2019-10-30'
+date: '2019-11-29'
 ---
 
 持ってる Windows デスクトップ
@@ -59,7 +59,9 @@ Terminal を起動
 sudo apt update
 sudo apt upgrade
 
-左の Caps を Ctrl に変更する
+## 各種設定
+
+### 左の Caps を Ctrl に変更する
 
 \$ sudo vi /etc/default/keyboard
 
@@ -69,11 +71,13 @@ XKBOPTIONS="ctrl:nocaps"
 
 を追記、PC 再起動で変更されました
 
-4K ディスプレイで文字が小さいので 130%表示にしたい
+### 4K ディスプレイで文字が小さいので 130%表示にしたい
 
 ```
-gsettings set org.gnome.desktop.interface text-scaling-factor 1.3
+$ gsettings set org.gnome.desktop.interface text-scaling-factor 1.3
 ```
+
+### mozc設定
 
 Google 日本語入力(mozc)が最初から入っているので設定をする
 
@@ -82,36 +86,74 @@ Ctrl+Shift+Space を IME 有効化にする
 
 ポイントは最初から割り当てられている設定と競合してないか確認
 
-Google Drive を使う
+### Google Drive を使う
 
 設定からオンラインアカウントで Google を設定、するとファイラーに表示される
 
-ソフトウェアセンターでインストール
+### ssh設定
+
+ssh 秘密鍵を持ってきて、.ssh/config の用意
+
+### ユーザー追加
+
+PC貸したり、テストしたりする用のユーザー追加
+
+```
+$ sudo adduser (user name)
+```
+
+## ソフトウェアインストール
+
+### ソフトウェアセンターでインストール
 
 - Visual Studio Code
 - Slack
 - VLC
 - LibreOffice
+- Gimp
 
-Firefox でダウンロードしてインストール
+### ブラウザでダウンロードしてインストール
 
 - google-chrome-stable
 - google-chrome-beta
-
 - Station
   - AppImage ファイルなので、実行権限つけて起動した
 
-Google Chrome
+### ブラウザ上で使う
+
+アプリをダウンロードせずブラウザ上で使ってるものです
 
 - Evernote
 - Dropbox
 
-Terminal でインストール
+### Terminal でインストール
+
+#### apt install で入れる
+- tree
+- tig
+
+#### サイトを見ていれた
 
 - Brave [Installing Brave — Brave Browser documentation](https://brave-browser.readthedocs.io/en/latest/installing-brave.html#linux)
+- Vim
+  - GitHubからcloneしてbuildした
+- nvm, node
+  - [Nodeらへんのインストール \| freks blog](https://blog.freks.jp/node-install/) を見てインストール
+- Gyazo
+  - [gyazo/Gyazo\-for\-Linux: Gyazo for Linux](https://github.com/gyazo/Gyazo-for-Linux) を見てインストール
 
-ssh 秘密鍵を持ってきて、.ssh/config の用意
+## Updateするには
 
-PC 貸すとき用のユーザー追加
+### aptでアップデート
 
-sudo adduser (user name)
+- Git
+
+### 再ビルド
+
+- Vim
+
+- nvm
+  - [nvm\-sh/nvm: Node Version Manager \- POSIX\-compliant bash script to manage multiple active node\.js versions](https://github.com/nvm-sh/nvm#installation) を見て、curlコマンド再実行かgitでアップデート
+
+- node
+  - nvmでアップデート
