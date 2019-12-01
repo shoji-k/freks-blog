@@ -1,6 +1,6 @@
 ---
-title: "Swagger"
-date: "2019-12-31"
+title: 'Swagger'
+date: '2020-12-31'
 ---
 
 ## はじめ方
@@ -9,14 +9,13 @@ date: "2019-12-31"
 
 ### Open API specification
 
-Swaggerで使われてた定義が標準仕様になった  
+Swagger で使われてた定義が標準仕様になった
 
 ### SwaggerHub UI
 
-ブラウザ上のエディタでAPIの定義を書くと、ドキュメントができたりする  
+ブラウザ上のエディタで API の定義を書くと、ドキュメントができたりする
 
 定義の書き方は Open API の仕様を見る  
 [OpenAPI 3 Tutorial| SwaggerHub](https://app.swaggerhub.com/help/tutorials/openapi-3-tutorial)
 
-SwaggerHub UIでAPI設計してから、Railsなどで実装するのがこの方法  
-
+SwaggerHub UI で API 設計してから、Rails などで実装するのがこの方法

@@ -1,6 +1,6 @@
 ---
 title: 'Ansible Galaxyはじめ'
-date: '2019-08-27'
+date: '2020-12-31'
 ---
 
 \$ ansible-galaxy install zzet.rbenv -p roles

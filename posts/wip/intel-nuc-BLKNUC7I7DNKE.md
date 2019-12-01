@@ -1,7 +1,9 @@
 ---
 title: 'Intel NUC BLKNUC7I7DNKE を買った'
-date: '2019-11-29'
+date: '2020-12-31'
 ---
+
+2019-11-27 に購入、全部で 10 万弱でした
 
 持ってる Windows デスクトップ
 BLKNUC7I7DNKE
@@ -77,7 +79,7 @@ XKBOPTIONS="ctrl:nocaps"
 $ gsettings set org.gnome.desktop.interface text-scaling-factor 1.3
 ```
 
-### mozc設定
+### mozc 設定
 
 Google 日本語入力(mozc)が最初から入っているので設定をする
 
@@ -90,13 +92,13 @@ Ctrl+Shift+Space を IME 有効化にする
 
 設定からオンラインアカウントで Google を設定、するとファイラーに表示される
 
-### ssh設定
+### ssh 設定
 
 ssh 秘密鍵を持ってきて、.ssh/config の用意
 
 ### ユーザー追加
 
-PC貸したり、テストしたりする用のユーザー追加
+PC 貸したり、テストしたりする用のユーザー追加
 
 ```
 $ sudo adduser (user name)
@@ -129,6 +131,7 @@ $ sudo adduser (user name)
 ### Terminal でインストール
 
 #### apt install で入れる
+
 - tree
 - tig
 
@@ -136,15 +139,15 @@ $ sudo adduser (user name)
 
 - Brave [Installing Brave — Brave Browser documentation](https://brave-browser.readthedocs.io/en/latest/installing-brave.html#linux)
 - Vim
-  - GitHubからcloneしてbuildした
+  - GitHub から clone して build した
 - nvm, node
-  - [Nodeらへんのインストール \| freks blog](https://blog.freks.jp/node-install/) を見てインストール
+  - [Node らへんのインストール \| freks blog](https://blog.freks.jp/node-install/) を見てインストール
 - Gyazo
   - [gyazo/Gyazo\-for\-Linux: Gyazo for Linux](https://github.com/gyazo/Gyazo-for-Linux) を見てインストール
 
-## Updateするには
+## Update するには
 
-### aptでアップデート
+### apt でアップデート
 
 - Git
 
@@ -153,7 +156,8 @@ $ sudo adduser (user name)
 - Vim
 
 - nvm
-  - [nvm\-sh/nvm: Node Version Manager \- POSIX\-compliant bash script to manage multiple active node\.js versions](https://github.com/nvm-sh/nvm#installation) を見て、curlコマンド再実行かgitでアップデート
+
+  - [nvm\-sh/nvm: Node Version Manager \- POSIX\-compliant bash script to manage multiple active node\.js versions](https://github.com/nvm-sh/nvm#installation) を見て、curl コマンド再実行か git でアップデート
 
 - node
-  - nvmでアップデート
+  - nvm でアップデート
