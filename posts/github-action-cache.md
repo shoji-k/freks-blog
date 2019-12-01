@@ -17,7 +17,8 @@ PostgreSQL 12
 
 を使います
 
-用意されてる `.github/workflows/ruby.yml` を変更したのが
+[Caching dependencies to speed up workflows \- GitHub Help](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/caching-dependencies-to-speed-up-workflows)  
+を参考に、用意されてる `.github/workflows/ruby.yml` を変更したのが
 
 ```yml
 name: Ruby CI
@@ -86,7 +87,8 @@ jobs:
 の `name: Cache bundle directory` と `bundle config path vendor/bundle` です  
 bundle install されるディレクトリを指定、それをキャッシュ、次回実行時にキャッシュから戻して、bundle install が早くなります
 
-これで今のところうまく動いています
+これで今のところうまく動いています  
+docker image layer のキャッシュをしたかったのですが、November mid in 2019 に出てる？らしいのですが見当たらなかったので、また今度
 
 設定したリポジトリは  
 [Use cache in github actions flow by shoji\-k · Pull Request \#7 · shoji\-k/rails\-sandbox](https://github.com/shoji-k/rails-sandbox/pull/7/commits/4c8e7f5ef432dee74e97db6ee7b1c699920a05c5)  
