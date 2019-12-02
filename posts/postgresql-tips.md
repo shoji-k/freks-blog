@@ -37,3 +37,13 @@ pg_dump -U (user name) (db name) > database.sql
 ```sh
 psql -U (user name) (db name) -f database.sql
 ```
+
+## データベースの文字コード確認
+
+```sql
+SELECT character_set_name FROM information_schema.character_sets;
+ character_set_name
+--------------------
+ UTF8
+(1 row)
+```
