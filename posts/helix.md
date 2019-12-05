@@ -146,6 +146,8 @@ USB ケーブルで片手分をつないで、qmk_toolbox の Flash when ready �
 
 ## build 時に出たエラー
 
+### QMK Firmware 0.6.x のとき
+
 Ubuntu 16.04 で make すると
 
 ```
@@ -159,6 +161,20 @@ sudo apt-get install gcc-avr avr-libc
 ```
 
 で make できるようになりました
+
+### QMK Firmware 0.7.97 にバージョンアップしたとき
+
+make 時に
+
+```
+tmk_core/protocol/lufa.mk:14: lib/lufa/LUFA/makefile: No such file or directory
+```
+
+qmk_firmware\lib\lufa ディレクトリを見ると空っぽ..
+
+GitHub [qmk/lufa at ce10f7642b0459e409839b23cc91498945119b4d](https://github.com/qmk/lufa/tree/ce10f7642b0459e409839b23cc91498945119b4d) から zip でダウンロード
+
+qmk_firmware\lib\lufa に展開したものを入れると make できました
 
 ## まとめ
 
