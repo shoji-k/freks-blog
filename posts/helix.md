@@ -176,6 +176,21 @@ GitHub [qmk/lufa at ce10f7642b0459e409839b23cc91498945119b4d](https://github.com
 
 qmk_firmware\lib\lufa に展開したものを入れると make できました
 
+### qmk toolbox 0.0.14 で書き込めない
+
+[Releases · qmk/qmk_toolbox](https://github.com/qmk/qmk_toolbox/releases)  
+で Flash するとエラーが..
+
+キャプチャとり忘れましたが
+
+[Bad command · Issue \#17 · qmk/qmk_toolbox](https://github.com/qmk/qmk_toolbox/issues/17)
+
+を同じ内容、既に merge されています..
+
+色々しましたが、一つ古いバージョンで Flash できました
+
+[Release 0\.0\.13 · qmk/qmk_toolbox](https://github.com/qmk/qmk_toolbox/releases/tag/0.0.13)
+
 ## まとめ
 
 大学ぶりのはんだづけがうまくいったのが成功したポイント  
