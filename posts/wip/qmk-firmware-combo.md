@@ -22,3 +22,9 @@ qmk_firmware で 左 Ctrl + Enter が Esc になるようにしたくてやっ�
 サンプルでかいてみた A + B だとすんなり反応するんですが..
 
 改善できるまで OS 側で、同時押しカスタマイズ使うことにしました
+
+追記）
+Ergodox EZ でやってみました  
+[set ctrl\+enter=esc combos to ergodox_ez · shoji\-k/qmk_firmware@45d145a](https://github.com/shoji-k/qmk_firmware/commit/45d145af8898cf6c2cb67fb3dffd1aa75c170e14)
+
+こっちはうまく動いています！
