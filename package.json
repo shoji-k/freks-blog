@@ -19,7 +19,7 @@
     "gatsby-plugin-sitemap": "2.2.24",
     "gatsby-plugin-typography": "2.3.20",
     "gatsby-source-filesystem": "2.1.42",
-    "gatsby-transformer-remark": "2.6.41",
+    "gatsby-transformer-remark": "2.6.42",
     "react": "16.12.0",
     "react-dom": "16.12.0",
     "react-helmet": "5.2.1",
