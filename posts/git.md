@@ -136,3 +136,13 @@ H test
 ```
 
 と h などが小文字で表示される
+
+## git diff-highlight
+
+差分が見やすくなる
+
+link:  
+https://udomomo.hatenablog.com/entry/2019/12/01/181404
+
+PATHを通すためにmakeする必要があった  
+https://qiita.com/sakahukamaki/items/c93143c583f276ff1c04

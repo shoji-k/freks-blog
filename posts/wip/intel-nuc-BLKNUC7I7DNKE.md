@@ -104,22 +104,39 @@ PC 貸したり、テストしたりする用のユーザー追加
 $ sudo adduser (user name)
 ```
 
+### ファイラーで隠しファイルを表示する
+
+ファイラーを開いて Ctrl + H で表示される  
+メニューからも設定できる
+
+### 警告音(beep)の音量を小さくする
+
+設定 > サウンド、音響効果タブで警告音の音量が調整できる
+
 ## ソフトウェアインストール
 
 ### ソフトウェアセンターでインストール
 
 - Visual Studio Code
-- Slack
 - VLC
 - LibreOffice
 - Gimp
+
+Slack はソフトウェアセンターでいれると、日本語入力できなくて、debをダウンロードして入れました
 
 ### ブラウザでダウンロードしてインストール
 
 - google-chrome-stable
 - google-chrome-beta
+- teesy (for Ergodox EZ)
+
+Slack
+- ↓をみてインストール
+[Ubuntu 18\.10のSlack Clientにて日本語入力ができない \- Qiita](https://qiita.com/Kameneko/items/f2e44835d529aca41b78)
+
+AppImage -> 実行権限つけて起動した
 - Station
-  - AppImage ファイルなので、実行権限つけて起動した
+- stoplight studio
 
 ### ブラウザ上で使う
 
@@ -134,6 +151,8 @@ $ sudo adduser (user name)
 
 - tree
 - tig
+- exfat-fuse exfat-utils // for exfat
+- byobu
 
 #### サイトを見ていれた
 
@@ -144,6 +163,12 @@ $ sudo adduser (user name)
   - [Node らへんのインストール \| freks blog](https://blog.freks.jp/node-install/) を見てインストール
 - Gyazo
   - [gyazo/Gyazo\-for\-Linux: Gyazo for Linux](https://github.com/gyazo/Gyazo-for-Linux) を見てインストール
+- docker
+  - [Get Docker Engine \- Community for Ubuntu \| Docker Documentation](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
+  - [Post\-installation steps for Linux \| Docker Documentation](https://docs.docker.com/install/linux/linux-postinstall/)
+- docker-compose
+  - [Install Docker Compose \| Docker Documentation](https://docs.docker.com/compose/install/)
+  - [Command\-line completion \| Docker Documentation](https://docs.docker.com/compose/completion/)
 
 ## Update するには
 
@@ -152,6 +177,8 @@ $ sudo adduser (user name)
 - Git
 
 ### 再ビルド
+
+サイトを見て入れたものは、もう一度リンクを参照する
 
 - Vim
 

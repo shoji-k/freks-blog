@@ -170,11 +170,13 @@ make 時に
 tmk_core/protocol/lufa.mk:14: lib/lufa/LUFA/makefile: No such file or directory
 ```
 
-qmk_firmware\lib\lufa ディレクトリを見ると空っぽ..
+~~qmk_firmware\lib\lufa ディレクトリを見ると空っぽ..
 
 GitHub [qmk/lufa at ce10f7642b0459e409839b23cc91498945119b4d](https://github.com/qmk/lufa/tree/ce10f7642b0459e409839b23cc91498945119b4d) から zip でダウンロード
 
-qmk_firmware\lib\lufa に展開したものを入れると make できました
+qmk_firmware\lib\lufa に展開したものを入れると make できました~~
+
+`make git-submodule` が正しいです、git submoduleだったんですね..
 
 ### qmk toolbox 0.0.14 で書き込めない
 
