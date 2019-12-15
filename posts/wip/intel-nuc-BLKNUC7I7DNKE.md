@@ -129,6 +129,7 @@ Slack はソフトウェアセンターでいれると、日本語入力でき�
 - google-chrome-stable
 - google-chrome-beta
 - teesy (for Ergodox EZ)
+- Steam (dpkg)
 
 Slack
 - ↓をみてインストール
@@ -169,6 +170,8 @@ AppImage -> 実行権限つけて起動した
 - docker-compose
   - [Install Docker Compose \| Docker Documentation](https://docs.docker.com/compose/install/)
   - [Command\-line completion \| Docker Documentation](https://docs.docker.com/compose/completion/)
+- tig
+  - apt installだと古いので https://github.com/jonas/tig.git からmakeした
 
 ## Update するには
 
