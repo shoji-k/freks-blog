@@ -15,7 +15,23 @@ $ sudo apt update
 $ sudo apt install git
 ```
 
-## 最初の設定
+## 設定
+
+こんな感じの初期設定してます
+
+```
+git config --global user.name (name)
+git config --global user.email (email address)
+git config --global color.ui auto
+git config --global alias.ch checkout
+git config --global alias.co commit
+git config --global alias.st status
+git config --global alias.br branch
+git config --global core.quotepath off
+git config --global core.editor vim
+git config --global push.default simple
+git config --global commit.verbose true
+```
 
 [dotfiles/git\-init\.sh at master · shoji\-k/dotfiles](https://github.com/shoji-k/dotfiles/blob/master/git-init.sh)
 
