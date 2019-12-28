@@ -28,9 +28,9 @@
     "typography-theme-ocean-beach": "0.16.19"
   },
   "devDependencies": {
-    "cypress": "3.8.0",
+    "cypress": "3.8.1",
     "eslint": "6.8.0",
-    "eslint-config-prettier": "6.8.0",
+    "eslint-config-prettier": "6.9.0",
     "eslint-plugin-prettier": "3.1.2",
     "eslint-plugin-react": "7.17.0",
     "prettier": "1.19.1"
