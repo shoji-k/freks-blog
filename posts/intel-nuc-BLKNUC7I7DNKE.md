@@ -1,14 +1,26 @@
 ---
 title: 'Intel NUC BLKNUC7I7DNKE を買った'
-date: '2020-12-31'
+date: '2020-12-22'
 ---
 
-2019-11-27 に購入、全部で 10 万弱でした
-
-持ってる Windows デスクトップ
-BLKNUC7I7DNKE
-
+2019-11-27 に購入、全部で \95277 でした
 SSD、メモリー、電源ケーブル（さきっぽのミッキーケーブル）が別売りなので購入しておきました
+
+PC Intel NUC BLKNUC7I7DNKE ￥ 77,398　　
+
+<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=freks-22&language=ja_JP&o=9&p=8&l=as4&m=amazon&f=ifr&ref=as_ss_li_til&asins=B07D3ZWHHR&linkId=f3697d926c773d658a19d87a856b4e6c"></iframe>
+
+メモリ DDR4-2400(PC4-19200) 8GB×2枚 ￥ 8,980  
+
+<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=freks-22&language=ja_JP&o=9&p=8&l=as4&m=amazon&f=ifr&ref=as_ss_li_til&asins=B06XP1ZN6H&linkId=68ed2f1ddd29842d7abb019e0bbf98ce"></iframe>
+
+SSD Crucial M.2 500GB ￥ 8,399
+
+<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=freks-22&language=ja_JP&o=9&p=8&l=as4&m=amazon&f=ifr&ref=as_ss_li_til&asins=B07JWK33MV&linkId=ac75c24fd02343e02511bf45865823c2"></iframe>
+
+電源ケーブル ￥ 500
+
+<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=freks-22&language=ja_JP&o=9&p=8&l=as4&m=amazon&f=ifr&ref=as_ss_li_til&asins=B014GLJJ32&linkId=8da22bfdd36cd45e07e32672c38261ca"></iframe>
 
 ## Intel NUC を組み立てる
 
@@ -58,8 +70,10 @@ Ubuntu はミニマムインストールしました
 
 Terminal を起動
 
-sudo apt update
-sudo apt upgrade
+```
+$ sudo apt update
+$ sudo apt upgrade
+```
 
 ## 各種設定
 
@@ -83,14 +97,15 @@ $ gsettings set org.gnome.desktop.interface text-scaling-factor 1.3
 
 Google 日本語入力(mozc)が最初から入っているので設定をする
 
-Ctrl+Space を IME 無効化
+Ctrl+Space を IME 無効化  
 Ctrl+Shift+Space を IME 有効化にする
 
 ポイントは最初から割り当てられている設定と競合してないか確認
 
 ### Google Drive を使う
 
-設定からオンラインアカウントで Google を設定、するとファイラーに表示される
+設定からオンラインアカウントで Google を設定、するとファイラーに表示される  
+が、動作が遅すぎて使えなかったので、やめてブラウザ上で使ってます  
 
 ### ssh 設定
 
@@ -132,12 +147,12 @@ Slack はソフトウェアセンターでいれると、日本語入力でき�
 - Steam (dpkg)
 
 Slack
-- ↓をみてインストール
-[Ubuntu 18\.10のSlack Clientにて日本語入力ができない \- Qiita](https://qiita.com/Kameneko/items/f2e44835d529aca41b78)
+- [Ubuntu 18\.10のSlack Clientにて日本語入力ができない](https://qiita.com/Kameneko/items/f2e44835d529aca41b78) をみてインストール  
+
 
 AppImage -> 実行権限つけて起動した
 - Station
-- stoplight studio
+- Stoplight Studio
 
 ### ブラウザ上で使う
 
@@ -151,7 +166,6 @@ AppImage -> 実行権限つけて起動した
 #### apt install で入れる
 
 - tree
-- tig
 - exfat-fuse exfat-utils // for exfat
 - byobu
 
@@ -172,22 +186,6 @@ AppImage -> 実行権限つけて起動した
   - [Command\-line completion \| Docker Documentation](https://docs.docker.com/compose/completion/)
 - tig
   - apt installだと古いので https://github.com/jonas/tig.git からmakeした
+  - [日本語環境で最新のTigを使う](https://blog.freks.jp/tig-install) にまとめてます
 
-## Update するには
-
-### apt でアップデート
-
-- Git
-
-### 再ビルド
-
-サイトを見て入れたものは、もう一度リンクを参照する
-
-- Vim
-
-- nvm
-
-  - [nvm\-sh/nvm: Node Version Manager \- POSIX\-compliant bash script to manage multiple active node\.js versions](https://github.com/nvm-sh/nvm#installation) を見て、curl コマンド再実行か git でアップデート
-
-- node
-  - nvm でアップデート
+なかなか快適に使えています
