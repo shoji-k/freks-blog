@@ -108,3 +108,6 @@ SHUREのエントリーモデルで少しちゃっちい気がしますが、音
 3. Amazon Echo (と周辺機器)
 
 でした
+
+追記)  
+2019年は [こちら](https://blog.freks.jp/bestbuy-2019)  
