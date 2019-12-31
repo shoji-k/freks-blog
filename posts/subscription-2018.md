@@ -21,7 +21,7 @@ Googleのビジネス用アカウントです
 Excel、Wordが必要な取引先があったので必要な旅に毎月使ってました  
 1ヶ月でやめたりしてましたが、今は毎月お金払ってます  
 
-- [Amazon Web Service](https://www.office.com/?omkt=ja-jp) ¥100-200くらい / month
+- [Amazon Web Service](https://aws.amazon.com/jp/) ¥100-200くらい / month
 
 個人で常時サーバーを立ち上げたりしてませんが、試したりするのに使いました  
 Cloud9を使ってプログラム講習をしたのがメインに使った用途な気がします  
