@@ -91,4 +91,18 @@ Huge 版 without GUI.  機能の一覧 有効(+)/無効(-)
 
 Vim8.1 入りました！
 
+## configure
+
+```
+./configure -h
+```
+
+で設定のヘルプを確認します
+
+`clipboard` を設定するには
+
+[Ubuntu 18\.04\.3 LTS でOSとVimのクリップボードを共有する方法 \- Qiita](https://qiita.com/gorilla0513/items/4034b8a0be5ff5808bb7)  
+が参考になりました
+
+
 <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=freks-22&language=ja_JP&o=9&p=8&l=as4&m=amazon&f=ifr&ref=as_ss_li_til&asins=B00HWLJI3U&linkId=50a986489dbbd53877243f7a16537d8c"></iframe>
