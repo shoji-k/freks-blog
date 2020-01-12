@@ -20,7 +20,7 @@ $ sudo apt install build-essential
 GitHubにrepositoryがあるので、cloneしてきます
 
 ```
-$ git clone git@github.com/vim/vim  
+$ git clone git@github.com/vim/vim.git  
 ```
 
 master branchでbuildせずに、最新リリースバージョンにしました  

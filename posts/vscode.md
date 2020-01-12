@@ -9,11 +9,17 @@ date: '2019-04-17'
 ## Terminal を WSL にする
 
 Ctrl + @ でターミナルが立ち上がりますが、デフォルトだと powershell とかなので、WSL にします  
-WSL で Ubuntu 18.04 を入れた状態で、File > Preference > Setting で terminal.external.windowsExec で検索
+WSL で Ubuntu 18.04 を入れた状態で、File > Preference > Setting で `terminal.integrated.shell.windows` で検索すると setting.json が開けるのでそこに
 
-![wsl terminal path](/vscode/wsl_terminal_path.png)
+```json
+"terminal.integrated.shell.windows": "ubuntu1804.exe",
+"terminal.integrated.shellArgs.windows": [
+    "run",
+    "/bin/bash"
+]
+```
 
-に、wsl.exe のパスを指定
+で切り替えられました
 
 ## WSL 内の Git を使えるようにする
 

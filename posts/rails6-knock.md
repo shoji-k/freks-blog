@@ -3,6 +3,8 @@ title: "Rails 6でknock gemが動かない"
 date: "2019-08-19"
 ---
 
+追記) 続編をかきました [Rails 6でknock gemが動かない - 続編](https://blog.freks.jp/rails6-knock-2)
+
 新しく始めたプロジェクトでRails + Vue.jsの構成にしてみてて、  
 Railsはapi mode、Vue.jsがフロントエンドで組みました  
 
@@ -21,6 +23,3 @@ config.autoloader = :classic
 ```
 
 を追記、これで動くようにはなりました
-
-zeitwerk使いたいんですが、 knockのメンテナンスも止まってるようで心配です  
-
