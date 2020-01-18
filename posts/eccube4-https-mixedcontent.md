@@ -18,7 +18,8 @@ EC-CUBE 4 で開発環境をhttps化したらTwig内で
 
 reference: https://symfony.com/doc/current/reference/twig_reference.html#url
 
-として、URLを相対的にしてあげることで回避しました  
+として、URLからスキーマを出さないようにしてあげることで回避しました  
+これでURLが `//sample.co.jp/sample_page` のようになります
 
 Symfony 3.4なのか、EC-CUBE 4が悪いのか、設定があるのか、はっきりさせたかったですがこれでしのぎます
 
