@@ -35,3 +35,29 @@ https://blog.bgbgbg.net/archives/4364
 で直せました
 
 マウスによるカーソル移動がしたいときは、F7
+
+## セッション操作
+
+セッション一覧見る
+
+```
+$ byobu ls
+```
+
+新しいセッションを名前をつけて作成
+
+```
+$ byobu new -s your_session_name
+```
+
+セッション名を指定して開く
+
+```
+$ byobu a -t your_session_name
+```
+
+セッション名を指定して削除
+
+```
+$ byobu kill-session -t your_session_name
+```
