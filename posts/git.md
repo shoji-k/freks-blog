@@ -162,3 +162,58 @@ https://udomomo.hatenablog.com/entry/2019/12/01/181404
 
 PATHを通すためにmakeする必要があった  
 https://qiita.com/sakahukamaki/items/c93143c583f276ff1c04
+
+## 作業途中に違うブランチの作業をするとき
+
+2つやり方がある
+
+### git stashで編集中のコードを対比して、branch切り替え
+
+```
+git stash
+git checkout hot-fix
+```
+
+として作業してcommitしてpush  
+
+編集中のコードを戻すには
+
+```
+git checkout main-branch
+git stash pop
+```
+
+で戻ってきます
+
+### git worktreeを使う
+
+git worktreeを使うと新しくディレクトリを作ってcheckoutできます  
+git branchで存在しているブランチだったら切り替えられて  
+
+```
+git worktree add production
+```
+
+とすると `./production` ディレクトリが作成され、productionブランチに切り替わります
+
+```
+cd production
+```
+
+で作業して、commitしてpushできます  
+
+```
+git worktree list
+```
+
+でworktreeの一覧が見えるのですが、不要なものを消すには
+
+```
+git worktree remove production
+```
+
+でディレクトリごと消せます  
+
+この方法だとディレクトリが変わるので、webアプリの場合、サーバー立ち上げて確認しないといけないので、あんまり効率よくなさそうです
+
+
