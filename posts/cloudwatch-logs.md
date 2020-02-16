@@ -1,6 +1,6 @@
 ---
 title: 'CloudWatch Logsにログをためる'
-date: '2020-02-105'
+date: '2020-02-15'
 ---
 
 理想のサーバー構成 [The Twelve\-Factor App （日本語訳）](https://12factor.net/ja/) に近づけるため、ログをサーバー外で管理したいので、Clooud Watch にログをためてみました
