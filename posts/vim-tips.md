@@ -1,6 +1,6 @@
 ---
 title: 'Vim tips'
-date: '2020-12-30'
+date: '2020-02-23'
 ---
 
 Vimの設定や調べ物したログを残します（更新していく予定）
@@ -48,6 +48,6 @@ $ git submodule update --remote
 $ git submodule foreach git pull
 ```
 
-らしいがまだ試してない
+でいけるそう
 
 [Vim 8 時代のがんばらないプラグイン管理のすすめ \- Humanity](http://tyru.hatenablog.com/entry/2017/12/20/035142)
