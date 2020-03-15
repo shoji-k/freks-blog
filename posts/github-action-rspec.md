@@ -86,4 +86,4 @@ docker-compose のようにサービス名がつくようです
 [Prepare RSpec GitHub Action by shoji\-k · Pull Request \#5 · shoji\-k/rails\-sandbox](https://github.com/shoji-k/rails-sandbox/pull/5/commits/803d66cf95ecd40089af736386e299555a4bd218)
 なので参考にしてください
 
-<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=freks-22&language=ja_JP&o=9&p=8&l=as4&m=amazon&f=ifr&ref=as_ss_li_til&asins=B07JLJSDMJ&linkId=92706a9853fe3ec1baf49ccc32614907"></iframe>
+

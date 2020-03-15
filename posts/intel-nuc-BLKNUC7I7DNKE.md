@@ -8,19 +8,19 @@ SSD、メモリー、電源ケーブル（さきっぽのミッキーケーブ�
 
 PC Intel NUC BLKNUC7I7DNKE ￥ 77,398　　
 
-<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=freks-22&language=ja_JP&o=9&p=8&l=as4&m=amazon&f=ifr&ref=as_ss_li_til&asins=B07D3ZWHHR&linkId=f3697d926c773d658a19d87a856b4e6c"></iframe>
+
 
 メモリ DDR4-2400(PC4-19200) 8GB×2枚 ￥ 8,980  
 
-<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=freks-22&language=ja_JP&o=9&p=8&l=as4&m=amazon&f=ifr&ref=as_ss_li_til&asins=B06XP1ZN6H&linkId=68ed2f1ddd29842d7abb019e0bbf98ce"></iframe>
+
 
 SSD Crucial M.2 500GB ￥ 8,399
 
-<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=freks-22&language=ja_JP&o=9&p=8&l=as4&m=amazon&f=ifr&ref=as_ss_li_til&asins=B07JWK33MV&linkId=ac75c24fd02343e02511bf45865823c2"></iframe>
+
 
 電源ケーブル ￥ 500
 
-<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=freks-22&language=ja_JP&o=9&p=8&l=as4&m=amazon&f=ifr&ref=as_ss_li_til&asins=B014GLJJ32&linkId=8da22bfdd36cd45e07e32672c38261ca"></iframe>
+
 
 ## Intel NUC を組み立てる
 

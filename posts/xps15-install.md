@@ -13,7 +13,7 @@ Graphic Board: GTX 1050Ti
 
 でたいていのゲームもできてしまうマシンです  
 
-<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=freks-22&language=ja_JP&o=9&p=8&l=as4&m=amazon&f=ifr&ref=as_ss_li_til&asins=B07GS38QTV&linkId=6848dad1a160e7a7924aac4db67ea029"></iframe>
+
 
 開封から設定までをまとめてみました  
 

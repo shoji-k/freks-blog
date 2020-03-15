@@ -78,4 +78,3 @@ Windows10とWSL2でファイルを共有できるように　`/mnt/c/` 以下の
 
 をみて、`/mnt/c/ ...` から `/home/user/` 以下に移動してやると動きました
 
-<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=freks-22&language=ja_JP&o=9&p=8&l=as4&m=amazon&f=ifr&ref=as_ss_li_til&asins=B07BHK5KX7&linkId=8f881cf5fd92011110f8ddb6fc13d5f4"></iframe>
