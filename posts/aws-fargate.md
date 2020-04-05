@@ -12,7 +12,7 @@ Postgres -> RDS
 
 ドキュメントや検索して出てくる情報だと、定義をJSONで書いてあったり、Cloudformation使ってたりが多いですが、いきなり理解難しいので、画面でポチポチ作ってみました  
 
-ひとまず動くまでわかりにくかったのでまとめておきます  
+ひとまず動くまでわかりにくかったところをまとめておきます  
 
 まずは  
 [AWS Fargate: サービス概要 \| Amazon Web Services ブログ](https://aws.amazon.com/jp/blogs/news/aws-fargate-a-product-overview/)  
@@ -32,8 +32,8 @@ Serviceで維持するコンテナの数 Desired count が2なら2つのコン�
 
 Docker imageを新しくしたとき
 
-docker-image-name:latest  とか指定してると latest が新しくなると、実行中のコンテナいれかえる
-WIP : 方法  
+docker-image-name:latest とか指定してると latest が新しくなると、実行中のコンテナいれかえる
+CodebuildでECS連携させるとできるし、他にもできる方法あると思うが調べられてない    
 
 1回だけ動かしたい場合は、Service開いて `Add task` で実行する  
 `rails db:migrate` などはこれでやる  
@@ -45,5 +45,8 @@ Fargate以外に知らないと厳しそうなこと
 - Security Group
   - コンテナからRDSにつながるようにする
 
-実際にやってみます  
+ここまで理解するのに苦労しました  
+
+ためしてみた画面キャプチャを取っておけばよかった..  
+忘れないようにきれいにまとめようと思いましたが、自分専用メモっぽくなってしまいました  
 
