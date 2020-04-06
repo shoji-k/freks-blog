@@ -25,7 +25,4 @@ CodePipeline部分
 
 うまくうごいたのですが、Docker containerの更新だけで、db migrationを走らせられてないです..
 
-Railsアプリで試してて、ECS + RDSでやってみたのですが、
-タスクが更新され、サーバーが入れ替わってからmigration走らせたいのですが、rolling updateだと、いつ切り替わるかは見ててわからないので、なにか仕組みが必要そうです  
-Blue/Green deploymentにしても、切り替えるタイミングでmigrationさせるのは手動？となりどうしたらいいか分かりません  
-あんまり情報調べてもないのはみんなどうしてるんでしょうか..
+Codebuildで使うRDSにアクセスできるようにしてあげて、buildspec.ymlにdb migrationするコマンドを足すとできそう
