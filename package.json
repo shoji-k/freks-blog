@@ -11,15 +11,15 @@
     "test": "cypress run"
   },
   "dependencies": {
-    "gatsby": "2.21.39",
+    "gatsby": "2.22.0",
     "gatsby-plugin-draft": "0.0.5",
     "gatsby-plugin-feed": "2.5.1",
     "gatsby-plugin-google-analytics": "2.3.1",
     "gatsby-plugin-react-helmet": "3.3.1",
     "gatsby-plugin-sitemap": "2.4.2",
     "gatsby-plugin-typography": "2.5.1",
-    "gatsby-source-filesystem": "2.3.4",
-    "gatsby-transformer-remark": "2.8.9",
+    "gatsby-source-filesystem": "2.3.5",
+    "gatsby-transformer-remark": "2.8.10",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-helmet": "5.2.1",
