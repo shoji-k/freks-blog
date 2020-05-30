@@ -11,7 +11,7 @@
     "test": "cypress run"
   },
   "dependencies": {
-    "gatsby": "2.22.12",
+    "gatsby": "2.22.13",
     "gatsby-plugin-draft": "0.0.5",
     "gatsby-plugin-feed": "2.5.3",
     "gatsby-plugin-google-analytics": "2.3.2",
