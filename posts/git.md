@@ -31,6 +31,7 @@ git config --global core.quotepath off
 git config --global core.editor vim
 git config --global push.default simple
 git config --global commit.verbose true
+git config --global pull.rebase false
 ```
 
 [dotfiles/git\-init\.sh at master · shoji\-k/dotfiles](https://github.com/shoji-k/dotfiles/blob/master/git-init.sh)
@@ -216,4 +217,27 @@ git worktree remove production
 
 この方法だとディレクトリが変わるので、webアプリの場合、サーバー立ち上げて確認しないといけないので、あんまり効率よくなさそうです
 
+### git config pull.rebase設定
 
+git v2.27.0 から設定してないと`warning`が出るようになりました  
+
+```
+ warning: Pulling without specifying how to reconcile divergent branches is
+ discouraged. You can squelch this message by running one of the following
+ commands sometime before your next pull:
+ 
+   git config pull.rebase false  # merge (the default strategy)
+   git config pull.rebase true   # rebase
+   git config pull.ff only       # fast-forward only
+ 
+ You can replace "git config" with "git config --global" to set a default
+ preference for all repositories. You can also pass --rebase, --no-rebase,
+ or --ff-only on the command line to override the configured default per
+ invocation.
+ ```
+
+`git config --global pull.rebase false` にしました  
+rebase派の人は、trueにするとよさそう  
+
+`git pull --rebase origin master` の `--rebase` がいらなくなります  
+rebaseは、commit logが見やすくなりますが、pushしたあとのbranchでするとおかしくなるので、force pushしたりするのが煩わしくてやってないです(ベストプラクティスわかってない感あります)　　
