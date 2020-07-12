@@ -54,6 +54,10 @@ CTRL_t / CTRL_b
 :imap a b は 挿入モードでa押すとbが効くし再帰する
 再帰とは :imap c a すると、c押すとbが効く
 :inoremap c a なら再帰されないのでa押すとbが効く
+
+Vim scriptはExコマンドのあつまり
+source something.vim で別ファイル読み込み
+:source % で現在のスクリプトを読み込む
 ```
 
 Language Server Protocol(LSP)をまだ活用できてなくて、Visual Studio　Codeが使えたら楽そうだなーと思いつつ、Vimで試してみようと思ってます  
