@@ -241,3 +241,18 @@ rebase派の人は、trueにするとよさそう
 
 `git pull --rebase origin master` の `--rebase` がいらなくなります  
 rebaseは、commit logが見やすくなりますが、pushしたあとのbranchでするとおかしくなるので、force pushしたりするのが煩わしくてやってないです(ベストプラクティスわかってない感あります)　　
+
+### repository size
+
+```
+$ git count-objects -v -H
+warning: garbage found: .git/objects/9a/tmp_obj_jTVCWc
+count: 13
+size: 52.00 KiB
+in-pack: 22042
+packs: 2
+size-pack: 7.69 GiB
+prune-packable: 0
+garbage: 1
+size-garbage: 1.87 MiB
+```
