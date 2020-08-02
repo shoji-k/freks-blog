@@ -11,7 +11,7 @@
     "test": "cypress run"
   },
   "dependencies": {
-    "gatsby": "2.24.15",
+    "gatsby": "2.24.23",
     "gatsby-plugin-draft": "0.0.5",
     "gatsby-plugin-feed": "2.5.11",
     "gatsby-plugin-google-analytics": "2.3.13",
@@ -29,7 +29,7 @@
   },
   "devDependencies": {
     "cypress": "4.11.0",
-    "eslint": "7.5.0",
+    "eslint": "7.6.0",
     "eslint-config-prettier": "6.11.0",
     "eslint-plugin-prettier": "3.1.4",
     "eslint-plugin-react": "7.20.5",
