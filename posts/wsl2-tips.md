@@ -39,3 +39,14 @@ ln -s /mnt/c/User/username/ws ws
 
 などシンボリックリンクを張ってあげると両方からファイルが触れます
 
+## wslのバージョンを確認する
+
+Windows PowerShellで
+
+```
+$ wsl --list --verbose
+
+* Ubuntu-18.04           Stopped         2
+  docker-desktop-data    Stopped         2
+  docker-desktop         Stopped         2
+```
