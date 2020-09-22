@@ -256,3 +256,9 @@ prune-packable: 0
 garbage: 1
 size-garbage: 1.87 MiB
 ```
+
+## いらないbranchを消す
+
+```
+$ git branch | grep -v -e master -e staging -e production | xargs git branch -d
+```
