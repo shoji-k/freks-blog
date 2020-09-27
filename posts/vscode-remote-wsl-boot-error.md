@@ -34,3 +34,21 @@ mv .vscode-server .vscode-server.1
 ```
 
 と変えてみて起動すると動作しました  
+
+## 追記
+
+また、起動するとエラーが...
+windows TerminalでUbuntu開くとエラー
+
+```
+既存の接続はリモート ホストに強制的に切断されました。
+
+[プロセスはコード 4294967295 で終了しました]
+```
+
+Insider PreviewでWSL2いれてて、通常のWindows updateでWSL2が来たからっぽい..
+参考) [Windows Updateしたら「プロセスはコード 4294967295 で終了しました」が出てWSL2が使えなくなった \- Qiita](https://qiita.com/fujiQ/items/9997916e5756c9e85e37) 
+
+[https://docs.microsoft.com/ja-jp/windows/wsl/install-win10  WSL 2 に更新する]
+
+で、選択した Linux ディストリビューションをインストールする、の手前まで実行して、PC再起動したら使えるようになりました
