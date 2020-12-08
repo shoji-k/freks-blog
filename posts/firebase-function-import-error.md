@@ -1,6 +1,6 @@
 ---
-title: 'firebase functionを読み込もうとしたときのエラー「'firebase' refers to a UMD global, but the current file is a module.」対策 '
-date: '2020-12-06'
+title: "firebase functionを読み込もうとしたときのエラー「'firebase' refers to a UMD global, but the current file is a module.」対策"
+date: "2020-12-06"
 ---
 
 Next.js + TypeScript + Firebase Firestore + Functions で開発中に
