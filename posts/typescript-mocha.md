@@ -27,4 +27,6 @@ env TS_NODE_COMPILER_OPTIONS='{"module": "commonjs" }' mocha -r ts-node/register
 }
 ```
 
-参考) [https://dev.to/matteobruni/mocha-chai-with-typescript-37f Mocha/Chai with TypeScript - DEV]
+参考)
+[mocha\-examples/packages/typescript at master · mochajs/mocha\-examples](https://github.com/mochajs/mocha-examples/tree/master/packages/typescript)
+[Mocha/Chai with TypeScript - DEV](https://dev.to/matteobruni/mocha-chai-with-typescript-37f)
