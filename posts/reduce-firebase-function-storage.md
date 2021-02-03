@@ -1,36 +1,37 @@
 ---
-title: "Firebase Storageの保存バイト数を減らす"
-date: "2021-02-02"
+title: 'Firebase Storageの保存バイト数を減らす'
+date: '2021-02-04'
 ---
 
-
-Firebase storageの保存バイト数が、アップロードしたファイルの割に大きすぎるのに気づきました
+Firebase storage の保存バイト数が、アップロードしたファイルの割に大きすぎるのに気づきました
 
 ![storage usage](/reduce-firebase-function-storage/storage_usage.png)
 
-アップロードしたファイルの容量合わせても10MBもないのに、570MBにもなっている
+アップロードしたファイルの容量合わせても 10MB もないのに、570MB にもなっている
 
-調べるとFirebase functionをデプロイする際に、docker containerが作られるらしくそのimageが残ってるらしい...
+調べると Firebase function をデプロイする際に、docker container が作られるらしくその image が残ってるらしい...
 
-Firebaseの管理画面だとこれ以上のことがわからなかったのですが、
-Firebaseの実態は、Google Cloud PlatformなのでGCPの管理画面で確認できました  
+Firebase の管理画面だとこれ以上のことがわからなかったのですが、
+Firebase の実態は、Google Cloud Platform なので GCP の管理画面で確認できました
 
 ![google cloud platform storage](/reduce-firebase-function-storage/google-cloud-platform-storage.png)
 
-URLだと https://console.cloud.google.com/storage/browser でプロジェクト選んだところです  
+URL だと https://console.cloud.google.com/storage/browser でプロジェクト選んだところです
 
-gcf-sources-626516263841-us-central1 は、Firebase Functionで必要なもの
-xxxxx.appspot.com は、Firebase Storageでアップロードしたファイル  
+gcf-sources-626516263841-us-central1 は、Firebase Function で必要なもの
+xxxxx.appspot.com は、Firebase Storage でアップロードしたファイル  
 が入ってました
 
-us.artifacts.xxxxx.appspot.com	が docker containerが入っているっぽいです  
+us.artifacts.xxxxx.appspot.com が docker container が入っているっぽいです  
 これを消すだけでもよさそうですが、毎回たまるのもいやなので自動で消えるようにしてみました
 
 us.artifacts.xxxxx.appspot.com を選択、ライフサイクルを開く、ルールの追加
 
 アクションの選択 > 削除  
-オブジェクト条件の選択 > 日数 > 3日
+オブジェクト条件の選択 > 日数 > 3 日
 
 にしてみました
 
 ![google cloud platform storage life event](/reduce-firebase-function-storage/google-cloud-platform-storage-life-event.png)
+
+2 日後くらいに確認すると、無事数百 kB へ減っていました
