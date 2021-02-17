@@ -1,12 +1,16 @@
 import Typography from 'typography'
 import theme from 'typography-theme-ocean-beach'
 
-theme.googleFonts.push({
-  name: 'Noto+Sans+JP',
-  styles: ['400'],
-})
-theme.bodyFontFamily = ['Noto Sans JP', 'Roboto', 'serif']
-theme.overrideThemeStyles = ({ rhythm }, options) => ({
+theme.googleFonts = []
+theme.bodyFontFamily = [
+  'Helvetica Neue',
+  'Arial',
+  'Hiragino Kaku Gothic ProN',
+  'Hiragino Sans',
+  'Meiryo',
+  'sans-serif',
+]
+theme.overrideThemeStyles = ({ rhythm }, _options) => ({
   pre: {
     backgroundColor: 'rgba(0, 0, 0, 0.03)',
     padding: rhythm(0.6),
