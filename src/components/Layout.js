@@ -6,12 +6,12 @@ const Header = ({ location, title }) => {
   const rootPath = `${__PATH_PREFIX__}/`
 
   if (location.pathname == rootPath) {
-    return <h1>{title}</h1>
+    return <h1 style={{ marginTop: 0 }}>{title}</h1>
   }
 
   return (
     <Link to="/">
-      <h3>{title}</h3>
+      <h1 style={{ fontSize: '1.31951rem' }}>{title}</h1>
     </Link>
   )
 }
@@ -25,7 +25,7 @@ class Layout extends Component {
           marginLeft: 'auto',
           marginRight: 'auto',
           maxWidth: rhythm(24),
-          padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
+          padding: `${rhythm(1)} ${rhythm(3 / 4)}`,
         }}
       >
         <Header location={location} title={title} />

@@ -16,6 +16,9 @@ theme.overrideThemeStyles = ({ rhythm }, _options) => ({
     padding: rhythm(0.6),
     overflowX: 'auto',
   },
+  'h1,h2,h3,h4,h5,h6': {
+    marginTop: rhythm(1),
+  },
 })
 
 const typography = new Typography(theme)

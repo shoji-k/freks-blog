@@ -7,7 +7,7 @@ function Seo({ description, lang, meta, keywords, title }) {
   return (
     <StaticQuery
       query={detailsQuery}
-      render={data => {
+      render={(data) => {
         const titleTemplate =
           title === data.site.siteMetadata.title
             ? title

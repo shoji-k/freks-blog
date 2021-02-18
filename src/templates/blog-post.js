@@ -11,7 +11,7 @@ export default function OneBlog({
     <Layout location={location} title={site.siteMetadata.title}>
       <Seo title={post.frontmatter.title} description={post.excerpt} />
       <div>
-        <h1>{post.frontmatter.title}</h1>
+        <h2 style={{ fontSize: '2rem' }}>{post.frontmatter.title}</h2>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
       </div>
     </Layout>
