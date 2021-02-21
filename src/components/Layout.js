@@ -7,26 +7,34 @@ const Header = ({ location, title }) => {
 
   if (location.pathname == rootPath) {
     return (
-      <>
-        <h1 style={{ marginTop: 0 }}>{title}</h1>
-        <Link to="/about" style={{ textAlign: 'right' }}>
-          <div style={{ fontSize: '1rem' }}>about</div>
-        </Link>
-      </>
+      <div style={{ display: 'grid' }}>
+        <div style={{ gridRow: 1, gridColumn: 1 }}>
+          <h1 style={{ marginTop: 0 }}>{title}</h1>
+        </div>
+        <div style={{ gridRow: 1, gridColumn: 2, paddingTop: '.2rem' }}>
+          <Link to="/about" style={{ textAlign: 'right' }}>
+            <div style={{ fontSize: '1rem' }}>about</div>
+          </Link>
+        </div>
+      </div>
     )
   }
 
   return (
-    <>
-      <Link to="/">
-        <h1 style={{ fontSize: '1.31951rem' }}>{title}</h1>
-      </Link>
-      {location.pathname != '/about' && (
-        <Link to="/about" style={{ textAlign: 'right' }}>
-          <div style={{ fontSize: '1rem' }}>about</div>
+    <div style={{ display: 'grid' }}>
+      <div style={{ gridRow: 1, gridColumn: 1 }}>
+        <Link to="/">
+          <h1 style={{ fontSize: '1.31951rem' }}>{title}</h1>
         </Link>
+      </div>
+      {location.pathname != '/about' && (
+        <div style={{ gridRow: 1, gridColumn: 2, paddingTop: '1.2rem' }}>
+          <Link to="/about" style={{ textAlign: 'right' }}>
+            <div style={{ fontSize: '1rem' }}>about</div>
+          </Link>
+        </div>
       )}
-    </>
+    </div>
   )
 }
 
