@@ -6,13 +6,27 @@ const Header = ({ location, title }) => {
   const rootPath = `${__PATH_PREFIX__}/`
 
   if (location.pathname == rootPath) {
-    return <h1 style={{ marginTop: 0 }}>{title}</h1>
+    return (
+      <>
+        <h1 style={{ marginTop: 0 }}>{title}</h1>
+        <Link to="/about" style={{ textAlign: 'right' }}>
+          <div style={{ fontSize: '1rem' }}>about</div>
+        </Link>
+      </>
+    )
   }
 
   return (
-    <Link to="/">
-      <h1 style={{ fontSize: '1.31951rem' }}>{title}</h1>
-    </Link>
+    <>
+      <Link to="/">
+        <h1 style={{ fontSize: '1.31951rem' }}>{title}</h1>
+      </Link>
+      {location.pathname != '/about' && (
+        <Link to="/about" style={{ textAlign: 'right' }}>
+          <div style={{ fontSize: '1rem' }}>about</div>
+        </Link>
+      )}
+    </>
   )
 }
 
