@@ -50,3 +50,15 @@ $ wsl --list --verbose
   docker-desktop-data    Stopped         2
   docker-desktop         Stopped         2
 ```
+
+## wsl2のビープ音を消す
+
+```bash
+vim /etc/inputrc
+```
+
+```text
+set bell-style none
+```
+
+がコメントアウトされてるので、コメントアウトを外します
