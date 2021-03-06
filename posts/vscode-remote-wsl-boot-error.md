@@ -55,6 +55,8 @@ Insider PreviewでWSL2いれてて、通常のWindows updateでWSL2が来たか�
 
 ## 追記2
 
+2021-03-06発生したエラーです  
+
 Windows10のバージョンは
 
 ```txt
