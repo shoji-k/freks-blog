@@ -17,6 +17,9 @@ export default function About({ data: { site }, location }) {
           お問い合わせ
         </a>
       </p>
+      <p>
+        <a href="https://amzn.asia/40oqmnA">🎁 Amazon wishlist</a>
+      </p>
     </Layout>
   )
 }
