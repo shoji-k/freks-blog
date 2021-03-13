@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link, graphql } from 'gatsby'
 import moment from 'moment'
 import { rhythm } from '../utils/typography'
@@ -13,15 +13,36 @@ export default function Top({
     process.env.NODE_ENV === 'development' || location.search === '?all'
   const today = moment().startOf('day')
 
+  const [filter, setFilter] = useState('')
+
+  const onChangeFilter = (e) => {
+    const f = e.target.value
+    setFilter(f)
+  }
+
   return (
     <Layout location={location} title={site.siteMetadata.title}>
       <Seo title={site.siteMetadata.title} />
+      <p>
+        <input
+          type="text"
+          placeholder="Filter title"
+          style={{ width: '100%' }}
+          onChange={onChangeFilter}
+        />
+      </p>
       <p>{posts.totalCount} Posts</p>
       {posts.edges
         .filter(
           ({ node }) =>
             showAll || today.diff(node.frontmatter.date, 'days') >= 0
         )
+        .filter(({ node }) => {
+          return (
+            filter === '' ||
+            node.frontmatter.title.toLowerCase().includes(filter.toLowerCase())
+          )
+        })
         .map(({ node }) => (
           <Link to={node.fields.slug} key={node.id}>
             <h2 style={{ fontSize: '1.31951rem', marginTop: rhythm(2) }}>
