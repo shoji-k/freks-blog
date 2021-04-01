@@ -16,7 +16,7 @@ VERCEL_URLを選ぶと、好きな環境変数名で取れるようになりま�
 ローカル環境で使うときは
 
 ```
-vercel dev pull
+vercel env pull
 ```
 
 でVercelで設定した環境変数が、`.env` にダウンロードされますが、VERCEL_URLは空になります  
