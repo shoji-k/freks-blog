@@ -53,24 +53,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-sitemap',
       options: {
-        output: '/sitemap.xml',
-        exclude: ['/wip/*'],
-        query: `
-        {
-          site {
-            siteMetadata {
-              siteUrl
-            }
-          }
-
-          allSitePage {
-            edges {
-              node {
-                path
-              }
-            }
-          }
-        }`,
+        excludes: ['/wip/*'],
       },
     },
     {
