@@ -18,7 +18,7 @@ exports.createPages = ({ graphql, actions }) => {
   return new Promise((resolve, reject) => {
     graphql(`
       {
-        allMarkdownRemark(filter: { fields: { draft: { eq: false } } }) {
+        allMarkdownRemark {
           edges {
             node {
               fields {

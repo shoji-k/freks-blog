@@ -88,8 +88,7 @@ module.exports = {
             {
               allMarkdownRemark(
                 limit: 1000,
-                sort: { order: DESC, fields: [frontmatter___date] },
-                filter: { fields: { draft: { eq: false } } }
+                sort: { order: DESC, fields: [frontmatter___date] }
               ) {
                 edges {
                   node {
@@ -111,6 +110,5 @@ module.exports = {
         ],
       },
     },
-    'gatsby-plugin-draft', // can hide future date post
   ],
 }
