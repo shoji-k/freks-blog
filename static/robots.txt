@@ -1,4 +1,2 @@
 User-agent: *
 Disallow: /wip
-
-Sitemap: https://blog.freks.jp/sitemap.xml

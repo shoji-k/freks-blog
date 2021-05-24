@@ -51,12 +51,6 @@ module.exports = {
     },
     'gatsby-plugin-react-helmet',
     {
-      resolve: 'gatsby-plugin-sitemap',
-      options: {
-        excludes: ['/wip/*'],
-      },
-    },
-    {
       resolve: `gatsby-plugin-feed`,
       options: {
         query: `
