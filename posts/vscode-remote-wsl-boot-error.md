@@ -3,6 +3,8 @@ title: "VSCodeでRemote WSLが立ち上がらなくなった"
 date: "2020-09-26"
 ---
 
+※ 追記3を見てください
+
 WSL2 + Ubuntu 18.04 + VSCode + Remote WSL を使ってたところ、起動しなくなりました
 
 ```
@@ -130,3 +132,17 @@ mv .vscode-server .vscode-server.1
 ```
 
 で、直りました
+
+## 追記3
+
+↑のやり方は強引すぎました...
+
+コマンドで対応できました
+
+Windows Powershellを開いて
+
+```bash
+wsl --shtudown
+```
+
+したあとに、wsl起動すればたいていうまくいってます
