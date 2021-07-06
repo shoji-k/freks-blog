@@ -19,7 +19,7 @@ export default function OneBlog({
 }
 
 export const query = graphql`
-  query($slug: String!) {
+  query ($slug: String!) {
     site {
       siteMetadata {
         title
