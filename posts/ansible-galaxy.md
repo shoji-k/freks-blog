@@ -19,7 +19,7 @@ ansible-galaxyは、ansibleをインストールしたときに入ってるの�
 
 [Ansible Galaxy - zzet/rbenv](https://galaxy.ansible.com/zzet/rbenv) を使ってみます
 
-```sh
+```bash
 $ ansible-galaxy install zzet.rbenv -p roles
 ```
 
@@ -58,7 +58,7 @@ xxx.xxx.xxx.xxx # ip addressを書く
 
 実行コマンド  
 
-```sh
+```bash
 $ ansible-playbook -i staging site.yml
 ```
 

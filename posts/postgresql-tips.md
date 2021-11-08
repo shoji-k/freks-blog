@@ -13,7 +13,7 @@ psql --set ON_ERROR_STOP=on -U dbuser dbname -f sample.sql
 
 ## テーブルのバックアップをとる
 
-```sh
+```bash
 pg_dump -U (user name) --table (table name) (db name) > backup.sql
 ```
 
@@ -22,19 +22,19 @@ pg_dump -U (user name) --table (table name) (db name) > backup.sql
 
 データを戻すには
 
-```sh
+```bash
 psql -U (user name) (db name) -f backup.sql
 ```
 
 ## データベースのバックアップをとる
 
-```sh
+```bash
 pg_dump -U (user name) (db name) > database.sql
 ```
 
 データを戻すには
 
-```sh
+```bash
 psql -U (user name) (db name) -f database.sql
 ```
 

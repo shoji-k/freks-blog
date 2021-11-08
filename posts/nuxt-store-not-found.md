@@ -9,7 +9,7 @@ NuxtでVuexを使う際に `$store not found` になって少しハマりまし�
 
 before
 
-```vue
+```js
 computed: {
   todos: () => {
     return this.$store.state.todos.list
@@ -19,7 +19,7 @@ computed: {
 
 after
 
-```vue
+```js
 computed: {
   todos() {
     return this.$store.state.todos.list

@@ -71,7 +71,7 @@ OS ビルド	21292.1010
 
 Linuxは、Ubuntu 18.04で
 
-```sh
+```bash
 $ lsb_release -a
 No LSB modules are available.
 Distributor ID: Ubuntu
@@ -85,7 +85,7 @@ Linux xps15 5.4.72-microsoft-standard-WSL2 #1 SMP Wed Oct 28 23:40:43 UTC 2020 x
 
 エラーメッセージはこれ
 
-```sh
+```bash
 [2021-03-06 02:16:40.319] Resolving wsl+ubuntu-18.04, resolveAttempt: 1
 [2021-03-06 02:16:40.362] Starting VS Code Server inside WSL (Ubuntu-18.04)
 [2021-03-06 02:16:40.362] Extension version: 0.54.0, Windows build: 21292. Multi distro support: available. WSL path support: enabled
