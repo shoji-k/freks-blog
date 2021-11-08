@@ -1,10 +1,14 @@
 version: 2.1
 orbs:
   cypress: cypress-io/cypress@1
+executors:
+  node_executor:
+    docker:
+      - image: 'cypress/base:14.17.0'
 workflows:
   build:
     jobs:
       - cypress/run:
           start: npm start
           wait-on: 'http://localhost:8000'
-          executor: cypress/base:14.17.0
+          executor: node_executor
