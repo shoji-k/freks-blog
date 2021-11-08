@@ -4,7 +4,7 @@ orbs:
 executors:
   node_executor:
     docker:
-      - image: 'cypress/base:14.17.0'
+      - image: 'cypress/base:14.17.3'
 workflows:
   build:
     jobs:
