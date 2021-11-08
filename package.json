@@ -6,7 +6,8 @@
     "start": "gatsby develop -H 0.0.0.0",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "eslint": "eslint src",
+    "lint": "eslint 'src/**/*.js'",
+    "lintfix": "eslint --fix 'src/**/*.js' && prettier --write 'src/**/*.js'",
     "eslint-check": "eslint --print-config . | eslint-config-prettier-check",
     "test": "cypress run"
   },
@@ -31,7 +32,6 @@
     "cypress": "8.7.0",
     "eslint": "7.32.0",
     "eslint-config-prettier": "8.3.0",
-    "eslint-plugin-prettier": "4.0.0",
     "eslint-plugin-react": "7.26.1",
     "prettier": "2.4.1"
   }
