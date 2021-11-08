@@ -8,7 +8,7 @@ date: '2021-02-20'
 コマンドプロンプトを管理者として実行、で起動します  
 タスクバーの検索ウィンドウで、cmd を入力、管理者として実行を選ぶのが早いと思います
 
-```sh
+```bash
 sfc /scannow
 ```
 
@@ -19,20 +19,20 @@ sfc /scannow
 この結果だと、全部直してくれたようです  
 これで直らなかったとき
 
-```sh
+```bash
 DISM /Online /Cleanup-Image /CheckHealth
 ```
 
 をするといいそうです  
 壊れたファイルがなくなって、もっと詳しくチェックしたかったら
 
-```sh
+```bash
 Dism /Online /Cleanup-Image /ScanHealth
 ```
 
 これで壊れたファイルが見つかったら
 
-```sh
+```bash
 Dism /Online /Cleanup-Image /RestoreHealth
 ```
 

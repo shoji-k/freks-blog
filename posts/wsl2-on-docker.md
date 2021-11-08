@@ -9,7 +9,7 @@ WSL2の用意は [WSL2を使ってみる](https://blog.freks.jp/wsl2-tips) で�
 
 Dockerのインストールは公式ドキュメントで入りました
 
-```sh
+```bash
 $ sudo apt-get install \
     apt-transport-https \
     ca-certificates \
@@ -53,7 +53,7 @@ $ sudo usermod -aG docker $USER
 公式ドキュメントを見ていれました  
 [Install Docker Compose \| Docker Documentation](https://docs.docker.com/compose/install/)
 
-```sh
+```bash
 $ sudo curl -L "https://github.com/docker/compose/releases/download/1.25.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 $ sudo chmod +x /usr/local/bin/docker-compose
 ```
