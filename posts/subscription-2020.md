@@ -23,7 +23,7 @@ Googleのビジネス用アカウントです
 
 - [Office 365](https://www.office.com/?omkt=ja-jp) ¥1274 / month
 
-Excel、Wordが必要な取引先があったので必要な旅に毎月使ってました  
+Excel、Wordが必要な取引先があったので必要なたびに毎月使ってました  
 1ヶ月でやめたりしてましたが、今は毎月お金払ってます  
 
 - [Amazon Web Service](https://aws.amazon.com/jp/) ほぼ ¥0 / month
