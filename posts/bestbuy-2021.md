@@ -64,6 +64,11 @@ Pixel 6 が出る前に買いましたが、別によかったかと思ってま
 
 Linux Desktop で使いたかったのですが、いまいちうまく使えなくて Windows 11 で使ってます
 
+- [ニトリ 掛け布団\(NウォームSP)](https://www.nitori-net.jp/ec/product/7544641s/)
+
+NitoriのNウォームの掛け布団です  
+重い布団を重ねて防寒してましたが、これ1枚で冬乗り切れそうですごい
+
 ## 買ったけど使わなくなってるもの
 
 - [WEB カメラ UCAM\-C820ABBK](https://www.biccamera.com/bc/item/8727086/)
