@@ -69,3 +69,12 @@ $ tree
 
  4 directories, 7 files
 ```
+
+git status すると sparce-checkout が使われてることが分かります
+
+```bash
+On branch main
+You are in a sparse checkout with 3% of tracked files present.
+
+nothing to commit, working tree clean
+```
