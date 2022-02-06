@@ -142,7 +142,7 @@ mv .vscode-server .vscode-server.1
 Windows Powershellを開いて
 
 ```bash
-wsl --shtudown
+wsl --shutdown
 ```
 
 したあとに、wsl起動すればたいていうまくいってます
