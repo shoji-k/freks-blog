@@ -33,7 +33,7 @@ Git for Windows を入れたりせず、WSL 内の Git を使うには
 
 VScode の設定を `Ctrl + ,` で開いて、`git.path` で検索、無いので追記します
 
-![git path](/vscode/git_path.png)
+![git path](/vscode/git_path.webp)
 
 VSCode を再起動すると Git が使えるようになりました  
 ただ、やたらと重いのでターミナルでコマンド打ってます...(2019-04-05 現在)
@@ -78,7 +78,7 @@ prettier をコマンドラインで動くようにしておいて
 Ctrl + , で設定開いて prettier を打ち込んで検索して  
 Prettier Eslint integration にチェックを入れる
 
-![prettier setting](/vscode/prettier_setting.png)
+![prettier setting](/vscode/prettier_setting.webp)
 
 整形するときは  
 Ctrl + Shift + p, Format Document

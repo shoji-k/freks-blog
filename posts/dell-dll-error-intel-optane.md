@@ -6,7 +6,7 @@ date: '2019-08-24'
 Dell XPS 15 9570 で Windows Update ver.1903 を入れたあとにエラーが出るようになりました  
 Google Chrome を使ってると出たりしました
 
-![dll_error](/dell-dll-error-intel-optane/dll_error.png)
+![dll_error](/dell-dll-error-intel-optane/dll_error.webp)
 
 ## 原因のプログラムを削除
 
@@ -15,7 +15,7 @@ Google Chrome を使ってると出たりしました
 
 コントロールパネル、プログラムの追加と削除を開いて、該当のプログラムを削除します
 
-![program_intel_rapid_storage](/dell-dll-error-intel-optane/program_intel_rapid_storage.png)
+![program_intel_rapid_storage](/dell-dll-error-intel-optane/program_intel_rapid_storage.webp)
 
 ## プログラムを入れ直す
 

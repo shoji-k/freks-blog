@@ -14,11 +14,11 @@ GitHub Actions で Cypress を動かしてみました
 
 View on Marketplace のボタンを押して入れておきます
 
-![View on Marketplace button](/github-action-cypress/cypress_actions_1.png)
+![View on Marketplace button](/github-action-cypress/cypress_actions_1.webp)
 
 Use latest version のボタンを押して有効化します
 
-![Use latest version button](/github-action-cypress/cypress_actions_2.png)
+![Use latest version button](/github-action-cypress/cypress_actions_2.webp)
 
 あとは使いたい GitHub の repository を表示、Actions ページを開きます
 

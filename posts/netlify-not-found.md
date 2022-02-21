@@ -5,7 +5,7 @@ date: '2019-05-03'
 
 React でアプリを作っててローカルでは大丈夫なのに、Netlify でデプロイした環境だと、ダイレクトに URL にアクセスできなくなりました
 
-![netlify not found](/netlify-not-found/netlify-not-found.png)
+![netlify not found](/netlify-not-found/netlify-not-found.webp)
 
 になります  
 クリックして URL 遷移すると正しく動きます

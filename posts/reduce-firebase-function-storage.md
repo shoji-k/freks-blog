@@ -5,7 +5,7 @@ date: '2021-02-04'
 
 Firebase storage の保存バイト数が、アップロードしたファイルの割に大きすぎるのに気づきました
 
-![storage usage](/reduce-firebase-function-storage/storage_usage.png)
+![storage usage](/reduce-firebase-function-storage/storage_usage.webp)
 
 アップロードしたファイルの容量合わせても 10MB もないのに、570MB にもなっている
 
@@ -14,7 +14,7 @@ Firebase storage の保存バイト数が、アップロードしたファイル
 Firebase の管理画面だとこれ以上のことがわからなかったのですが、
 Firebase の実態は、Google Cloud Platform なので GCP の管理画面で確認できました
 
-![google cloud platform storage](/reduce-firebase-function-storage/google-cloud-platform-storage.png)
+![google cloud platform storage](/reduce-firebase-function-storage/google-cloud-platform-storage.webp)
 
 URL だと https://console.cloud.google.com/storage/browser でプロジェクト選んだところです
 
@@ -32,6 +32,6 @@ us.artifacts.xxxxx.appspot.com を選択、ライフサイクルを開く、ル�
 
 にしてみました
 
-![google cloud platform storage life event](/reduce-firebase-function-storage/google-cloud-platform-storage-life-event.png)
+![google cloud platform storage life event](/reduce-firebase-function-storage/google-cloud-platform-storage-life-event.webp)
 
 2 日後くらいに確認すると、無事数百 kB へ減っていました

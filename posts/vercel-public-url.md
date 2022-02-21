@@ -8,7 +8,7 @@ Vercelの環境変数を設定することで、取れました
 
 Vercelでプロジェクトを開いて、Project Settings > Environment Variables
 
-![Vercel environment variables settings](/vercel-public-url/vercel-environment-variables.png)
+![Vercel environment variables settings](/vercel-public-url/vercel-environment-variables.webp)
 
 Reference to System Environment Variable を選んで  
 VERCEL_URLを選ぶと、好きな環境変数名で取れるようになります

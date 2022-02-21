@@ -69,7 +69,7 @@ render()
 
 ログ
 
-![hmr log](/react_hot_module_replacement/hmr_log.png)
+![hmr log](/react_hot_module_replacement/hmr_log.webp)
 
 GitHub Issueの  
 [webpack\-dev\-sever HMR do not works, only working full reload behavior · Issue \#1315 · webpack/webpack\-dev\-server](https://github.com/webpack/webpack-dev-server/issues/1315)  
