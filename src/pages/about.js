@@ -18,7 +18,31 @@ export default function About({ data: { site }, location }) {
         </a>
       </p>
       <p>
-        <a href="https://amzn.asia/40oqmnA">🎁 Amazon wishlist</a>
+        <a
+          href="https://amzn.asia/40oqmnA"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          🎁 Amazon wishlist
+        </a>
+      </p>
+      <p>
+        <a
+          href="https://www.paypal.com/paypalme/freks"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          😊 Sponsor?
+        </a>
+      </p>
+      <p>
+        <a
+          href="https://www.buymeacoffee.com/freks"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          ☕ Buy me a coffee?
+        </a>
       </p>
     </Layout>
   )
