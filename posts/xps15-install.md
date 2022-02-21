@@ -206,18 +206,18 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 下のトレイにあるアイコンを右クリック > プロパティ  
 キー設定の選択、編集をクリック  
 
-![google_ime_option](/xps15-install/google_ime_option.png)
+![google_ime_option](/xps15-install/google_ime_option.webp)
 
 下記画像の下4つの設定を追加  
 
-![google_ime_addition](/xps15-install/google_ime_addition.png)
+![google_ime_addition](/xps15-install/google_ime_addition.webp)
 
 ## Windows Defender
 
 スキャンしてほしくないディレクトリを指定  
 yarn installしたディレクトリはウィルススキャンすると重いため除外します  
 
-![windows_defender_exclude](/xps15-install/windows_defender_exclude.png)
+![windows_defender_exclude](/xps15-install/windows_defender_exclude.webp)
 
 ## まとめ
 

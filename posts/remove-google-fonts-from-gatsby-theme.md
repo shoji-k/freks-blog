@@ -5,7 +5,7 @@ date: '2021-02-17'
 
 このブログをひさしぶりにlight houseのスコアを見てみるとperformanceが黄色になってました  
 
-![lighthouse results before](/remove-google-fonts-from-gatsby-theme/lighthouse-before.png)
+![lighthouse results before](/remove-google-fonts-from-gatsby-theme/lighthouse-before.webp)
 
 項目は[Eliminate render-blocking resources](https://web.dev/render-blocking-resources/?utm_source=lighthouse&utm_medium=devtools)で、Google fontsを読み込んでるところでした  
 読み込みを遅延させることも考えたのですが、いっそGoogle fontsを外してみました  
@@ -23,11 +23,11 @@ https://github.com/shoji-k/freks-blog/commit/fed6641e4b010be1b7a385e36c9ee62ddb1
 
 before  
 
-![top screen before](/remove-google-fonts-from-gatsby-theme/top-before.png)
+![top screen before](/remove-google-fonts-from-gatsby-theme/top-before.webp)
 
 after  
 
-![top screen after](/remove-google-fonts-from-gatsby-theme/top-after.png)
+![top screen after](/remove-google-fonts-from-gatsby-theme/top-after.webp)
 
 
 と、ほんの少し見た目が変わりました    
@@ -36,6 +36,6 @@ font-familyは、[2020年に最適なfont\-familyの書き方 \- ICS MEDIA](http
 
 light houseが
 
-![lighthouse results before](/remove-google-fonts-from-gatsby-theme/lighthouse-after.png)
+![lighthouse results before](/remove-google-fonts-from-gatsby-theme/lighthouse-after.webp)
 
 とperformance 100点になりました！

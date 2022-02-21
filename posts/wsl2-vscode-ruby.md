@@ -25,11 +25,11 @@ VS Code を、CTRL + P 、Remove-WSL で VS Code から WSL2 につないだ状�
 VS Code の setting.json に設定を書くのですが、  
 拡張のネジアイコン > Extension Settings
 
-![vscode ruby extension setting](/wsl2-vscode-ruby/vscode-ruby-extension-setting.png)
+![vscode ruby extension setting](/wsl2-vscode-ruby/vscode-ruby-extension-setting.webp)
 
 Ruby:Format などの、Edit in setting.json をクリックするのがたどり着きやすいです
 
-![vscode ruby extension edit-setting.json](/wsl2-vscode-ruby/vscode-ruby-extension-edit-setting-json.png)
+![vscode ruby extension edit-setting.json](/wsl2-vscode-ruby/vscode-ruby-extension-edit-setting-json.webp)
 
 ここではまったのが、↑ のタブのところで WSL のタブを選ばないと、設定が効かないです  
 設定は、Rubocop を入れていたので

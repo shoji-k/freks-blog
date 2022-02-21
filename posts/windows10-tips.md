@@ -14,7 +14,7 @@ sfc /scannow
 
 をすると、壊れたファイルを直してくれるようです
 
-![sfc scannow result](/windows10-tips/sfc_scannow_result.png)
+![sfc scannow result](/windows10-tips/sfc_scannow_result.webp)
 
 この結果だと、全部直してくれたようです  
 これで直らなかったとき

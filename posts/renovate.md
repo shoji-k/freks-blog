@@ -16,11 +16,11 @@ Github Market PlaceでRenovateを有効にします
 
 GitHubにログインしておいて  
 
-![renovate github marketplace](/renovate/renovate_github_marketplace.png)
+![renovate github marketplace](/renovate/renovate_github_marketplace.webp)
 
 "Set up ad free trial" から進んで
 
-![renovate github marketplace](/renovate/renovate_github_marketplace_2.png)
+![renovate github marketplace](/renovate/renovate_github_marketplace_2.webp)
 
 Planを選んで進めます  
 
@@ -29,7 +29,7 @@ Planを選んで進めます
 
 初回のPRはこれでした  
 
-![renovate first pull request](/renovate/renovate_pr.png)
+![renovate first pull request](/renovate/renovate_pr.webp)
 
 リポジトリに対してRenovateを有効にするには、最初のPRをmergeします  
 merge後、1時間に最大2つPRを送ってくれるそうです  

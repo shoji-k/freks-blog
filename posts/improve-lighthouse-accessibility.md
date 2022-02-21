@@ -6,7 +6,7 @@ date: '2021-02-18'
 このブログの Lighthouse accessibility が、97 点だったので改善してみました  
 [Gatsby theme から Google fonts を外した \| freks blog](https://blog.freks.jp/remove-google-fonts-from-gatsby-theme/) の記事の続きです
 
-![Lighthouse accessibility before](/improve-lighthouse-accessibility/Lighthouse-accessibility-before.png)
+![Lighthouse accessibility before](/improve-lighthouse-accessibility/Lighthouse-accessibility-before.webp)
 
 [Heading elements are not in a sequentially-descending order](https://web.dev/heading-order/)  
 が指摘の点で
@@ -19,7 +19,7 @@ date: '2021-02-18'
 
 そうすると...
 
-![Lighthouse after improvement](/improve-lighthouse-accessibility/Lighthouse-after.png)
+![Lighthouse after improvement](/improve-lighthouse-accessibility/Lighthouse-after.webp)
 
 All green になりました！  
 PWA 対応もそのうちしてみようと思います

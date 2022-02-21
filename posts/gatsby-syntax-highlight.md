@@ -7,11 +7,11 @@ date: '2021-02-14'
 
 こういうコードが
 
-![before code highlighting](/gatsby-syntax-highlight/before-code-highlight.png)
+![before code highlighting](/gatsby-syntax-highlight/before-code-highlight.webp)
 
 こうなります
 
-![after code highlighting](/gatsby-syntax-highlight/after-code-highlight.png)
+![after code highlighting](/gatsby-syntax-highlight/after-code-highlight.webp)
 
 ハイライトのテーマがいくつかあるのですが、一番ひかえめなデフォルトのものにしました
 

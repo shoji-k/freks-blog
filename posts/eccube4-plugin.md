@@ -545,7 +545,7 @@ class EstimateFormController extends AbstractController
 `{{ form(form) }}`でフォームが表示されます  
 フォームを入力して保存できるようになります！
 
-![sample_ec_site](/eccube4-plugin/sample_ec_site.png)
+![sample_ec_site](/eccube4-plugin/sample_ec_site.webp)
 
 こんな流れでプラグインができました
 

@@ -34,10 +34,10 @@ $ rails generate rspec:install
 ```
 
 format = documentation のほうが見やすいです  
-![format_documentation](/rspec/format_not_document.png)
+![format_documentation](/rspec/format_not_document.webp)
 
 デフォルト  
-![format_not_documentation](/rspec/format_document.png)
+![format_not_documentation](/rspec/format_document.webp)
 
 ## 起動を早くする
 

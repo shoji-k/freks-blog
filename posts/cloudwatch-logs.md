@@ -150,7 +150,7 @@ EC2にCloudWatch Logsにアクセスできるロール(用意したIAMユーザ�
 AWSの管理コンソール画面を開いて、CloudWatchを開きます  
 左のペインの Logs > Log groups に指定したグループができていたらログが溜まっていると思います  
 
-![cloudwatch-logs-group](/cloudwatch-logs/cloudwatch-logs-list.png)
+![cloudwatch-logs-group](/cloudwatch-logs/cloudwatch-logs-list.webp)
 
 Expired Event After がクリックできて、保存期間が変更できるので節約したかったら短くしましょう  
 

@@ -48,7 +48,7 @@ Podcastやるなど音声録音したりしなければ、もったいない気�
 
 を持っているので、つなぐとWindowsの音声設定の録音のところに出てきます  
 
-![mic setting](/use-microphone/mic_setting.png)
+![mic setting](/use-microphone/mic_setting.webp)
 
 音質がいいのかちょっと不安です
 
