@@ -1,6 +1,7 @@
 ---
 title: "Rubocopとnvim連携"
 date: "2019-03-27"
+updated: ""
 ---
 
 RailsプロジェクトにRubocopを入れたので、コマンドラインでRubocopを使うだけじゃなく、nvimでも使えるようにしました

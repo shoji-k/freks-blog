@@ -1,6 +1,7 @@
 ---
 title: "MochaのテストコードをTypeScriptで書く"
 date: "2020-12-17"
+updated: ""
 ---
 
 [Mocha \- the fun, simple, flexible JavaScript test framework](https://mochajs.org/) は、Javascriptで動くので、そのままではTypeScriptでテストがかけません

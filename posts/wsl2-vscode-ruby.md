@@ -1,6 +1,7 @@
 ---
 title: 'WSL2 + VSCodeでRubyの開発環境を用意する'
 date: '2021-02-19'
+updated: ""
 ---
 
 Windows 10 の WSL2 を使って Visual Studio Code で Ruby の開発ができるようにしてみました

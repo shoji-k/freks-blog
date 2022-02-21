@@ -1,6 +1,7 @@
 ---
 title: 'AWS Fargate「CodePipeline を使用した継続的なデプロイ」をやってみた'
 date: '2020-04-05'
+updated: ""
 ---
 
 [チュートリアル: CodePipeline を使用した継続的なデプロイ \- Amazon Elastic Container Service](https://docs.aws.amazon.com/ja_jp/AmazonECS/latest/developerguide/ecs-cd-pipeline.html) をやってみました

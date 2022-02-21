@@ -1,6 +1,7 @@
 ---
 title: "2020年に買ったもの"
 date: "2020-12-31"
+updated: ""
 ---
 
 2019年は [こちら](https://blog.freks.jp/bestbuy-2019)  

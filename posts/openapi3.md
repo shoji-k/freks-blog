@@ -1,6 +1,7 @@
 ---
 title: 'OpenAPI3を使い始めてみた'
 date: '2019-12-16'
+updated: ""
 ---
 
 API Documentのために [OpenAPI3](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md)  を使ってみました  

@@ -1,6 +1,7 @@
 ---
 title: "historyコマンドの使い方"
 date: "2019-01-21"
+updated: ""
 ---
 
 linuxのhistoryコマンドをおさらいしました  

@@ -1,6 +1,7 @@
 ---
 title: 'Ansible Galaxyはじめ'
 date: '2019-12-21'
+updated: ""
 ---
 
 [Ansible Galaxy](https://galaxy.ansible.com/home) はAnsible版GitHubみたいなものでよさそうなansible playbookの1セット “role” を探して使えるものです

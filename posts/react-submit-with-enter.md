@@ -1,6 +1,7 @@
 ---
 title: "ReactでInputフォームのEnterキーで処理を行う"
 date: "2019-02-09"
+updated: ""
 ---
 
 React version 16.4.2 でinputフォームでのEnterキーを押して処理をしたかった際、

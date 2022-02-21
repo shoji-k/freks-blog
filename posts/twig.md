@@ -1,6 +1,7 @@
 ---
 title: 'Twig tips'
 date: '2019-11-07'
+updated: ""
 ---
 
 ## 使える変数をすべて見る

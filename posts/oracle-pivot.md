@@ -1,6 +1,7 @@
 ---
 title: 'Oracle Pivotの使い方'
 date: '2019-05-09'
+updated: ""
 ---
 
 Oracle Pivot を使った SQL を読むたびに、どうなるんだっけ..となってしまってたのでここにまとめます

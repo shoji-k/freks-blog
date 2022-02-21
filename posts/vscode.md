@@ -1,6 +1,7 @@
 ---
 title: 'Visual Studio Codeの設定'
 date: '2019-04-17'
+updated: ""
 ---
 
 [Visual Studio Code \- Code Editing\. Redefined](https://code.visualstudio.com/)  

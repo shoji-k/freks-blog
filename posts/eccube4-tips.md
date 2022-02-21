@@ -1,6 +1,7 @@
 ---
 title: 'EC-CUBE 4 Tips'
 date: '2019-08-29'
+updated: ""
 ---
 
 ## EC-CUBE 4 のバージョンを見る

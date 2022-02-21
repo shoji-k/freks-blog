@@ -1,6 +1,7 @@
 ---
 title: "Pythonはじめのメモ"
 date: "2018-12-16"
+updated: ""
 tags: "python"
 ---
 

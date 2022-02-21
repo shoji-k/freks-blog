@@ -1,6 +1,7 @@
 ---
 title: 'Ruby gemの読み方'
 date: '2021-03-13'
+updated: ""
 ---
 
 Ruby gem のコードを読むときにやっていること

@@ -1,6 +1,7 @@
 ---
 title: "Nodeらへんのインストール"
 date: "2019-01-18"
+updated: ""
 ---
 
 ## install nvm

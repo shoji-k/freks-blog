@@ -1,6 +1,7 @@
 ---
 title: 'テキストファイルからiframeタグを一気に削除する'
 date: '2020-03-14'
+updated: ""
 ---
 
 テキストファイルから `<iframe>something</iframe>` をすべて消し去りたいのでやってみました  

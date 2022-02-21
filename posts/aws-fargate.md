@@ -1,6 +1,7 @@
 ---
 title: 'RailsアプリをFargateに乗せてみた'
 date: '2020-04-03'
+updated: ""
 ---
 
 AWS FargateをRailsアプリで試してみました  

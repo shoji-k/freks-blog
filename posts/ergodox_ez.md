@@ -1,6 +1,7 @@
 ---
 title: "Ergodox EZ keyboard"
 date: "2018-12-19"
+updated: ""
 ---
 
 [ErgoDox EZ: An Incredible Mechanical Ergonomic Keyboard](https://ergodox-ez.com/)

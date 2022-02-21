@@ -1,6 +1,7 @@
 ---
 title: "はじめてのCircleCI"
 date: "2019-02-15"
+updated: ""
 ---
 
 [CircleCI](https://circleci.com/)を使ってみたくて、このブログのリポジトリに入れてみました

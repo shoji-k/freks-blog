@@ -1,6 +1,7 @@
 ---
 title: 'qmk_firmwareで同時押しカスタマイズしてみた'
 date: '2019-12-20'
+updated: ""
 ---
 
 自作キーボード

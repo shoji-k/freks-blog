@@ -1,6 +1,7 @@
 ---
 title: 'VSCodeで@tailwindが認識できない'
 date: '2022-01-31'
+updated: ""
 ---
 
 [Create React App](https://create-react-app.dev/) で [TailWind css](https://tailwindcss.com/) を

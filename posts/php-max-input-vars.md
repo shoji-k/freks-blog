@@ -1,6 +1,7 @@
 ---
 title: "PHPで大量のinputをpostすると$_POSTが空になる"
 date: "2019-02-06"
+updated: ""
 ---
 
 PHPで開発しててinputフォームを動的に追加できる画面を作ってて、inputフォームをばしばし増やして実行したら突然$_POSTが空に..  

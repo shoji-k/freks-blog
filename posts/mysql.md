@@ -1,6 +1,7 @@
 ---
 title: "MySQL tips"
 date: "2019-02-11"
+updated: ""
 ---
 
 ## 文字コード変更

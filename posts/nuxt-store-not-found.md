@@ -1,6 +1,7 @@
 ---
 title: 'Nuxt + Vuexで $store not found になった'
 date: '2020-01-04'
+updated: ""
 ---
 
 Nuxtちょっとやってみるかと思って、Todoアプリ作ってたんですが

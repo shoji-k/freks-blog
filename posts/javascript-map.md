@@ -1,6 +1,7 @@
 ---
 title: "JavascriptのMapを使う"
 date: "2021-02-10"
+updated: ""
 ---
 
 JavascriptのMapを使わずに、ついObjectでやってしまっているので違いをまとめてみた

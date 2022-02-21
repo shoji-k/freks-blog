@@ -1,6 +1,7 @@
 ---
 title: 'Intel NUC BLKNUC7I7DNKE を買った'
 date: '2019-12-22'
+updated: ""
 ---
 
 2019-11-27 に購入、全部で \95277 でした

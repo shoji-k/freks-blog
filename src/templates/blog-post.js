@@ -12,6 +12,14 @@ export default function OneBlog({
       <Seo title={post.frontmatter.title} description={post.excerpt} />
       <div style={{ minHeight: 'calc(100vh - 220px)' }}>
         <h2 style={{ fontSize: '2rem' }}>{post.frontmatter.title}</h2>
+        <div style={{ display: 'flex', justifyContent: 'flex-end', paddingBottom: '.8rem' }}>
+          <div style={{ fontSize: '.8rem', paddingRight: '1rem' }}>
+            created: {post.frontmatter.date}
+          </div>
+          {post.frontmatter.updated && (
+            <div style={{ fontSize: '.8rem' }}>updated: {post.frontmatter.updated}</div>
+          )}
+        </div>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
       </div>
       <small>
@@ -33,6 +41,8 @@ export const query = graphql`
       excerpt(pruneLength: 160)
       frontmatter {
         title
+        date
+        updated
       }
     }
   }

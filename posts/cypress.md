@@ -1,6 +1,7 @@
 ---
 title: "CUI環境にCypressを導入してみた"
 date: "2019-02-14"
+updated: ""
 ---
 
 このブログはGatsbyでできてて、Ubuntu 18.04 の上でこのブログを作ってるのですが、Cypressを使い始めました  

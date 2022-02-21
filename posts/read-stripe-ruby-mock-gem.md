@@ -1,6 +1,7 @@
 ---
 title: 'stripe-ruby-mock gemを読んでみた'
 date: '2021-03-14'
+updated: ""
 ---
 
 [stripe\-ruby\-mock/stripe\-ruby\-mock: A mocking library for testing stripe ruby](https://github.com/stripe-ruby-mock/stripe-ruby-mock)

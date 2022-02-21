@@ -1,6 +1,7 @@
 ---
 title: 'Firebase Storageの保存バイト数を減らす'
 date: '2021-02-04'
+updated: ""
 ---
 
 Firebase storage の保存バイト数が、アップロードしたファイルの割に大きすぎるのに気づきました

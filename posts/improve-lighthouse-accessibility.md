@@ -1,6 +1,7 @@
 ---
 title: 'Lighthouse accessibilityを改善した'
 date: '2021-02-18'
+updated: ""
 ---
 
 このブログの Lighthouse accessibility が、97 点だったので改善してみました  

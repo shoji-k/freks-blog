@@ -1,6 +1,7 @@
 ---
 title: 'Domain Driven Design Quickly 日本語版 を読んだ'
 date: '2020-05-11'
+updated: ""
 ---
 
 DDDを知っておきたくて、手始めとして  
