@@ -10,10 +10,13 @@ export default function OneBlog({
   return (
     <Layout location={location} title={site.siteMetadata.title}>
       <Seo title={post.frontmatter.title} description={post.excerpt} />
-      <div>
+      <div style={{ minHeight: 'calc(100vh - 220px)' }}>
         <h2 style={{ fontSize: '2rem' }}>{post.frontmatter.title}</h2>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
       </div>
+      <small>
+        This site is managed by <a href="/about">freks</a>
+      </small>
     </Layout>
   )
 }
