@@ -47,7 +47,7 @@ module.exports = {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
         trackingIds: [
-          "G-ED5RP1MX3C", // Google Analytics / GA
+          'G-ED5RP1MX3C', // Google Analytics / GA
         ],
         pluginConfig: {
           head: false,
@@ -111,5 +111,6 @@ module.exports = {
         ],
       },
     },
+    `gatsby-plugin-sitemap`,
   ],
 }
