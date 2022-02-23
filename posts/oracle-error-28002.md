@@ -1,6 +1,7 @@
 ---
 title: "Oracle 11g ORA-28002 エラー"
 date: "2019-01-12"
+updated: ""
 ---
 
 データベースにOracleを使っている案件があって  

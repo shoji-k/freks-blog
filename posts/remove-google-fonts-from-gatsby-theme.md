@@ -1,6 +1,7 @@
 ---
 title: 'Gatsby themeからGoogle fontsを外した'
 date: '2021-02-17'
+updated: ""
 ---
 
 このブログをひさしぶりにlight houseのスコアを見てみるとperformanceが黄色になってました  

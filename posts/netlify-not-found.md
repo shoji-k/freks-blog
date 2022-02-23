@@ -1,6 +1,7 @@
 ---
 title: 'Netlify+React RouterでNot Foundになる'
 date: '2019-05-03'
+updated: ""
 ---
 
 React でアプリを作っててローカルでは大丈夫なのに、Netlify でデプロイした環境だと、ダイレクトに URL にアクセスできなくなりました

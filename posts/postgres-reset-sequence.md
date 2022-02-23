@@ -1,6 +1,7 @@
 ---
 title: 'PostgreSQLのシーケンスをリセットする'
 date: '2019-10-04'
+updated: ""
 ---
 
 PostgreSQL のシーケンスをリセットする方法を調べました

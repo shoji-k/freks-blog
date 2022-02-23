@@ -1,6 +1,7 @@
 ---
 title: "Rails 6でknock gemが動かない"
 date: "2019-08-19"
+updated: ""
 ---
 
 追記) 続編をかきました [Rails 6でknock gemが動かない - 続編](https://blog.freks.jp/rails6-knock-2)

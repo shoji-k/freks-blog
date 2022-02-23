@@ -1,6 +1,7 @@
 ---
 title: "Renovateにパッケージを新しくしてもらう"
 date: "2018-12-28"
+updated: ""
 ---
 
 [Renovate \| Automated Dependency Updates](https://renovatebot.com/)  

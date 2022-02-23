@@ -1,6 +1,7 @@
 ---
 title: 'ApacheでのURL設定'
 date: '2019-09-11'
+updated: ""
 ---
 
 Apache 2.4 での mod_rewrite まとめます

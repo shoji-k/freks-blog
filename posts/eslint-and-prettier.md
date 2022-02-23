@@ -1,6 +1,7 @@
 ---
 title: "ESLintとPrettierをともに使う"
 date: "2018-12-21"
+updated: ""
 ---
 
 [Prettier · Opinionated Code Formatter](https://prettier.io/)  

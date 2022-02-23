@@ -1,6 +1,7 @@
 ---
 title: 'squoosh-cliで画像を軽量にしてみた'
 date: '2022-02-21'
+updated: ""
 ---
 
 [WebP image format \| Can I use\.\.\. Support tables for HTML5, CSS3, etc](https://caniuse.com/webp) の通り、Webp がだいたいのブラウザで使えるので、このブログの PNG 画像を全部 Webp にしてみました

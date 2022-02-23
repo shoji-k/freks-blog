@@ -1,6 +1,7 @@
 ---
 title: "webpack-dev-serverのhot reloadが動かなかった際の対策"
 date: "2018-12-26"
+updated: ""
 ---
 
 webpackの[Hot Module Replacement](https://webpack.js.org/guides/hot-module-replacement/)(HMR)を導入してたのですが、毎回リロードがかかってたので直しました  

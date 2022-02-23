@@ -1,6 +1,7 @@
 ---
 title: 'CircleCIでCypressを動かすNode versionを指定する'
 date: '2021-11-08'
+updated: ""
 ---
 
 このブログでもCircleCIでCI回してて、Cypressのテストを通してます  

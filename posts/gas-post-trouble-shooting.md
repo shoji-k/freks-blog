@@ -1,6 +1,7 @@
 ---
 title: 'Google Apps Script へPOSTしたかった'
 date: '2019-04-18'
+updated: ""
 ---
 
 API を叩いて、Google Spreadsheet に記録を取るアプリを作りたかったときにはまった話

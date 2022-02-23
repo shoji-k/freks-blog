@@ -1,6 +1,7 @@
 ---
 title: '「Ruby on Rails 6 エンジニア 養成読本」を読んだ'
 date: '2020-01-12'
+updated: ""
 ---
 
 Ruby on Rails 6 エンジニア 養成読本 Software Design plus を Kindle で読みました

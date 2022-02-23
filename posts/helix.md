@@ -1,6 +1,7 @@
 ---
 title: 'Helix keyboard'
 date: '2018-12-20'
+updated: ""
 ---
 
 [Helix キーボードキット \| 遊舎工房](https://yushakobo.jp/shop/helix-keyboard-kit/)

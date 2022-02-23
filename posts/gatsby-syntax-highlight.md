@@ -1,6 +1,7 @@
 ---
 title: 'Gatsybyでシンタックスハイライトをつける'
 date: '2021-02-14'
+updated: ""
 ---
 
 この blog は[Gatsby](https://www.gatsbyjs.com/)で作ってますが、コードのシンタックスハイライトを入れてなかったので入れました

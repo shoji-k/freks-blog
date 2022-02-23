@@ -1,6 +1,7 @@
 ---
 title: "「Warning: React version not specified in eslint-plugin-react settings.」を解決する"
 date: "2019-02-13"
+updated: ""
 ---
 
 このブログはGatsbyで作ってるんですが、eslintをかけるとWarningエラーがでました

@@ -1,6 +1,7 @@
 ---
 title: "Google日本語入力の追加設定"
 date: "2019-02-08"
+updated: ""
 ---
 
 Google日本語入力についてまとめてみます  

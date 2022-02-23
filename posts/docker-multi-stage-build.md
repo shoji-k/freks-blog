@@ -1,6 +1,7 @@
 ---
 title: 'Dockerのmuti-stage buildsを使ってみた'
 date: '2020-06-26'
+updated: ""
 ---
 
 Dockerのmuti-stage buildsを使ってみました

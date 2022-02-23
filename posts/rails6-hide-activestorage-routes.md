@@ -1,6 +1,7 @@
 ---
 title: 'Rails6でActiveStorage関連のroutes情報を非表示にする'
 date: '2019-11-25'
+updated: ""
 ---
 
 Rails6 で ActiveStorage 関連の routes を表示しないようにしてみました

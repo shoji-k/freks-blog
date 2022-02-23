@@ -1,6 +1,7 @@
 ---
 title: 'Vercelのデプロイ後のURLを取得する'
 date: '2020-11-26'
+updated: ""
 ---
 
 Next.jsで開発してて、`/pages/api` にAPIを立てたときに、フルのURLを取りたかったら、

@@ -1,6 +1,7 @@
 ---
 title: "Gatsbyでブログを作った"
 date: "2018-12-14"
+updated: ""
 ---
 
 Gatsbyでブログを作ってみました

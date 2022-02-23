@@ -1,6 +1,7 @@
 ---
 title: 'GitHub ActionsでCypressを動かしてみた'
 date: '2019-11-28'
+updated: ""
 ---
 
 GitHub Actions で Cypress を動かしてみました

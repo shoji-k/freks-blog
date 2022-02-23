@@ -1,6 +1,7 @@
 ---
 title: "JavascriptのSetでArrayの重複を除く"
 date: "2021-02-11"
+updated: ""
 ---
 
 [JavascriptのMapを使う](https://blog.freks.jp/javascript-map)で紹介したMapも便利ですが、Setも便利なので紹介します

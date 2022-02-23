@@ -1,6 +1,7 @@
 ---
 title: 'Firebase Storeで"FirebaseError: Null value error."ではまった'
 date: '2021-01-04'
+updated: ""
 ---
 
 ローカルで、Next.js + Firebaseの開発をしていたときにFirebase Emulatorをつかってやっていました  

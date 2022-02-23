@@ -1,6 +1,7 @@
 ---
 title: "Ubuntu設定"
 date: "2019-01-11"
+updated: ""
 ---
 
 Ubuntuの設定をまとめました  

@@ -1,6 +1,7 @@
 ---
 title: 'EC-CUBE4でModelのTraitファイルを削除した時のエラー対処'
 date: '2019-09-27'
+updated: ""
 ---
 
 EC-CUBE 4 で [Entity のカスタマイズ \| EC\-CUBE 4\.0 開発ドキュメント](http://doc4.ec-cube.net/customize_entity) をみて Order クラスを拡張してたんですが、仕様変更で拡張を削除することになりました

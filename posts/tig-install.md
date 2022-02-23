@@ -1,6 +1,7 @@
 ---
 title: '日本語環境で最新のTigを使う'
 date: '2019-12-15'
+updated: ""
 ---
 
 Tigでgitのdiff-highlightが使いたかったのですが、apt installで入るtigが2.0.2で、2.2以上がいるらしく最新版のTigを入れてみました

@@ -1,6 +1,7 @@
 ---
 title: 'PostGISをDocker使ってさわってみた'
 date: '2019-10-13'
+updated: ""
 ---
 
 [PostGIS](https://lets.postgresql.jp/documents/tutorial/PostGIS/1) をやらないといけなさそうで、Docker 使って触ってみました

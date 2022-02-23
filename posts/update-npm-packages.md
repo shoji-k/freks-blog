@@ -1,6 +1,7 @@
 ---
 title: 'npm packagesを更新する'
 date: '2020-09-24'
+updated: ""
 ---
 
 更新方法をまとめました

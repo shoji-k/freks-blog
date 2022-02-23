@@ -1,6 +1,7 @@
 ---
 title: "Railsのscopeでnilになる場合はallが返る"
 date: "2018-12-18"
+updated: ""
 ---
 
 Railsで勘違いしていたのでメモ

@@ -1,6 +1,7 @@
 ---
 title: 'WSL2上でDockerを使ってみる'
 date: '2019-12-29'
+updated: ""
 ---
 
 WSL2の用意は [WSL2を使ってみる](https://blog.freks.jp/wsl2-tips) でやりました

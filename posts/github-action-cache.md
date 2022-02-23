@@ -1,6 +1,7 @@
 ---
 title: 'GitHub ActionsでCacheを使ってみた'
 date: '2019-12-02'
+updated: ""
 ---
 
 [GitHub Actions で RSpec を動かしてみた \| freks blog](https://blog.freks.jp/github-action-rspec/) で bundle install が時間かかるのでキャッシュを使ってみました

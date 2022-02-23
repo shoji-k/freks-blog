@@ -1,6 +1,7 @@
 ---
 title: 'RSpec はじめ'
 date: '2019-08-08'
+updated: ""
 ---
 
 RSpec を始めるときの手順

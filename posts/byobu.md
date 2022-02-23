@@ -1,6 +1,7 @@
 ---
 title: 'Byobu tips'
 date: '2019-11-17'
+updated: ""
 ---
 
 ## byobu のエスケープシーケンスを使う

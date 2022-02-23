@@ -1,6 +1,7 @@
 ---
 title: 'PostgreSQL Tips'
 date: '2019-10-30'
+updated: ""
 ---
 
 ## エラーが起きたら止める

@@ -1,6 +1,7 @@
 ---
 title: "Neovimインストールと設定"
 date: "2019-01-19"
+updated: ""
 ---
 
 [Neovim](https://neovim.io/)とVim8とどちらを使うか迷いましたが、[暗黒美無王](https://github.com/Shougo)のプラグインの設定が楽そうなのでNeovimを使っています  

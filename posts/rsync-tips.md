@@ -1,6 +1,7 @@
 ---
 title: 'rsync tips'
 date: '2020-07-31'
+updated: ""
 ---
 
 rsyncの使うときに毎回調べてるのでまとめる

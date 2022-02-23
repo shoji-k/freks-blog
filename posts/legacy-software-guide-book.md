@@ -1,6 +1,7 @@
 ---
 title: '「レガシーソフトウェア改善ガイド」を読んだ'
 date: '2020-04-11'
+updated: ""
 ---
 
 [レガシーソフトウェア改善ガイド](https://www.shoeisha.co.jp/book/detail/9784798145143)を読みました  

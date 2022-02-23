@@ -1,6 +1,7 @@
 ---
 title: 'GitHub ActionsでRSpecを動かしてみた'
 date: '2019-12-01'
+updated: ""
 ---
 
 [GitHub Actions で Cypress を動かしてみた \| freks blog](https://blog.freks.jp/github-action-cypress/) に続いて、RSpec を動かしてみました

@@ -1,6 +1,7 @@
 ---
 title: 'Git tips'
 date: '2019-01-17'
+updated: ""
 ---
 
 ## install
