@@ -1,5 +1,5 @@
 ---
-title: 'GatsbyでMarkdown記法に更新日を追加表示する'
+title: 'GatsbyでMarkdown記法に更新日を追加して表示する'
 date: '2022-02-21'
 updated: ''
 ---
