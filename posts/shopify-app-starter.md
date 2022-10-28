@@ -60,6 +60,24 @@ Heroku の環境変数にセットします
 
 ※ Host の URL に最後スラッシュをつけてるとインストールに失敗しました ❌ HOST=https://my-app-name.heroku.com/
 
+`heroku.yml` をトップディレクトリに作成します
+
+```yml
+build:
+  docker:
+    web: Dockerfile
+  config:
+    SHOPIFY_API_KEY: ReplaceWithKEYFromEnvCommand
+```
+
+Heroku に push します
+
+```
+git push heroku main
+```
+
+これで Heroku 上に App がデプロイされました
+
 ## 公開する
 
 Shopify App Store に登録する方法もありますが自分のショップにだけ入れる方法でやってみます
@@ -106,5 +124,12 @@ npm run dev -- --reset
 ↑ だとインストールができませんでした...
 
 コードを GitHub に push していたため、別ディレクトリで `git clone` してから `npm run dev` して新しい App を作成すると無事インストールでき開発進められました  
-まだ詳しい原因調べられてません(余力がほしい...)  
+まだ詳しい原因調べられてません(余力がほしい...)
 
+デプロイは
+
+```bash
+heroku git:remote -a my-app-name
+```
+
+すれば `git push heroku main` でデプロイできます
