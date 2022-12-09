@@ -47,8 +47,7 @@ Couldn't decrypt config/credentials.yml.enc. Perhaps you passed the wrong key?
 開けなかったら `config/credentials.yml.enc` をいったん削除してやり直すしかないです  
 `EDITOR` には好きなエディタを設定します
 
-データベースへの接続ができなかったりしたら
-
+データベースへの接続ができなかったりしたら  
 `config/database.yml` の production の設定を確認するといいです  
 初期データがいるなら  
 `bin/rails db:seed` などで production 用のデータを入れるといいです
