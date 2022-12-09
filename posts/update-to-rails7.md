@@ -68,6 +68,10 @@ After this, check Rails upgrade guide at https://guides.rubyonrails.org/upgradin
 ```
 
 設定が一新されるので、差分を見ながら取り込んでいきます
+
+`config/initializers/new_framework_defaults_7_0.rb` は読んで不要だったら消します  
+`config/application.rb` で `config.load_defaults 7.0` に変えます
+
 できたら
 
 ```bash
@@ -78,4 +82,6 @@ bin/rpec
 してエラーを潰していきます  
 bullet のエラーがでたので直したのがほとんどです
 
-念のため development mode で動作確認
+念のため development mode、production mode で動作確認してみて終わりです
+
+link: [Rails を production mode で動かしてみる](/rails-production-mode)
