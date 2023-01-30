@@ -4,10 +4,16 @@ date: '2023-01-30'
 updated: ''
 ---
 
-shopify cli を入れようと公式ドキュメントを見ると、node のものが紹介されていたので  
-入れてみたのですが、前に入れた ruby gem の shopify-cli が先に動くようです
+### 前置き
 
-rbenv で ruby を入れていた古い ruby で入れた shopify gem を消してみました
+Shopify cli v2 が ruby 製で、v3 が node 製になったようで  
+https://shopify.dev/apps/tools/cli/migrate
+
+v2 を残したまま 新しい Shopify cli v3 を入れたのですが、前に入れた ruby gem の shopify コマンドが先に動いてしまいました
+
+### 本編
+
+rbenv で ruby を入れている場合の、古い ruby で入れた shopify gem を消してみました
 
 今は
 
