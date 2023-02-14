@@ -4,7 +4,7 @@ date: '2023-01-24'
 updated: ''
 ---
 
-WordPress テーマ [Twenty Twenty-Three](https://ja.wordpress.org/themes/twentytwentythree/) を使っていて子テーマの変更が反映されなくてはまったのでメモ  
+WordPress ブロックテーマ [Twenty Twenty-Three](https://ja.wordpress.org/themes/twentytwentythree/) を使っていて子テーマの変更が反映されなくてはまったのでメモ  
 昨日の[WordPress テーマ Twenty Twenty-Three でカスタムフィールドを表示させてみた](/wp-block-template-custom-field) で分からなかったものが解決しました
 
 子テーマの用意は

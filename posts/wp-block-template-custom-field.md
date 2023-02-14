@@ -7,6 +7,8 @@ updated: ''
 新しく blog を始めてて、最新のテーマ [Twenty Twenty-Three](https://ja.wordpress.org/themes/twentytwentythree/) を使ってみて構築しました  
 https://travel.freks.jp
 
+ブロックテーマとかいうらしくテーマ編集だとブロックでパーツを増やしたりできます
+
 カスタムフィールドを使って個別の投稿画面に表示したかったのですが苦戦しました
 
 カスタムフィールドは  
