@@ -9,7 +9,8 @@
     "lint": "eslint 'src/**/*.js'",
     "lintfix": "eslint --fix 'src/**/*.js' && prettier --write 'src/**/*.js'",
     "eslint-check": "eslint --print-config . | eslint-config-prettier-check",
-    "test": "cypress run"
+    "test": "cypress run",
+    "ci": "start-server-and-test start http://localhost:8000 test"
   },
   "dependencies": {
     "gatsby": "5.8.0",
@@ -34,6 +35,7 @@
     "eslint": "8.37.0",
     "eslint-config-prettier": "8.8.0",
     "eslint-plugin-react": "7.32.2",
-    "prettier": "2.8.7"
+    "prettier": "2.8.7",
+    "start-server-and-test": "^2.0.0"
   }
 }
