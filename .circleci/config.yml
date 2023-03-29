@@ -1,14 +1,41 @@
 version: 2.1
 orbs:
-  cypress: cypress-io/cypress@2.2.0
+  cypress: cypress-io/cypress@3
 executors:
-  node_executor:
+  docker:
+    description: |
+      Single Docker container used to run Cypress Tests
     docker:
-      - image: 'cypress/base:18.14.1'
+      - image: cimg/node:<< parameters.node-version >>-browsers
+    parameters:
+      node-version:
+        default: '18.14.1'
+        description: |
+          The version of Node to run your tests with.
+        type: string
+jobs:
+  install:
+    executor: docker
+    steps:
+      - cypress/install
+      - persist_to_workspace:
+          paths:
+            - .cache/Cypress
+            - project
+          root: ~/
+  run-tests:
+    executor: docker
+    steps:
+      - attach_workspace:
+          at: ~/
+      - cypress/run-tests:
+          cypress-command: npm run ci
 workflows:
-  build:
+  workflow:
     jobs:
-      - cypress/run:
-          start: npm start
-          wait-on: 'http://localhost:8000'
-          executor: node_executor
+      - install:
+          name: Install
+      - run-tests:
+          name: Run Tests
+          requires:
+            - Install
