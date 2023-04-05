@@ -19,3 +19,10 @@ RUN curl -LO https://github.com/jonas/tig/releases/download/tig-2.5.8/tig-2.5.8.
   && make prefix=/usr/local \
   && make install prefix=/usr/local
 
+# to keep .bash_history
+ARG USERNAME=node
+RUN SNIPPET="export PROMPT_COMMAND='history -a' && export HISTFILE=/commandhistory/.bash_history" \
+    && mkdir /commandhistory \
+    && touch /commandhistory/.bash_history \
+    && chown -R $USERNAME /commandhistory \
+    && echo "$SNIPPET" >> "/home/$USERNAME/.bashrc"
