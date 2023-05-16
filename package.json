@@ -13,7 +13,7 @@
     "ci": "start-server-and-test start http://localhost:8000 test"
   },
   "dependencies": {
-    "gatsby": "5.9.1",
+    "gatsby": "5.10.0",
     "gatsby-plugin-feed": "5.9.0",
     "gatsby-plugin-google-gtag": "5.9.0",
     "gatsby-plugin-react-helmet": "6.9.0",
