@@ -85,5 +85,11 @@ fetch `mode: no-cors` で CORS が必要なリンク先を指定してしまう�
 
 `mode: cors` にしてアクセスできるようにするなどする必要があります
 
+## ファイルがブラウザで開かれるとき
+
+アクセス先からのレスポンスヘッダーに
+`Content-Disposition: attachment` を設定するとダウンロードされるはずです  
+[Content\-Disposition \- HTTP \| MDN](https://developer.mozilla.org/ja/docs/Web/HTTP/Headers/Content-Disposition)
+
 References:  
 [Download Any Files in HTML and JavaScript: Ultimate Tutorial \| WM](https://www.webmound.com/download-file-using-javascript/#:~:text=You%20can%20use%20the%20download%20attribute%20on%20an,download%20the%20file%20instead%20of%20navigating%20to%20it.)
