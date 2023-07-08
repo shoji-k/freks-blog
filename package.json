@@ -27,7 +27,7 @@
     "react-dom": "18.2.0",
     "react-helmet": "6.1.0",
     "react-typography": "0.16.23",
-    "typography": "0.16.21",
+    "typography": "0.16.24",
     "typography-theme-ocean-beach": "0.16.19"
   },
   "devDependencies": {
