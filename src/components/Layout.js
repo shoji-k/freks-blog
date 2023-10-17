@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { Link } from 'gatsby'
-import { rhythm } from '../utils/typography'
 
 const Header = ({ location, title }) => {
   const rootPath = `${__PATH_PREFIX__}/`
@@ -12,7 +11,7 @@ const Header = ({ location, title }) => {
           <h1 style={{ marginTop: 0 }}>{title}</h1>
         </div>
         <div style={{ gridRow: 1, gridColumn: 2, paddingTop: '.2rem' }}>
-          <Link to="/about" style={{ textAlign: 'right' }}>
+          <Link to="/about" style={{ textAlign: 'right' }} class="no-decoration">
             <div style={{ fontSize: '1rem' }}>about</div>
           </Link>
         </div>
@@ -23,13 +22,13 @@ const Header = ({ location, title }) => {
   return (
     <div style={{ display: 'grid' }}>
       <div style={{ gridRow: 1, gridColumn: 1 }}>
-        <Link to="/">
+        <Link to="/" class="no-decoration">
           <h1 style={{ fontSize: '1.31951rem' }}>{title}</h1>
         </Link>
       </div>
       {location.pathname != '/about' && (
         <div style={{ gridRow: 1, gridColumn: 2, paddingTop: '1.2rem' }}>
-          <Link to="/about" style={{ textAlign: 'right' }}>
+          <Link to="/about" style={{ textAlign: 'right' }} class="no-decoration">
             <div style={{ fontSize: '1rem' }}>about</div>
           </Link>
         </div>
@@ -46,8 +45,8 @@ class Layout extends Component {
         style={{
           marginLeft: 'auto',
           marginRight: 'auto',
-          maxWidth: rhythm(24),
-          padding: `${rhythm(1)} ${rhythm(3 / 4)}`,
+          maxWidth: '40rem',
+          padding: '1rem',
         }}
       >
         <Header location={location} title={title} />

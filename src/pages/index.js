@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { Link, graphql } from 'gatsby'
 import moment from 'moment'
-import { rhythm } from '../utils/typography'
 import Layout from '../components/Layout'
 import Seo from '../components/Seo'
 
@@ -44,8 +43,8 @@ export default function Top({
           )
         })
         .map(({ node }) => (
-          <Link to={node.fields.slug} key={node.id}>
-            <h2 style={{ fontSize: '1.31951rem', marginTop: rhythm(2) }}>
+          <Link to={node.fields.slug} key={node.id} class="no-decoration">
+            <h2 style={{ fontSize: '1.31951rem', marginTop: '2rem' }}>
               {node.frontmatter.title}
               <small style={{ color: '#bbb' }}>
                 {' '}

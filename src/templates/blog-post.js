@@ -10,7 +10,7 @@ export default function OneBlog({
   return (
     <Layout location={location} title={site.siteMetadata.title}>
       <Seo title={post.frontmatter.title} description={post.excerpt} />
-      <div style={{ minHeight: 'calc(100vh - 220px)' }}>
+      <div style={{ minHeight: 'calc(100vh - 220px)', paddingBottom: '1rem' }}>
         <h2 style={{ fontSize: '2rem' }}>{post.frontmatter.title}</h2>
         <div style={{ display: 'flex', justifyContent: 'flex-end', paddingBottom: '.8rem' }}>
           <div style={{ fontSize: '.8rem', paddingRight: '1rem' }}>
