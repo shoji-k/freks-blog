@@ -1,6 +1,6 @@
 {
-  "name": "gatsby-starter-hello-world",
-  "description": "Gatsby hello world starter",
+  "name": "freks_blog",
+  "description": "freks blog",
   "license": "MIT",
   "scripts": {
     "start": "gatsby develop -H 0.0.0.0",
@@ -18,17 +18,13 @@
     "gatsby-plugin-google-gtag": "5.12.1",
     "gatsby-plugin-react-helmet": "6.12.0",
     "gatsby-plugin-sitemap": "6.12.1",
-    "gatsby-plugin-typography": "5.12.0",
     "gatsby-remark-prismjs": "7.12.0",
     "gatsby-source-filesystem": "5.12.0",
     "gatsby-transformer-remark": "6.12.1",
     "prismjs": "1.29.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-helmet": "6.1.0",
-    "react-typography": "0.16.23",
-    "typography": "0.16.24",
-    "typography-theme-ocean-beach": "0.16.19"
+    "react-helmet": "6.1.0"
   },
   "devDependencies": {
     "cypress": "13.3.1",
