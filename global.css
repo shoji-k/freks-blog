@@ -9,3 +9,9 @@ a.no-decoration {
 input[type='text'] {
   padding: 0.6rem;
 }
+
+img {
+  object-fit: contain;
+  width: 100%;
+  height: auto;
+}
