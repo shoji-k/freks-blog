@@ -25,7 +25,9 @@ window.onpopstate = (event) => {
 };
 ```
 
-動かず
+動かず  
+これは、移動先から戻るボタンや進むボタンをクリックする時に動くので、用と違いですかね  
+いまはブラウザの制約かそれも動きませんでした  
 
 ### PageTransitionEvent.persisted
 
