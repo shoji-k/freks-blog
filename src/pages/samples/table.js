@@ -4,7 +4,7 @@ import { vegetables } from '../../constants/vegetables'
 
 export default function Table() {
   return (
-    <div className="table-wrapper">
+    <div className="sample-table">
       <table>
         <thead>
           <tr>

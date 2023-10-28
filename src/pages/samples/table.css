@@ -1,23 +1,26 @@
-
-.table-wrapper {
+.sample-table {
   height: 10rem;
   width: max-content;
   overflow-y: auto;
-}
-table {
-  border-collapse: collapse;
-  & thead {
-    background-color: #f2f2f2;
-  }
-  & th, & td {
-    border: 1px solid #ddd;
-    padding: 0.4rem;
+
+  & table {
+    border-collapse: collapse;
+    & thead {
+      background-color: #f2f2f2;
+    }
+    & th,
+    & td {
+      border: 1px solid #ddd;
+      padding: 0.4rem;
+    }
   }
 }
 
-table {
-  & thead {
-    position: sticky;
-    top: 0;
+.sample-table {
+  & table {
+    & thead {
+      position: sticky;
+      top: 0;
+    }
   }
 }

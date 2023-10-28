@@ -1,7 +1,9 @@
-ul {
-  list-style: none;
-}
-li {
-  cursor: pointer;
-  border: 1px solid;
+.sample-drag {
+  & ul {
+    list-style: none;
+  }
+  & li {
+    cursor: pointer;
+    border: 1px solid;
+  }
 }

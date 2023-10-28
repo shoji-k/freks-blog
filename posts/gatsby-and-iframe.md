@@ -20,7 +20,7 @@ import './test.css'
 
 export default function Test() {
   return (
-    <div>
+    <div className="sample-test">
       <h2>Test</h2>
       <p>This is a test page.</p>
     </div>
@@ -31,16 +31,21 @@ export default function Test() {
 `src/pages/sample/test.css`  
 
 ```css
-h1 {
-  color: salmon
+.sample-test {
+  h2 {
+    color: salmon
+  }
 }
 ```
+
+`h2` にグローバルにあてるとサイト全体（他のページにも）適用されてしまうので注意です
 
 とかで `/sample/test` にアクセスすると表示されます
 
 ## iframeで表示
 
-`/samples/test.js` を表示してみます
+`https://blog.freks.jp/samples/test.js` を表示してみます  
+ドメインまで指定しないと、ローカルでは表示されますが、デプロイ後は`X-Frame-Options: deny`でブロックされてしまいます  
 
 ```html
 <iframe
@@ -48,7 +53,7 @@ h1 {
   title="iframe Sample"
   width="640"
   height="200"
-  src="/samples/test">
+  src="https://blog.freks.jp/samples/test">
 </iframe>
 ```
 
@@ -59,7 +64,7 @@ h1 {
   title="iframe Sample"
   width="640"
   height="200"
-  src="/samples/test">
+  src="https://blog.freks.jp/samples/test/">
 </iframe>
 
 できました  

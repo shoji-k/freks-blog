@@ -8,7 +8,7 @@ export default function Drag() {
       <Helmet>
         <script src={'/samples/drag.js'} type="text/javascript" />
       </Helmet>
-      <>
+      <div className="sample-drag">
         <ul>
           <li id="test1" draggable="true">
             リスト1
@@ -20,7 +20,7 @@ export default function Drag() {
             リスト3
           </li>
         </ul>
-      </>
+      </div>
     </>
   )
 }

@@ -4,7 +4,7 @@ import './test.css'
 export default function Test() {
   return (
     <div>
-      <h1>Test</h1>
+      <h2>Test</h2>
       <p>This is a test page.</p>
     </div>
   )
