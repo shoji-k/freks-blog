@@ -1,5 +1,5 @@
 ---
-title: 'Gatsbyでページを用意してiframeで表示する'
+title: 'Gatsbyでページを用意してiframeで表示（失敗）'
 date: '2023-10-20'
 updated: ''
 ---
@@ -42,10 +42,9 @@ export default function Test() {
 
 とかで `/sample/test` にアクセスすると表示されます
 
-## iframeで表示
+## iframeで表示(失敗)
 
-`https://blog.freks.jp/samples/test.js` を表示してみます  
-ドメインまで指定しないと、ローカルでは表示されますが、デプロイ後は`X-Frame-Options: deny`でブロックされてしまいます  
+`/samples/test.js` を表示してみます  
 
 ```html
 <iframe
@@ -53,7 +52,7 @@ export default function Test() {
   title="iframe Sample"
   width="640"
   height="200"
-  src="https://blog.freks.jp/samples/test">
+  src="/samples/test">
 </iframe>
 ```
 
@@ -64,9 +63,9 @@ export default function Test() {
   title="iframe Sample"
   width="640"
   height="200"
-  src="https://blog.freks.jp/samples/test/">
+  src="/samples/test/">
 </iframe>
 
-できました  
+`npm run start` のローカルでは表示されますが、デプロイ後は`X-Frame-Options: deny`でブロックされてしまいます  
 
-htmlとcssのコード紹介にいいかもしれません
+htmlとcssのコード紹介にいいかもと思ったのですが、`X-Frame-Options` をなんとかしないとiframeは使えないですね
