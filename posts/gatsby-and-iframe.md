@@ -15,10 +15,24 @@ Gatsbyで静的ページを作成して、iframeで表示してみました
 `src/pages/sample/test.js`  
 
 ```js
+import React from 'react'
+import './test.css'
+
 export default function Test() {
   return (
-    <div>Hello</div>
+    <div>
+      <h2>Test</h2>
+      <p>This is a test page.</p>
+    </div>
   )
+}
+```
+
+`src/pages/sample/test.css`  
+
+```css
+h1 {
+  color: salmon
 }
 ```
 
@@ -26,14 +40,26 @@ export default function Test() {
 
 ## iframeで表示
 
-今回は別記事で使う `/samples/table.js` を表示してみます
+`/samples/test.js` を表示してみます
+
+```html
+<iframe
+  id="iframeSample"
+  title="iframe Sample"
+  width="640"
+  height="200"
+  src="/samples/test">
+</iframe>
+```
+
+を書くと
 
 <iframe
   id="iframeSample"
   title="iframe Sample"
   width="640"
-  height="400"
-  src="/samples/table">
+  height="200"
+  src="/samples/test">
 </iframe>
 
 できました  
