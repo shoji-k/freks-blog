@@ -6,8 +6,9 @@ a.no-decoration {
   text-decoration: none;
 }
 
-input[type='text'] {
+input.input-filter {
   padding: 0.6rem;
+  width: -webkit-fill-available;
 }
 
 img {

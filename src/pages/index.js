@@ -26,7 +26,7 @@ export default function Top({
         <input
           type="text"
           placeholder="Filter title"
-          style={{ width: '100%' }}
+          className="input-filter"
           onChange={onChangeFilter}
         />
       </p>
@@ -43,7 +43,7 @@ export default function Top({
           )
         })
         .map(({ node }) => (
-          <Link to={node.fields.slug} key={node.id} class="no-decoration">
+          <Link to={node.fields.slug} key={node.id} className="no-decoration">
             <h2 style={{ fontSize: '1.31951rem', marginTop: '2rem' }}>
               {node.frontmatter.title}
               <small style={{ color: '#bbb' }}>

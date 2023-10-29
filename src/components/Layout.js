@@ -8,10 +8,10 @@ const Header = ({ location, title }) => {
     return (
       <div style={{ display: 'grid' }}>
         <div style={{ gridRow: 1, gridColumn: 1 }}>
-          <h1 style={{ marginTop: 0 }}>{title}</h1>
+          <h1 style={{ margin: 0 }}>{title}</h1>
         </div>
         <div style={{ gridRow: 1, gridColumn: 2, paddingTop: '.2rem' }}>
-          <Link to="/about" style={{ textAlign: 'right' }} class="no-decoration">
+          <Link to="/about" style={{ textAlign: 'right' }} className="no-decoration">
             <div style={{ fontSize: '1rem' }}>about</div>
           </Link>
         </div>
@@ -22,13 +22,13 @@ const Header = ({ location, title }) => {
   return (
     <div style={{ display: 'grid' }}>
       <div style={{ gridRow: 1, gridColumn: 1 }}>
-        <Link to="/" class="no-decoration">
+        <Link to="/" className="no-decoration">
           <h1 style={{ fontSize: '1.31951rem' }}>{title}</h1>
         </Link>
       </div>
       {location.pathname != '/about' && (
         <div style={{ gridRow: 1, gridColumn: 2, paddingTop: '1.2rem' }}>
-          <Link to="/about" style={{ textAlign: 'right' }} class="no-decoration">
+          <Link to="/about" style={{ textAlign: 'right' }} className="no-decoration">
             <div style={{ fontSize: '1rem' }}>about</div>
           </Link>
         </div>
@@ -45,7 +45,7 @@ class Layout extends Component {
         style={{
           marginLeft: 'auto',
           marginRight: 'auto',
-          maxWidth: '40rem',
+          maxWidth: '800px',
           padding: '1rem',
         }}
       >
