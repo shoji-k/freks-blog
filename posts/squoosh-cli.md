@@ -1,8 +1,11 @@
 ---
 title: 'squoosh-cliで画像を軽量にしてみた'
 date: '2022-02-21'
-updated: ""
+updated: "2023-11-11"
 ---
+
+追記: [cwebpで画像をWebPに変換する \| freks blog](/cwebp/) 
+を使うほうがおすすめです 2023-11-11
 
 [WebP image format \| Can I use\.\.\. Support tables for HTML5, CSS3, etc](https://caniuse.com/webp) の通り、Webp がだいたいのブラウザで使えるので、このブログの PNG 画像を全部 Webp にしてみました
 
