@@ -4,13 +4,13 @@ date: '2019-12-22'
 updated: ""
 ---
 
-2019-11-27 に購入、全部で \95277 でした
-SSD、メモリー、電源ケーブル（さきっぽのミッキーケーブル）が別売りなので購入しておきました
+2019-11-27 に購入、全部で \95277 でした  
+SSD、メモリー、電源ケーブル（さきっぽのミッキーケーブル）が別売りなので購入しておきました  
 
-PC Intel NUC BLKNUC7I7DNKE ￥ 77,398　　
-メモリ DDR4-2400(PC4-19200) 8GB×2枚 ￥ 8,980  
-SSD Crucial M.2 500GB ￥ 8,399  
-電源ケーブル ￥ 500  
+PC Intel NUC BLKNUC7I7DNKE ￥77,398  
+メモリ DDR4-2400(PC4-19200) 8GB×2枚 ￥8,980  
+SSD Crucial M.2 500GB ￥8,399  
+電源ケーブル ￥500  
 
 ## Intel NUC を組み立てる
 
@@ -27,7 +27,7 @@ SSD は、ネジを外して、刺しこんでネジで止めます
 OS がいらない BIOS アップロードファイルを見つけてダウンロード  
 DNi70067.bio でした
 
-ダウンロードして Fat32 でフォーマットした USB メモリに入れました  
+ダウンロードして FAT32 でフォーマットした USB メモリに入れました  
 exFat でフォーマットした USB だと認識してくれませんでした
 
 Intel NUC を起動して F2 で Visual BIOS 画面が起動できました  
@@ -61,8 +61,8 @@ Ubuntu はミニマムインストールしました
 Terminal を起動
 
 ```
-$ sudo apt update
-$ sudo apt upgrade
+sudo apt update
+sudo apt upgrade
 ```
 
 ## 各種設定
@@ -80,7 +80,7 @@ XKBOPTIONS="ctrl:nocaps"
 ### 4K ディスプレイで文字が小さいので 130%表示にしたい
 
 ```
-$ gsettings set org.gnome.desktop.interface text-scaling-factor 1.3
+gsettings set org.gnome.desktop.interface text-scaling-factor 1.3
 ```
 
 ### mozc 設定
@@ -106,7 +106,7 @@ ssh 秘密鍵を持ってきて、.ssh/config の用意
 PC 貸したり、テストしたりする用のユーザー追加
 
 ```
-$ sudo adduser (user name)
+sudo adduser (user name)
 ```
 
 ### ファイラーで隠しファイルを表示する
@@ -137,10 +137,11 @@ Slack はソフトウェアセンターでいれると、日本語入力でき�
 - Steam (dpkg)
 
 Slack
+
 - [Ubuntu 18\.10のSlack Clientにて日本語入力ができない](https://qiita.com/Kameneko/items/f2e44835d529aca41b78) をみてインストール  
 
-
 AppImage -> 実行権限つけて起動した
+
 - Station
 - Stoplight Studio
 
@@ -175,7 +176,7 @@ AppImage -> 実行権限つけて起動した
   - [Install Docker Compose \| Docker Documentation](https://docs.docker.com/compose/install/)
   - [Command\-line completion \| Docker Documentation](https://docs.docker.com/compose/completion/)
 - tig
-  - apt installだと古いので https://github.com/jonas/tig.git からmakeした
+  - apt installだと古いので <https://github.com/jonas/tig.git> からmakeした
   - [日本語環境で最新のTigを使う](https://blog.freks.jp/tig-install) にまとめてます
 
 なかなか快適に使えています
