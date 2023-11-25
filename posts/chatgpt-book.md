@@ -4,7 +4,7 @@ date: '2023-11-25'
 updated: ''
 ---
 
-[ChatGPT](https://chat-gpt.com/)を時間が取れたら使いこなしてみようとずっと思っていましたが、後で読むのブックマークリンクが100を超えてました...  
+[ChatGPT](https://openai.com/chatgpt)を時間が取れたら使いこなしてみようとずっと思っていましたが、後で読むのブックマークリンクが100を超えてました...  
 なので網羅的に全体像をつかもうと思って本1冊読んでみました
 
 <a href="https://amzn.to/47Re8SH" target="_blank">ChatGPT最強の仕事術</a> <small>(このリンクは、アフィリエイトリンクです)</small>
