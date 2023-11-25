@@ -27,3 +27,10 @@ settings.json に
 右下の `Ruby {}` みたいなところをクリックすると動いている状態が分かります
 
 コードジャンプはしないみたいでした
+
+<br />
+<hr />
+
+<iframe sandbox="allow-popups allow-scripts allow-modals allow-forms allow-same-origin" style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=freks01-22&language=ja_JP&o=9&p=8&l=as4&m=amazon&f=ifr&ref=as_ss_li_til&asins=B09MPX7SMY&linkId=64c21020f4044301b7aef66bf6d8f429"></iframe>
+
+<small>このリンクは、アフィリエイトリンクです</small>
