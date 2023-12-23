@@ -1,6 +1,6 @@
 ---
 title: '2023年に買ったもの'
-date: '2023-12-30'
+date: '2023-12-23'
 updated: ''
 ---
 
@@ -121,4 +121,4 @@ DellのPCはメモリを付け替えられるのでいいです
 ベストは  
 [耐風 超はっ水紳士傘BJ　70cm ニトリ](https://www.nitori-net.jp/ec/product/8698996s/) か  
 Anker 725 Charger (65W)  
-かなと思います
+でした
