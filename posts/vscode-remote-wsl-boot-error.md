@@ -50,7 +50,7 @@ windows TerminalでUbuntu開くとエラー
 ```
 
 Insider PreviewでWSL2いれてて、通常のWindows updateでWSL2が来たからっぽい..
-参考) [Windows Updateしたら「プロセスはコード 4294967295 で終了しました」が出てWSL2が使えなくなった \- Qiita](https://qiita.com/fujiQ/items/9997916e5756c9e85e37) 
+参考) [Windows Updateしたら「プロセスはコード 4294967295 で終了しました」が出てWSL2が使えなくなった \- Qiita](https://qiita.com/fujiQ/items/9997916e5756c9e85e37)
 
 [WSL 2 に更新する https://docs.microsoft.com/ja-jp/windows/wsl/install-win10](https://docs.microsoft.com/ja-jp/windows/wsl/install-win10)
 
@@ -63,11 +63,11 @@ Insider PreviewでWSL2いれてて、通常のWindows updateでWSL2が来たか�
 Windows10のバージョンは
 
 ```txt
-エディション	Windows 10 Pro Insider Preview
-バージョン	2004
-インストール日	‎2021/‎01/‎17
-OS ビルド	21292.1010
-エクスペリエンス	Windows Feature Experience Pack 220.35104.0.3
+エディション Windows 10 Pro Insider Preview
+バージョン 2004
+インストール日 ‎2021/‎01/‎17
+OS ビルド 21292.1010
+エクスペリエンス Windows Feature Experience Pack 220.35104.0.3
 ```
 
 Linuxは、Ubuntu 18.04で
@@ -151,6 +151,8 @@ wsl --shutdown
 <br />
 <hr />
 
-<iframe sandbox="allow-popups allow-scripts allow-modals allow-forms allow-same-origin" style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=freks01-22&language=ja_JP&o=9&p=8&l=as4&m=amazon&f=ifr&ref=as_ss_li_til&asins=B09TDYLWM8&linkId=393fdf6112a29a04cb7a9a8a2f4d4f94"></iframe>
+PR
+
+[これ1冊でできる！Visual Studio Code 超入門](https://amzn.to/48NXRy5)
 
 <small>このリンクは、アフィリエイトリンクです</small>
