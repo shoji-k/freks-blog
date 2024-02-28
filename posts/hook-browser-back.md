@@ -63,3 +63,7 @@ window.addEventListener("pageshow", function (event) {
 ### その他
 
 戻ってきたときにdocument.referrerで行った先のURL取れるかと思いましたが、取れませんでした
+
+PR
+
+[JavaScript コードレシピ集](https://amzn.to/3TfpxXN) とか見て知識増やしたいですね
