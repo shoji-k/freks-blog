@@ -1,5 +1,5 @@
 import React from 'react'
-import { graphql } from 'gatsby'
+import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Seo from '../components/Seo'
 
@@ -7,6 +7,7 @@ export default function OneBlog({
   data: { site, markdownRemark: post },
   location,
 }) {
+  console.log(location, location.pathname === "/programmer_books/")
   return (
     <Layout location={location} title={site.siteMetadata.title}>
       <Seo title={post.frontmatter.title} description={post.excerpt} />
@@ -28,6 +29,23 @@ export default function OneBlog({
             </div>
           )}
         </div>
+        {location.pathname !== '/programmer_books/' && (
+          <div style={{ width: '100%', marginBottom: '2rem' }}>
+            <Link
+              to="/programmer_books/"
+              className="no-decoration"
+              style={{
+                border: '1px solid #ccc',
+                padding: '.3rem 1rem .1rem 1rem',
+                background: '#f5f5f5',
+                width: 'calc(100% - 2rem)',
+                display: 'inline-block',
+              }}
+            >
+              特選記事: おすすめプログラマー本
+            </Link>
+          </div>
+        )}
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
       </div>
       <hr />

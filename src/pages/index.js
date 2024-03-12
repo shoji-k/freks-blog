@@ -31,6 +31,21 @@ export default function Top({
         />
       </p>
       <p>{posts.totalCount} Posts</p>
+      <div style={{ width: '100%', marginBottom: '2rem' }}>
+        <Link
+          to="/programmer_books/"
+          className="no-decoration"
+          style={{
+            border: '1px solid #ccc',
+            padding: '.3rem 1rem .1rem 1rem',
+            background: '#f5f5f5',
+            width: 'calc(100% - 2rem)',
+            display: 'inline-block',
+          }}
+        >
+          特選記事: おすすめプログラマー本
+        </Link>
+      </div>
       {posts.edges
         .filter(
           ({ node }) =>
@@ -64,7 +79,7 @@ export const query = graphql`
         title
       }
     }
-    allMarkdownRemark(sort: {frontmatter: {date: DESC}}) {
+    allMarkdownRemark(sort: { frontmatter: { date: DESC } }) {
       totalCount
       edges {
         node {
