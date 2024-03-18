@@ -43,7 +43,7 @@ export default function Top({
             display: 'inline-block',
           }}
         >
-          特選記事: おすすめプログラマー本
+          特選記事: 出会ってよかったプログラマー本
         </Link>
       </div>
       {posts.edges
