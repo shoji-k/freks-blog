@@ -48,6 +48,7 @@ end
 
 これでログインしてないとアクセスできないようになります
 
+ログインします  
 <https://github.com/nsarno/knock/blob/master/app/controllers/knock/auth_token_controller.rb> の create に `email` と `password` を送信すると、jwtが返ってきます
 
 実際に使うにはコントローラーを用意します  
