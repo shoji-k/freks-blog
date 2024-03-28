@@ -1,7 +1,7 @@
 ---
 title: 'knock gemのコードリーディングをしてみる'
 date: '2024-03-18'
-updated: ''
+updated: '2024-03-27'
 ---
 
 すでにArchivedされているgemですが  
