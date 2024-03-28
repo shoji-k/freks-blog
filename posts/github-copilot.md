@@ -21,7 +21,7 @@ VSCodeに [GitHub Copilot \- Visual Studio Marketplace](https://marketplace.visu
 
 ### コメントを書いて始める
 
-```
+```js
 /*
 Create a basic markdown editor in Next.js with the following features:
 - Use react hooks
