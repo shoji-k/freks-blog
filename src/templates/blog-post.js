@@ -42,7 +42,7 @@ export default function OneBlog({
                 display: 'inline-block',
               }}
             >
-              特選記事: 出会ってよかったプログラマー本
+              おすすめ記事: 出会ってよかったプログラマー本
             </Link>
           </div>
         )}
