@@ -23,6 +23,6 @@ ChatGPTを始める一歩目としては悪くはなか悪くはなかった
 
 おすすめAI本
 
-[これ1冊でできる！Visual Studio Code 超入門](https://amzn.to/3RYfWmk)
+[生成AIで世界はこう変わる](https://amzn.to/3RYfWmk)
 
 <small>このリンクは、アフィリエイトリンクです</small>
