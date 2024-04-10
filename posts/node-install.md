@@ -1,7 +1,7 @@
 ---
 title: "Nodeらへんのインストール"
 date: "2019-01-18"
-updated: ""
+updated: "2024-04-10"
 ---
 
 ## install nvm
@@ -15,7 +15,7 @@ Nodeバージョンを変えたりするため、nvmでnodeをインストール
 Ubuntuだったので  
 
 ```
-$ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
 ```
 
 .bashrcに追記
@@ -34,13 +34,13 @@ export NVM_DIR="$HOME/.nvm"
 ```--lts```をつけるとLong term supportのバージョンだけ出てくる
 
 ```
-$ nvm ls-remote --lts
+nvm ls-remote --lts
 ```
 
 インストール
 
 ```
-$ nvm install v10.15.0
+nvm install v10.15.0
 ```
 
 確認
@@ -52,20 +52,22 @@ v10.15.0
 
 ## install yarn
 
+※ yarnは [yarnを使うときはCorepackを使おう](/enable-yarn/) で入れましょう
+
 [インストール \| Yarn](https://yarnpkg.com/ja/docs/install#debian-stable)
 を参考に  
 
 Ubuntuだったので
 
 ```
-$ curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
-$ echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
 ```
 
 nvmいれてたので
 
 ```
-$ sudo apt-get install --no-install-recommends yarn
+sudo apt-get install --no-install-recommends yarn
 ```
 
 確認
@@ -74,4 +76,3 @@ $ sudo apt-get install --no-install-recommends yarn
 $ yarn -v
 1.13.0
 ```
-
