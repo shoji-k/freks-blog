@@ -1,5 +1,5 @@
 ---
-title: 'devcontainerの立ち上げ時のカレントディレクトリ'
+title: 'Dev Containerの立ち上げ時のカレントディレクトリ'
 date: '2024-04-08'
 updated: ''
 ---
