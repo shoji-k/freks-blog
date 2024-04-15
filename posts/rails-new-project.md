@@ -68,6 +68,10 @@ $ bin/rails stats
   Code LOC: 46146     Test LOC: 48146     Code to Test Ratio: 1:1.0
 ```
 
+## Gemfileを見る
+
+どんなgemを使ってるか見ます  
+
 ## rails routes
 
 ルーティングを確認します  
