@@ -22,9 +22,11 @@ os.environ["AZURE_OPENAI_API_VERSION"] = "2023-06-01-preview"
 os.environ["AZURE_OPENAI_CHAT_DEPLOYMENT_NAME"] = "chat"
 ```
 
-AZURE_OPENAI_API_KEYとAZURE_OPENAI_ENDPOINTは、Azure OpenAI の Keys and Endpointで確認できます  
-AZURE_OPENAI_API_VERSION は、[Azure OpenAI Service の REST API リファレンス - Azure OpenAI | Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/ai-services/openai/reference#chat-completions) にサポートされているバージョンが書いてあるので、それを指定します  
-AZURE_OPENAI_CHAT_DEPLOYMENT_NAME は、LLMのモデルをデプロイするとき自分が指定したデプロイ名です  
+AZURE_OPENAI_API_KEYとAZURE_OPENAI_ENDPOINT: Azure OpenAI の Keys and Endpointで確認  
+
+AZURE_OPENAI_API_VERSION: [Azure OpenAI Service の REST API リファレンス - Azure OpenAI | Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/ai-services/openai/reference#chat-completions) にサポートされているバージョン  
+
+AZURE_OPENAI_CHAT_DEPLOYMENT_NAME: LLMのモデルをデプロイするとき自分が指定したデプロイ名  
 
 ```python
 from langchain_core.messages import HumanMessage
