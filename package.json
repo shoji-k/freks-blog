@@ -27,7 +27,7 @@
     "react-helmet": "6.1.0"
   },
   "devDependencies": {
-    "cypress": "13.8.0",
+    "cypress": "13.8.1",
     "eslint": "8.57.0",
     "eslint-config-prettier": "9.1.0",
     "eslint-plugin-react": "7.34.1",
