@@ -1,13 +1,14 @@
 ---
-title: 'LangChain first step'
-date: '2024-04-24'
+title: 'LangChainでRAGを試す'
+date: '2024-04-26'
 updated: ''
 ---
 
-LangChainのチュートリアルをAzure OpenAI Serviceのモデルを使ってやってみました  
-[LangChain first step](/langchain-first-step) の次にやりました  
+LangChainのチュートリアルをAzure OpenAI Serviceのモデルを使ってやっています
+今回は、RAGを試すところです
+[LangChain first step](/langchain-first-step) の次にやってます  
 
-[Quickstart \| 🦜️🔗 LangChain](https://python.langchain.com/docs/get_started/quickstart/#retrieval-chain) あたりの写経になりました  
+[Quickstart \| 🦜️🔗 LangChain](https://python.langchain.com/docs/get_started/quickstart/#retrieval-chain) あたりのほぼ写経になりました  
 
 ```python
 import os
@@ -43,6 +44,7 @@ documents = text_splitter.split_documents(docs)
 embeddings = OpenAIEmbeddings() # ドキュメント埋め込み用のモデル
 vector = FAISS.from_documents(documents, embeddings) 
 
+# プロンプトを作成
 prompt = ChatPromptTemplate.from_template(
     """Answer the following question based only on the provided context:
 
@@ -53,16 +55,22 @@ prompt = ChatPromptTemplate.from_template(
 Question: {input}"""
 )
 
+# llm modelとプロンプトをchainにします
 document_chain = create_stuff_documents_chain(llm, prompt)
 
+# vectorデータベースをretrieverにします
 retriever = vector.as_retriever()
+# retrieverとdocument_chainをchainにします、これでpromptのcontext埋めてくれるようです
 retrieval_chain = create_retrieval_chain(retriever, document_chain)
 
+# 実行
 response = retrieval_chain.invoke(
     {"input": "how can langsmith help with testing?"}
 )
 print(response["answer"])
 ```
+
+実行結果が以下になりました
 
 ```text
 LangSmith can help with testing by providing the following features:
@@ -88,9 +96,11 @@ LangSmith can help with testing by providing the following features:
 Overall, LangSmith provides a comprehensive set of tools and functionalities to aid in testing LLM applications at various stages of development, from prototyping to production monitoring.
 ```
 
+ドキュメントを見ての回答になってそうです
+
 ## まとめ
 
-LangChainを使うベースができました  
+これがRAGっていうやつですね
 
 PR
 
