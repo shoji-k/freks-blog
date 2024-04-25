@@ -7,6 +7,8 @@ updated: ''
 LangChainのチュートリアルをAzure OpenAI Serviceのモデルを使ってやってみました  
 [LangChainでAzure OpenAI Serviceのモデルを使う](/langchain-openai-base) の続きです  
 
+チュートリアルは [Quickstart \| 🦜️🔗 LangChain](https://python.langchain.com/docs/get_started/quickstart/)  
+
 ```python
 import os
 from langchain_openai import AzureChatOpenAI
