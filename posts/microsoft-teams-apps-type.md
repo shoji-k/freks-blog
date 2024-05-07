@@ -1,6 +1,6 @@
 ---
 title: 'Microsoft Teamsアプリの種類'
-date: '2024-05-04'
+date: '2024-05-06'
 updated: ''
 ---
 
