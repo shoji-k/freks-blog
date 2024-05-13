@@ -1,7 +1,7 @@
 ---
 title: 'Dev ContainerからGitHubにpushする'
 date: '2024-04-11'
-updated: ''
+updated: '2024-05-13'
 ---
 
 VSCode Dev Containerで開発しているときに `git push` すると
@@ -61,6 +61,14 @@ git push origin HEAD
 ```
 
 うまくいきました
+
+追記)  
+
+~/.bashrc に鍵を追加するコマンドをいれないと再起動後に動きませんでした
+
+```bash
+eval `ssh-add ~/.ssh/github_rsa > /dev/null 2>&1`
+```
 
 ## まとめ
 
