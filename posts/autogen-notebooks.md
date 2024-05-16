@@ -34,6 +34,75 @@ Pythonコードを作って実行させていく例
 
 <https://microsoft.github.io/autogen/docs/notebooks/agentchat_azr_ai_search>
 
+Azure Cognitive Searchをfunction_callに登録して使う例
+
+## Agent Chat with custom model loading
+
+<https://microsoft.github.io/autogen/docs/notebooks/agentchat_custom_model>
+
+custom modelを使う例  
+[Open\-Orca/Mistral\-7B\-OpenOrca · Hugging Face](https://huggingface.co/Open-Orca/Mistral-7B-OpenOrca) を使う例がある  
+
+## Task Solving with Provided Tools as Functions (Asynchronous Function Calls)
+
+<https://microsoft.github.io/autogen/docs/notebooks/agentchat_function_call_async>
+
+Function callを使う例  
+
+## Writing a software application using function calls
+
+<https://microsoft.github.io/autogen/docs/notebooks/agentchat_function_call_code_writing>
+
+FastApiのコードを改善する例  
+Function callでファイルを参照、変更する方法を渡しておいて既存のコードを改善する  
+
+## Currency Calculator: Task Solving with Provided Tools as Functions
+
+<https://microsoft.github.io/autogen/docs/notebooks/agentchat_function_call_currency_calculator>
+
+通貨を換金するFunctionをFunction callに登録しておいてUSDをEURに変換する例  
+
+## Group Chat
+
+<https://microsoft.github.io/autogen/docs/notebooks/agentchat_groupchat>
+
+[Multi\-agent Conversation Framework \| AutoGen](https://microsoft.github.io/autogen/docs/Use-Cases/agent_chat/) の例  
+
+Coder, Product_manager, Userを用意、最新のgpt-4論文をみつけて、ソフトウェア開発への応用の可能性を答える  
+Coderは論文を取得するコードを用意する  
+
+## Group Chat with Retrieval Augmented Generation
+
+<https://microsoft.github.io/autogen/docs/notebooks/agentchat_groupchat_RAG>
+
+Group ChatのRAGあり版  
+Boss、Boss_Assistant(RAG担当)、Senior_Python_Engineer(コードを書く)、Product_Manager(プランを考える)、Code_Reviewer(コードレビュー)の例あり  
+話して次の話し相手の選択は `round_robin` で行われている  
+
+## Group Chat with Customized Speaker Selection Method
+
+<https://microsoft.github.io/autogen/docs/notebooks/agentchat_groupchat_customized>
+
+Group Chatで次の話し相手をカスタマイズで思い通りにする例
+
+## FSM - User can input speaker transition constraints
+
+<https://microsoft.github.io/autogen/docs/notebooks/agentchat_groupchat_finite_state_machine>
+
+Group Chatで次の話し相手の条件を付ける方法  
+図でも出せて分かるようになってる  
+
+## Perform Research with Multi-Agent Group Chat
+
+<https://microsoft.github.io/autogen/docs/notebooks/agentchat_groupchat_research>
+
+Admin(Plannerの話し相手)、Engineer、Scientist、Planner、Executor(コード実行)、Critic(チェックする)を用意した例  
+LLMアプリケーションの論文を見つけて表にさせてる  
+
+## StateFlow: Build Workflows through State-Oriented Actions
+
+<https://microsoft.github.io/autogen/docs/notebooks/agentchat_groupchat_stateflow>
+
 ## まとめ
 
 PR
