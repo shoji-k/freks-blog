@@ -224,29 +224,45 @@ Teachabilityは長期記憶を持てチャットが終了しても記憶を保�
 
 <https://microsoft.github.io/autogen/docs/notebooks/agentchat_teaching>
 
+タスクを次々と実行していく例  
+clear_history=Falseを使うことで会話履歴を保持していく  
+
 ## Preprocessing Chat History with TransformMessages
 
 <https://microsoft.github.io/autogen/docs/notebooks/agentchat_transform_messages>
+
+TransformMessages を使って ConversableAgent に長いセンシティブなデータを保持させる例
 
 ## Translating Video audio using Whisper and GPT-3.5-turbo
 
 <https://microsoft.github.io/autogen/docs/notebooks/agentchat_video_transcript_translate_with_whisper>
 
+動画のセリフを取り出して翻訳する例  
+
 ## Web Scraping using Apify Tools
 
 <https://microsoft.github.io/autogen/docs/notebooks/agentchat_webscraping_with_apify>
+
+[Apify: Full\-stack web scraping and data extraction platform](https://apify.com/) を使ってウェブスクレイピングをする例  
 
 ## Websockets: Streaming input and output using websockets
 
 <https://microsoft.github.io/autogen/docs/notebooks/agentchat_websockets>
 
+ストリーミング入出力をする例  
+
 ## Solving Multiple Tasks in a Sequence of Chats with Different Conversable Agent Pairs
 
 <https://microsoft.github.io/autogen/docs/notebooks/agentchats_sequential_chats>
 
+複数のエージェントを使ってそれぞれのタスクを解決する例
+
 ## From Dad Jokes To Sad Jokes: Function Calling with GPTAssistantAgent
 
 <https://microsoft.github.io/autogen/docs/notebooks/gpt_assistant_agent_function_call>
+
+GPTAssistantAgentにtoolsとFunction callを使う例  
+<https://icanhazdadjoke.com/> のAPIを使ってジョークを取得して、悲しいジョークに変換して、ファイルに保存  
 
 ## まとめ
 
