@@ -103,6 +103,151 @@ LLMアプリケーションの論文を見つけて表にさせてる
 
 <https://microsoft.github.io/autogen/docs/notebooks/agentchat_groupchat_stateflow>
 
+状態を管理して次の話し相手を決める例  
+初回 - 論文取得 - 論文の概要を書く - 終了 という流れで話している
+
+## Group Chat with Coder and Visualization Critic
+
+<https://microsoft.github.io/autogen/docs/notebooks/agentchat_groupchat_vis>
+
+User、Coder、Criticで重さと馬力の関係をグラフ化する例
+
+## Generate Dalle Images With Conversable Agents
+
+<https://microsoft.github.io/autogen/docs/notebooks/agentchat_image_generation_capability>
+
+画像を出力する例  
+プロンプト投げる役と画像を生成する役で話す
+
+## Engaging with Multimodal Models: GPT-4V in AutoGen
+
+<https://microsoft.github.io/autogen/docs/notebooks/agentchat_lmm_gpt-4v>
+
+Multimodal Modelsを使って渡した画像を認識して回答する例  
+Commander、Coder、Criticsを内包したFigureCreatorを用意してシアトルの気温のCSVをグラフ化する例  
+
+## Runtime Logging with AutoGen
+
+<https://microsoft.github.io/autogen/docs/notebooks/agentchat_logging>
+
+ログを取る例  
+SQLiteにたまるのでそれを取り出す、費用を見る  
+
+## Solving Multiple Tasks in a Sequence of Async Chats
+
+<https://microsoft.github.io/autogen/docs/notebooks/agentchat_multi_task_async_chats>
+
+複数のタスクを非同期に処理した後に一つにまとめる例  
+
+## Solving Multiple Tasks in a Sequence of Chats
+
+<https://microsoft.github.io/autogen/docs/notebooks/agentchat_multi_task_chats>
+
+複数のタスクを1つずつつないで実行する例  
+
+## Nested Chats for Tool Use in Conversational Chess
+
+<https://microsoft.github.io/autogen/docs/notebooks/agentchat_nested_chats_chess>
+
+[Nested Chats \| AutoGen](https://microsoft.github.io/autogen/docs/tutorial/conversation-patterns/#nested-chats) の例
+
+## Solving Complex Tasks with A Sequence of Nested Chats
+
+<https://microsoft.github.io/autogen/docs/notebooks/agentchat_nested_sequential_chats>
+
+連続したタスクをNested Chatsで解決する例  
+
+## Solving Complex Tasks with Nested Chats
+
+<https://microsoft.github.io/autogen/docs/notebooks/agentchat_nestedchat>
+
+複雑なタスクをNested Chatsで解決する例  
+
+## OptiGuide with Nested Chats in AutoGen
+
+<https://microsoft.github.io/autogen/docs/notebooks/agentchat_nestedchat_optiguide>
+
+[microsoft/OptiGuide: Large Language Models for Supply Chain Optimization](https://github.com/microsoft/OptiGuide) とNested Chatsを使う例  
+
+## Chat with OpenAI Assistant using function call in AutoGen: OSS Insights for Advanced GitHub Data Analysis
+
+<https://microsoft.github.io/autogen/docs/notebooks/agentchat_oai_assistant_function_call>
+
+Function callsを使ってGitHub Insightsを取得する例  
+GPTAssistantAgent というOpenAI Assistant APIを使うAgentを使っている  
+
+OpenAI Assistant APIを利用して会話能力を提供する実験的なエージェントクラス
+ConversableAgentとは異なり、状態管理にOpenAI Assistantを使用する  
+会話の状態やコンテキストをOpenAI Assistant APIを通じて管理し、より高度な会話機能を提供することができる、らしい
+
+Assistants APIはCode Interpreter, Retrieval, Function callingができる  
+
+## Auto Generated Agent Chat: Group Chat with GPTAssistantAgent
+
+<https://microsoft.github.io/autogen/docs/notebooks/agentchat_oai_assistant_groupchat>
+
+GPTAssistantAgentを使ったGroup Chatの例  
+GPTAssistantAgentというOpenAI Assistant APIを使うAgentを使っている  
+
+## Auto Generated Agent Chat: GPTAssistant with Code Interpreter
+
+<https://microsoft.github.io/autogen/docs/notebooks/agentchat_oai_code_interpreter>
+
+GPTAssistantAgentとCode Interpreterを使う例  
+
+## Using RetrieveChat Powered by PGVector for Retrieve Augmented Code Generation and Question Answering
+
+<https://microsoft.github.io/autogen/docs/notebooks/agentchat_pgvector_RetrieveChat>
+
+PostgreSQLのPGVectorを使ったRAGを実装する例  
+
+## Using RetrieveChat with Qdrant for Retrieve Augmented Code Generation and Question Answering
+
+<https://microsoft.github.io/autogen/docs/notebooks/agentchat_qdrant_RetrieveChat>
+
+Vector database serviceの[qdrant](https://www.bing.com/search?q=qdrant&qs=UT&pq=qdrant&sc=10-6&cvid=22F25FDA398E400E94B2CECE44F1C895&FORM=QBRE&sp=1&lq=0)を使ったRAGを実装する例
+
+## SocietyOfMindAgent
+
+<https://microsoft.github.io/autogen/docs/notebooks/agentchat_society_of_mind>  
+
+GroupChatを1つのAgentとしてSocietyOfMindAgentにまとめ、SocietyOfMindAgentが外と会話する例  
+
+## Chatting with a teachable agent
+
+<https://microsoft.github.io/autogen/docs/notebooks/agentchat_teachability>
+
+AgentにTeachabilityを付加できる  
+Teachabilityは長期記憶を持てチャットが終了しても記憶を保持できる
+
+## Auto Generated Agent Chat: Teaching
+
+<https://microsoft.github.io/autogen/docs/notebooks/agentchat_teaching>
+
+## Preprocessing Chat History with TransformMessages
+
+<https://microsoft.github.io/autogen/docs/notebooks/agentchat_transform_messages>
+
+## Translating Video audio using Whisper and GPT-3.5-turbo
+
+<https://microsoft.github.io/autogen/docs/notebooks/agentchat_video_transcript_translate_with_whisper>
+
+## Web Scraping using Apify Tools
+
+<https://microsoft.github.io/autogen/docs/notebooks/agentchat_webscraping_with_apify>
+
+## Websockets: Streaming input and output using websockets
+
+<https://microsoft.github.io/autogen/docs/notebooks/agentchat_websockets>
+
+## Solving Multiple Tasks in a Sequence of Chats with Different Conversable Agent Pairs
+
+<https://microsoft.github.io/autogen/docs/notebooks/agentchats_sequential_chats>
+
+## From Dad Jokes To Sad Jokes: Function Calling with GPTAssistantAgent
+
+<https://microsoft.github.io/autogen/docs/notebooks/gpt_assistant_agent_function_call>
+
 ## まとめ
 
 PR
