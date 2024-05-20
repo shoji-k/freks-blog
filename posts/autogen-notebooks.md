@@ -1,6 +1,6 @@
 ---
 title: 'Autogen公式サイトのNotebookを読む'
-date: '2024-05-15'
+date: '2024-05-19'
 updated: ''
 ---
 
