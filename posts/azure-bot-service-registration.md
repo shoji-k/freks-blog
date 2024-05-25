@@ -41,6 +41,8 @@ ngrok http 3978
 
 保存したら "Webチャットでテスト" で動作確認ができました  
 
+![web chat test](/azure-bot-service-registration/web-chat-test.webp)
+
 ## まとめ
 
 ドキュメントを何度も読み込んでやらないと目的のことができないのでつらいですね
