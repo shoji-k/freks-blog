@@ -188,6 +188,8 @@ puts res.body
 `reply.to_json` の中身で `from.id` が間違っていると 403 エラーになりました  
 なぜ403になるのかが分かるところがなくて試行錯誤しました  
 
+APIの仕様は [アクティビティを更新する](https://learn.microsoft.com/ja-jp/azure/bot-service/rest-api/bot-framework-rest-connector-api-reference?view=azure-bot-service-4.0#update-activity) にありますが、何が必須でどこにその設定があるのか分からないので手探りです  
+
 ## まとめ
 
 情報がまとまってなくて苦労してます  
