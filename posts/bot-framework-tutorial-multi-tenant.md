@@ -14,7 +14,7 @@ updated: ''
 [Azure portal で Azure Bot リソースを作成する - Bot Service | Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/bot-service/abs-quickstart?view=azure-bot-service-4.0&tabs=userassigned)  
 を参考にAzure Botを用意  
 
-リソースの管理のところで、シングルテナント、マルチテナントを選べますが、いったんマルチテナントにします  
+リソースの管理のところで、マルチテナントにします  
 
 ## REST APIを呼ぶサーバーを準備
 
@@ -84,7 +84,7 @@ end
 
 `fetch_access_token` のエンドポイントがマルチテナント用になってます  
 
-[Bot Connector API を使用した承認要求 \- Bot Service \| Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/bot-service/rest-api/bot-framework-rest- connector-authentication?view=azure-bot-service-4.0&tabs=multitenant#bot-to-connector)  
+[Bot Connector API を使用した承認要求 \- Bot Service \| Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/bot-service/rest-api/bot-framework-rest-connector-authentication?view=azure-bot-service-4.0&tabs=multitenant#bot-to-connector)  
 に情報があります
 
 Sinatraを立ち上げます  
