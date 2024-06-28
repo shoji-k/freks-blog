@@ -14,7 +14,7 @@ React.js 18.2.0 の環境で確認しています
 ## ポイント
 
 React.jsでは、`FormData` を `'Content-Type': 'multipart/form-data'` で送信  
-Railsでは特に何もしなくてもいい  
+Railsでは特別必要なことはしなくていい  
 
 ## 実装例
 
@@ -46,7 +46,7 @@ end
 React.jsでアップロード
 
 ```ts
-const formValues = {
+const formValues: { avatar: File } = {
   avatar: avatarFile,
 }
 
