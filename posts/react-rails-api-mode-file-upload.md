@@ -1,7 +1,7 @@
 ---
 title: 'React.js + Rails API modeでファイルをアップロードする'
 date: '2024-06-28'
-updated: ''
+updated: '2024-08-22'
 ---
 
 Userにavatar画像をアップロードする例を考えます  
@@ -56,14 +56,19 @@ body.append('users[avatar]', formValues.avatar);
 await fetch('sample.com/users', {
     method: 'POST',
     headers: {
-      'Content-Type': 'multipart/form-data',
-      // Authorization: 'Bearer ' + token,
+      // 'Content-Type': 'multipart/form-data',
+      Authorization: 'Bearer ' + token,
     },
-    body: JSON.stringify(body),
+    body: body,
   });
 ```
 
-といった感じでアップロードできます
+といった感じでアップロードできます  
+fetchの場合は、`'Content-Type': 'multipart/form-data'` を指定するとおかしくなるので注意です  
+
+参考: [fetch で multipart/form\-data を送る時は Content\-Type を指定してはいけない](https://zenn.dev/kariya_mitsuru/articles/25c9aeb27059e7)
+
+axiosなら指定してうまくいきました
 
 ## まとめ
 
