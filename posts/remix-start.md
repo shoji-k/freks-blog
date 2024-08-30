@@ -31,8 +31,8 @@ export const links: LinksFunction = () => {
 
 ## ファイル名でルーティング用意
 
-`app/routes` にファイルを置くと、そのファイル名でルーティングされます
-`_` で始まるファイル名はルーティングから無視
+`app/routes` にファイルを置くと、そのファイル名でルーティングされます  
+`_` で始まるファイル名はルーティングから無視  
 ディレクトリで区切るか`.`で区切ると、ネストされたルーティングになります
 
 [Route File Naming \| Remix](https://remix.run/docs/en/main/file-conventions/routes)  
@@ -51,7 +51,7 @@ export const links: LinksFunction = () => {
 
 ## データロード
 
-サーバーサイドでデータロードします　　
+サーバーサイドでデータロードします  
 [loader | Remix](https://remix.run/docs/en/main/route/loader) を使います
 
 ```tsx
