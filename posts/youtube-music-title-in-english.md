@@ -30,7 +30,7 @@ Language & Location でLanguageをEnglish(US)に変更します
 PR
 
 <div style="width: 200px; border: 1px solid #ddd; padding: 10px; padding-bottom: 0;">
-  <a href="https://amzn.to/49QSKNY" target="_blank" style="text-decoration: none; color: black;">
+  <a href="https://amzn.to/3XvA3fG" target="_blank" style="text-decoration: none; color: black;">
     <img src="https://m.media-amazon.com/images/I/71prAVvs1BL._AC_SX679_.jpg" alt="グレイテスト・ヒッツ" style="width: 100%; height: auto;">
     <h2 style="font-size: 16px; margin: 0;">グレイテスト・ヒッツ</h2>
   </a>

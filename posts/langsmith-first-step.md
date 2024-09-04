@@ -92,7 +92,7 @@ RAGを実行させると途中で裏でやってたことが見れるので便�
 PR
 
 <div style="width: 200px; border: 1px solid #ddd; padding: 10px; padding-bottom: 0;">
-  <a href="https://amzn.to/3JQjt2J" target="_blank" style="text-decoration: none; color: black;">
+  <a href="https://amzn.to/3TazIwf" target="_blank" style="text-decoration: none; color: black;">
     <img src="https://m.media-amazon.com/images/I/81Tfw3iSJUL._SY466_.jpg" alt="Pythonプログラミングパーフェクトマスター" style="width: 100%; height: auto;">
     <h2 style="font-size: 16px; margin: 0;">Pythonプログラミングパーフェクトマスター</h2>
   </a>

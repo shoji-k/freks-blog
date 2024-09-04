@@ -39,7 +39,7 @@ PR
 仕事の進め方を学べる本です
 
 <div style="width: 200px; border: 1px solid #ddd; padding: 10px; padding-bottom: 0;">
-  <a href="https://amzn.to/3PXwhYu" target="_blank" style="text-decoration: none; color: black;">
+  <a href="https://amzn.to/3zgJmGZ" target="_blank" style="text-decoration: none; color: black;">
     <img src="https://m.media-amazon.com/images/I/51lm0alurNL._SY445_SX342_.jpg" alt="アジャイルサムライ――達人開発者への道" style="width: 100%; height: auto;">
     <h2 style="font-size: 16px; margin: 0;">アジャイルサムライ――達人開発者への道</h2>
   </a>

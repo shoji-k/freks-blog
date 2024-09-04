@@ -14,7 +14,7 @@ Sum41が解散しますね...
 一番好きなアルバムは
 
 <div style="width: 200px; border: 1px solid #ddd; padding: 10px; padding-bottom: 0;">
-  <a href="https://amzn.to/3TS1AWW" target="_blank" style="text-decoration: none; color: black;">
+  <a href="https://amzn.to/3MxHugb" target="_blank" style="text-decoration: none; color: black;">
     <img src="https://m.media-amazon.com/images/I/717SyXSlwwL._AC_SX679_.jpg" alt="All Killer No Filler" style="width: 100%; height: auto;">
     <h2 style="font-size: 16px; margin: 0;">All Killer No Filler</h2>
   </a>
@@ -78,7 +78,7 @@ PR
 Sum41ラストアルバム！聴きまくります！
 
 <div style="width: 200px; border: 1px solid #ddd; padding: 10px; padding-bottom: 0;">
-  <a href="https://amzn.to/49gl77K" target="_blank" style="text-decoration: none; color: black;">
+  <a href="https://amzn.to/4earbBH" target="_blank" style="text-decoration: none; color: black;">
     <img src="https://m.media-amazon.com/images/I/91wi6GgdW2L._AC_SX679_.jpg" alt="Heaven :x: Hell" style="width: 100%; height: auto;">
     <h2 style="font-size: 16px; margin: 0;">Heaven :x: Hell</h2>
   </a>
