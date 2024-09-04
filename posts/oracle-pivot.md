@@ -63,3 +63,11 @@ Pivot 内の in の項目が横表示になります
 値は、max(Val)が表示されます
 
 出典: [図でイメージする Oracle Database の SQL 全集 第 8 回 Pivot と UnPivot](https://www.oracle.com/technetwork/jp/articles/otnj-sql-image8-1869572-ja.html#c)
+
+<div style="width: 200px; border: 1px solid #ddd; padding: 10px; padding-bottom: 0;">
+  <a href="https://amzn.to/3ZajRSg" target="_blank" style="text-decoration: none; color: black;">
+    <img src="https://a.media-amazon.com/images/I/81mwLGJmsqL._SY466_.jpg" alt="図解入門よくわかる 最新Oracleデータベースの基本と仕組み[第6版]" style="width: 100%; height: auto;">
+    <h2 style="font-size: 16px; margin: 0;">図解入門よくわかる 最新Oracleデータベースの基本と仕組み[第6版]</h2>
+  </a>
+  <p style="font-size: 10px; color: #888;">このリンクは、アフィリエイトリンクです</p>
+</div>

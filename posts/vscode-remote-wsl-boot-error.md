@@ -153,6 +153,15 @@ wsl --shutdown
 
 PR
 
-[これ1冊でできる！Visual Studio Code 超入門](https://amzn.to/48NXRy5)
+[]()
 
 <small>このリンクは、アフィリエイトリンクです</small>
+
+<div style="width: 200px; border: 1px solid #ddd; padding: 10px; padding-bottom: 0;">
+  <a href="https://amzn.to/48NXRy5" target="_blank" style="text-decoration: none; color: black;">
+    <img src="https://a.media-amazon.com/images/I/81DwGyeL4VL._SY466_.jpg" alt="これ1冊でできる！Visual Studio Code 超入門" style="width: 100%; height: auto;">
+    <h2 style="font-size: 16px; margin: 0;">これ1冊でできる！Visual Studio Code 超入門</h2>
+  </a>
+  <p style="font-size: 10px; color: #888;">このリンクは、アフィリエイトリンクです</p>
+</div>
+
