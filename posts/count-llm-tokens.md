@@ -23,7 +23,7 @@ PR
 AI開発するのに、この本が分かりやすいです  
 
 <div style="width: 200px; border: 1px solid #ddd; padding: 10px; padding-bottom: 0;">
-  <a href="https://amzn.to/4cHc0QI" target="_blank" style="text-decoration: none; color: black;">
+  <a href="https://amzn.to/3ASmUog" target="_blank" style="text-decoration: none; color: black;">
     <img src="https://m.media-amazon.com/images/I/51e-tl7l8OL._SX342_SY445_.jpg" alt="Azure OpenAI ServiceではじめるChatGPT/LLMシステム構築入門" style="width: 100%; height: auto;">
     <h2 style="font-size: 16px; margin: 0;">Azure OpenAI ServiceではじめるChatGPT/LLMシステム構築入門</h2>
   </a>

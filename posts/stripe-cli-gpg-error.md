@@ -42,7 +42,7 @@ curl -s https://packages.stripe.dev/api/security/keypair/stripe-cli-gpg/public |
 PR
 
 <div style="width: 200px; border: 1px solid #ddd; padding: 10px; padding-bottom: 0;">
-  <a href="https://amzn.to/4aRaXM2" target="_blank" style="text-decoration: none; color: black;">
+  <a href="https://amzn.to/47fcefs" target="_blank" style="text-decoration: none; color: black;">
     <img src="https://m.media-amazon.com/images/I/71soeH9BOlL._SY522_.jpg" alt="改訂新版 Visual Studio Code実践ガイド —— 定番コードエディタを使い倒すテクニック" style="width: 100%; height: auto;">
     <h2 style="font-size: 16px; margin: 0;">改訂新版 Visual Studio Code実践ガイド —— 定番コードエディタを使い倒すテクニック</h2>
   </a>

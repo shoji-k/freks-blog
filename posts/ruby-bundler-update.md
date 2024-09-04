@@ -70,7 +70,7 @@ Gemfile.lockの指定のほうが使われるようです
 PR
 
 プログラム経験ある人は  
-[プロを目指す人のためのRuby入門［改訂2版］　言語仕様からテスト駆動開発・デバッグ技法まで Software Design plus](https://amzn.to/3UZ6iD2) <small>(このリンクは、アフィリエイトリンクです)</small>  
+[プロを目指す人のためのRuby入門［改訂2版］　言語仕様からテスト駆動開発・デバッグ技法まで Software Design plus](https://amzn.to/3Tedn13) <small>(このリンクは、アフィリエイトリンクです)</small>  
 がおすすめです
 
 プログラム経験のあまりない人は  

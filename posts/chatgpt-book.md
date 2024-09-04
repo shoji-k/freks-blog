@@ -7,7 +7,7 @@ updated: ''
 [ChatGPT](https://openai.com/chatgpt)を時間が取れたら使いこなしてみようとずっと思っていましたが、後で読むのブックマークリンクが100を超えてました...  
 なので網羅的に全体像をつかもうと思って本1冊読んでみました
 
-<a href="https://amzn.to/47Re8SH" target="_blank">ChatGPT最強の仕事術</a> <small>(このリンクは、アフィリエイトリンクです)</small>
+<a href="https://amzn.to/3XuTnd2" target="_blank">ChatGPT最強の仕事術</a> <small>(このリンクは、アフィリエイトリンクです)</small>
 
 内容は基礎的な使いかたのあと、実際にビジネスで使うフレームワークの紹介が多いです  
 具体例がたくさん載っています
@@ -23,6 +23,6 @@ ChatGPTを始める一歩目としては悪くはなか悪くはなかった
 
 おすすめAI本
 
-[生成AIで世界はこう変わる](https://amzn.to/3RYfWmk)
+[生成AIで世界はこう変わる](https://amzn.to/3Tgr6US)
 
 <small>このリンクは、アフィリエイトリンクです</small>
