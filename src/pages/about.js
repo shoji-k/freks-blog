@@ -18,6 +18,10 @@ export default function About({ data: { site }, location }) {
         </a>
       </p>
       <p>
+        <a href="/privacy-policy/">プライバシーポリシー</a>
+      </p>
+      <hr />
+      <p>
         <a
           href="https://amzn.asia/40oqmnA"
           target="_blank"
