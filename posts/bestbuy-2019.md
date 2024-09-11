@@ -10,7 +10,7 @@ updated: ""
 
 ## 買ってよかったもの
 
-- 超小型デスクトップPC      
+- 超小型デスクトップPC
 
 [こちら](https://blog.freks.jp/intel-nuc-BLKNUC7I7DNKE) にまとめてます  
 思ったよりもサイズが小さくて性能そこそこでコスパ良かったです
