@@ -1,6 +1,6 @@
 ---
 title: 'Google検索のcache:が復活'
-date: '2024-09-12'
+date: '2024-09-13'
 updated: ''
 ---
 
