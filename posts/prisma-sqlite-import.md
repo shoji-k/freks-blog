@@ -5,6 +5,7 @@ updated: ''
 ---
 
 prismaを入れます  
+[Getting started with Prisma Migrate \| Prisma Documentation](https://www.prisma.io/docs/orm/prisma-migrate/getting-started#create-a-baseline-migration) を参考にしました  
 
 ```bash
 npm install --save-dev prisma
@@ -46,6 +47,34 @@ Run prisma generate to generate Prisma Client.
 ```
 
 ファイル場所間違えやすそうですね
+
+prismaでテーブル管理するために、初期データを作ります
+
+```bash
+mkdir -p prisma/migrations/0_init
+```
+
+`0_` で始まると最初に実行されます
+
+作られたスキーマから初期ファイルを作ります  
+
+```bash
+$ npx prisma migrate diff \
+--from-empty \
+--to-schema-datamodel prisma/schema.prisma \
+--script > prisma/migrations/0_init/migration.sql
+```
+
+prismaの初期ファイルが作られました  
+migrateで管理するために適用します  
+
+```bash
+npx prisma migrate resolve --applied 0_init
+```
+
+`prisma/dev.db-journal` が作られます
+
+これでprisma使っていける環境が整いました  
 
 PR
 
