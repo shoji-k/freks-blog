@@ -1,7 +1,7 @@
 ---
 title: "フリーランスができる節税"
 date: "2018-12-24"
-updated: ""
+updated: "2024-09-19"
 ---
 
 フリーランスができる節税方法を調べてみた
@@ -43,3 +43,21 @@ updated: ""
 - 所得に応じて控除額が変わる
 - 控除上限額内で寄附を行うと合計寄附額から2,000円を引いた額が所得税と住民税から控除
 - 返戻金がもらえたりする
+
+## [年金の付加保険料の納付](https://www.nenkin.go.jp/service/kokunen/hokenryo/fukanofu.html)  
+
+2024-09-19追記  
+知り合いに教えてもらいました
+
+月額400円x収めた月数が老齢基礎年金に上乗せされます  
+20年収めると 400円 x 12か月 x 20年 = 96,000円が毎年の年金として加算されます  
+
+PR
+
+<div style="width: 200px; border: 1px solid #ddd; padding: 10px; padding-bottom: 0;">
+  <a href="https://amzn.to/3BaSCNH" target="_blank" style="text-decoration: none; color: black;">
+    <img src="https://m.media-amazon.com/images/I/81vkfH9UZPS._SY522_.jpg" alt="はじめての人のためのフリーランス節税事典" style="width: 100%; height: auto;">
+    <h2 style="font-size: 16px; margin: 0;">はじめての人のためのフリーランス節税事典</h2>
+  </a>
+  <p style="font-size: 10px; color: #888;">このリンクは、アフィリエイトリンクです</p>
+</div>

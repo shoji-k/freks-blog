@@ -40,6 +40,14 @@ e-taxで確定申告してたので
 
 毎月払いに変えたり、掛け金を下げたりできますが、2ヶ月かかるっぽいので早めにやらないと手遅れになりそうです  
 
-あとは、会計ソフトで経費をすべて登録、所得をだして、ふるさと納税をする作業&#x1f468;
+あとは、会計ソフトで経費をすべて登録、所得をだして、ふるさと納税をする作業
 
 関連ポスト) [フリーランスができる節税](/freelance-saving-money)
+
+<div style="width: 200px; border: 1px solid #ddd; padding: 10px; padding-bottom: 0;">
+  <a href="https://amzn.to/3BaSCNH" target="_blank" style="text-decoration: none; color: black;">
+    <img src="https://m.media-amazon.com/images/I/81vkfH9UZPS._SY522_.jpg" alt="はじめての人のためのフリーランス節税事典" style="width: 100%; height: auto;">
+    <h2 style="font-size: 16px; margin: 0;">はじめての人のためのフリーランス節税事典</h2>
+  </a>
+  <p style="font-size: 10px; color: #888;">このリンクは、アフィリエイトリンクです</p>
+</div>
