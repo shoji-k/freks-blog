@@ -104,6 +104,12 @@ Prisma clientを生成するには
 npx prisma generate
 ```
 
+データベースをリセットしたかったら
+
+```bash
+npx prisma migrate reset
+```
+
 ## まとめ
 
 最低限抑えられたかとおもいます
