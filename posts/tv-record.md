@@ -34,6 +34,8 @@ SeeQVault対応の機器であれば、SeeQVaultフォーマットで録画す�
 [SeeQVaultが使える製品（TV）｜SeeQVault（シーキューボルト）公式サイト](https://jp.seeqvault.com/devicelist-tv.html)  
 を見ると数が少ない気もします  
 
+SeeQVaultは4K非対応で、新規格もでず、商品少なくなっているようです...
+
 <div style="width: 200px; border: 1px solid #ddd; padding: 10px; padding-bottom: 0;">
   <a href="https://amzn.to/4dio21T" target="_blank" style="text-decoration: none; color: black;">
     <img src="https://m.media-amazon.com/images/I/81HRwcvEEpL._AC_SX450_.jpg" alt="パナソニック 65V型 有機EL テレビ 4K TV-65Z90A VIERA" style="width: 100%; height: auto;">
@@ -67,4 +69,4 @@ NASだとRAID1のものもあるので、HDD故障にもそこそこ対応でき
 
 ## まとめ
 
-そこそこ投資が必要そうです  
+費用かけてNASにするか、必要な分だけディスクに焼くかになりそうです
