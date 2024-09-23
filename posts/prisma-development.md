@@ -49,6 +49,10 @@ model User {
 を追記して、データベースに反映していきます  
 自分でかかずに、他のデータからインポートするときは [Prismaでsqliteのデータベースからスキーマを作る](/prisma-sqlite-import) にまとめてあります  
 
+スキーマの書き方は [Models \| Prisma Documentation](https://www.prisma.io/docs/orm/prisma-schema/data-model/models) あたりを見て書きます
+
+migrationします
+
 ```bash
 npx prisma migrate dev --name init
 ```
