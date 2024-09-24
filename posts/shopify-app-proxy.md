@@ -1,0 +1,132 @@
+---
+title: 'ShopifyのApp Proxyを使ってみる'
+date: '2024-09-21'
+updated: ''
+---
+
+ShopifyのApp Proxyを試してみます
+
+[Shopify CLI](https://shopify.dev/docs/api/shopify-cli) をインストールしておきます  
+
+アプリを作ります  
+選択肢は自由に選んでください  
+
+```bash
+$ shopify app init
+
+Welcome. Let’s get started by naming your app project. You can change it later.
+
+?  Your project name?
+✔  sample-app
+
+?  Get started building your app:
+✔  Start with Remix (recommended)
+
+?  For your Remix template, which language do you want?
+✔  TypeScript
+```
+
+自分はここで `git add . && git commit -m 'init'` しておきました  
+都度、コミットしておくといいかもしれません  
+
+必要だったら、アプリで使うscopeを変えておきます
+`shopify.app.toml` を編集  
+
+```toml
+[scopes]
+read_products = "read_products, write_products"
+```
+
+変更したらデプロイが必要です  
+
+いったん、デプロイします  
+
+```bash
+npm run deploy
+```
+
+Partner Dashboardで登録されたアプリが出てきてるはずです  
+
+theme extension を作ります  
+
+```bash
+shopify app generate extension
+```
+
+`Theme app extension` を選択します
+
+`extensions/` にディレクトリが作られます  
+
+liquidファイルを編集して、データを取得できるようにしてみます  
+`extensions/theme-extension-sandbox/blocks/star_rating.liquid` を編集  
+
+```liquid
+<button onClick="handleClick()">Get data</button>
+
+<script>
+  const url = ''; // あとでセット
+  function handleClick() {
+    fetch(url, {
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/json',
+        'Aceess-Control-Allow-Origin': '*',
+      },
+    })
+      .then((response) => {
+        console.log('ok', response);
+      })
+      .catch((error) => {
+        console.error('error', error);
+      });
+  }
+</script>
+
+{% schema %}
+{
+  "name": "Star Rating",
+  "target": "section",
+  "settings": [
+    { "type": "product", "id": "product", "label": "product", "autofill": true },
+    { "type": "color", "id": "colour", "label": "Star Colour", "default": "#ff0000" }
+  ]
+}
+{% endschema %}
+```
+
+`url` はあとでセットします  
+
+Shopifyの管理画面でテーマ編集、theme extensionのブロックを追加します  
+`star_rating` は、プロダクション用なっているので、プロダクションページで追加します
+
+`npm run dev` で動作確認します  
+プロダクションページでClickボタンが表示されていたらOK  
+
+Partner dashboardでApp proxyの設定が必要なのですが、`npm run dev` してるPCには外部からアクセスできないので、ひと工夫します  
+
+Proxy URLをpublicなものにするのに `Checkout UI` extensionを入れます  
+
+```bash
+shopify app generate extension
+```
+
+これで立ち上げると
+
+```bash
+npm run dev
+```
+
+`https://brunette-guru-worse-clark.trycloudflare.com` とか `*.trycloudflare.com` で立ち上がります　　
+これを Partner dashboardでApp proxyへ登録します  
+
+![App proxy](/shopify-app-proxy/app-proxy.webp)
+
+PR
+
+<div style="width: 200px; border: 1px solid #ddd; padding: 10px; padding-bottom: 0;">
+  <a href="https://amzn.to/3Xtt7j7" target="_blank" style="text-decoration: none; color: black;">
+    <img src="https://a.media-amazon.com/images/I/81veEHwK-4L._SY466_.jpg" alt="いちばんやさしいShopifyの教本 人気講師が教える売れるネットショップ制作・運営 「いちばんやさしい教本」シリーズ" style="width: 100%; height: auto;">
+    <h2 style="font-size: 16px; margin: 0;">いちばんやさしいShopifyの教本 人気講師が教える売れるネットショップ制作・運営 「いちばんやさしい教本」シリーズ</h2>
+  </a>
+  <p style="font-size: 10px; color: #888;">このリンクは、アフィリエイトリンクです</p>
+</div>
