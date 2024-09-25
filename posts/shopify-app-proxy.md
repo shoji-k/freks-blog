@@ -1,6 +1,6 @@
 ---
 title: 'ShopifyのApp Proxyを使ってみる'
-date: '2024-09-21'
+date: '2024-09-26'
 updated: ''
 ---
 
@@ -30,7 +30,8 @@ Welcome. Let’s get started by naming your app project. You can change it later
 都度、コミットしておくといいかもしれません  
 
 必要だったら、アプリで使うscopeを変えておきます
-`shopify.app.toml` を編集  
+
+たとえば `shopify.app.toml` を編集して `write_products` を追加    
 
 ```toml
 [scopes]
@@ -97,10 +98,10 @@ liquidファイルを編集して、データを取得できるようにして�
 `url` はあと用意するApp ProxyのURLをセットします  
 
 Shopifyの管理画面でテーマ編集、theme extensionのブロックを追加します  
-`star_rating` は、プロダクション用なっているので、プロダクションページで追加します
+`star_rating` は、Product用になっているので、Productページで追加します
 
 `npm run dev` で動作確認します  
-プロダクションページでClickボタンが表示されていたらOK  
+ProductページでClickボタンが表示されていたらOK  
 
 次にApp Proxy経由で呼ばれるAPIエンドポイントを作ります  
 
@@ -161,7 +162,7 @@ export const action = async ({ request }: ActionFunctionArgs) => {
 ```
 
 `/app/test` のエンドポイントで、`lorder`がGET、`action`がPOSTで呼ばれます  
-POSTですが手抜きでProduct一覧を取るだけにしてます  
+POSTは手抜きでProduct一覧を取るだけにしてます  
 
 POSTで商品を追加するなら、Shopify Appのscopeに `write_products` を追加、productを追加するGraphQLクエリに変えると良いです  
 
@@ -182,8 +183,8 @@ application_url = "https://who-shareholders-complications-commissioners.trycloud
 
 ![App proxy](/shopify-app-proxy/app-proxy.webp)
 
-Subpath prefix: apps  
-Subpath: test  
+Subpath prefix: `apps`  
+Subpath: `test`  
 にすると、Shopifyサイトから呼ぶURLが `(your shopify url)/apps/test` になります  
 e.g `https://freks-dev-store.myshopify.com/apps/test`  
 

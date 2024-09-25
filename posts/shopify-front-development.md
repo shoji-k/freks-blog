@@ -1,10 +1,12 @@
 ---
 title: 'Shopifyのユーザーページの改造'
-date: '2024-09-21'
+date: '2024-09-27'
 updated: ''
 ---
 
 Shopifyでユーザーが使うフロント画面でデータをロードして、変更する機能を作りたいので調べています  
+
+公式のまとめは [List of app extensions](https://shopify.dev/docs/apps/build/app-extensions/list-of-app-extensions)  
 
 ## theme app extensions
 
@@ -21,7 +23,9 @@ Shopifyが持っているデータを表示するなら
 ## app proxies
 
 外部のデータを表示するなら `App proxy` が使えそうです  
-[Display dynamic store data with app proxies](https://shopify.dev/docs/apps/build/online-store/display-dynamic-data)
+[Display dynamic store data with app proxies](https://shopify.dev/docs/apps/build/online-store/display-dynamic-data)  
+
+[ShopifyのApp Proxyを使ってみる](/shopify-app-proxy) で試してみました  
 
 ## checkoutページ
 
@@ -31,7 +35,6 @@ Checkoutページをカスタマイズするには
 ## Storefront API
 
 ## Subscription UI
-
 
 PR
 
