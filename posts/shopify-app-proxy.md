@@ -64,7 +64,7 @@ liquidファイルを編集して、データを取得できるようにして�
 <button onClick="handleClick()">Get data</button>
 
 <script>
-  const url = ''; // あとでセット
+  const url = '(your shopify url)/apps/test'; // あとで用意するApp Proxy URLをセット
   function handleClick() {
     fetch(url, {
       method: 'GET',
@@ -94,7 +94,7 @@ liquidファイルを編集して、データを取得できるようにして�
 {% endschema %}
 ```
 
-`url` はあとでセットします  
+`url` はあと用意するApp ProxyのURLをセットします  
 
 Shopifyの管理画面でテーマ編集、theme extensionのブロックを追加します  
 `star_rating` は、プロダクション用なっているので、プロダクションページで追加します
@@ -102,24 +102,103 @@ Shopifyの管理画面でテーマ編集、theme extensionのブロックを追�
 `npm run dev` で動作確認します  
 プロダクションページでClickボタンが表示されていたらOK  
 
-Partner dashboardでApp proxyの設定が必要なのですが、`npm run dev` してるPCには外部からアクセスできないので、ひと工夫します  
+次にApp Proxy経由で呼ばれるAPIエンドポイントを作ります  
 
-Proxy URLをpublicなものにするのに `Checkout UI` extensionを入れます  
+`app/routes/app.test.tsx` を作成  
 
-```bash
-shopify app generate extension
+```tsx
+import type { ActionFunctionArgs, LoaderFunctionArgs } from "@remix-run/node";
+import { json } from "@remix-run/node";
+import { authenticate } from "../shopify.server";
+
+export const loader = async ({ request }: LoaderFunctionArgs) => {
+  console.log("---------loader called---------");
+
+  const { admin } = await authenticate.public.appProxy(request);
+
+  if (!admin) {
+    return json({ error: "admin not found" }, { status: 404 });
+  }
+
+  const response = await admin.graphql(
+    `#graphql
+{
+ products(first: 10) {
+    nodes {
+      id
+      title
+    }
+  }
+}`,
+  );
+
+  return json(await response.json());
+};
+
+export const action = async ({ request }: ActionFunctionArgs) => {
+  console.log("---------action called---------");
+
+  const { admin } = await authenticate.public.appProxy(request);
+
+  if (!admin) {
+    return json({ error: "admin not found" }, { status: 404 });
+  }
+
+  const response = await admin.graphql(
+    `#graphql
+{
+ products(first: 10) {
+    nodes {
+      id
+      title
+    }
+  }
+}`,
+  );
+
+  return json(await response.json());
+};
 ```
 
-これで立ち上げると
+`/app/test` のエンドポイントで、`lorder`がGET、`action`がPOSTで呼ばれます  
+POSTですが手抜きでProduct一覧を取るだけにしてます  
 
-```bash
-npm run dev
+POSTで商品を追加するなら、Shopify Appのscopeに `write_products` を追加、productを追加するGraphQLクエリに変えると良いです  
+
+App Proxyの設定をします  
+Partner dashboardでApp proxyの設定が必要なのですが、`npm run dev` してるPCには外部からアクセスできるURLの指定が必要です  
+
+Shopify Appを `npm run dev` するとCloudflaredで外部URLが発行されていると思います  
+Shopify Appの設定でURLを毎回自動で発行するようにしてれば、`shopify.app.toml` に設定があるはずです  
+
+```toml
+application_url = "https://who-shareholders-complications-commissioners.trycloudflare.com"
 ```
 
-`https://brunette-guru-worse-clark.trycloudflare.com` とか `*.trycloudflare.com` で立ち上がります　　
+といったURLが上書きされるので、これを使います  
 これを Partner dashboardでApp proxyへ登録します  
 
+[Display dynamic store data with app proxies](https://shopify.dev/docs/apps/build/online-store/display-dynamic-data#example) にApp ProxyのURLがどうなるか書かれています  
+
 ![App proxy](/shopify-app-proxy/app-proxy.webp)
+
+Subpath prefix: apps  
+Subpath: test  
+にすると、Shopifyサイトから呼ぶURLが `(your shopify url)/apps/test` になります  
+e.g `https://freks-dev-store.myshopify.com/apps/test`  
+
+Proxy URLに `(your shopify url)/apps/test` をたたいて呼ばれるURLを入れます
+
+Proxy URLをpublicなものにするのに `Checkout UI` extension入れる方法もあるようです  
+[Shopify App Development | Setup App Proxy with Remix app | YouTube](https://youtu.be/WfxJhAOD2tg?si=iatlGl6VIWgaMhnN&t=548)  
+
+ここまできたら動作確認します  
+
+theme extensionで追加したブロックのClickボタンを押すと、App Proxy経由でAPIエンドポイントが呼ばれて、Product一覧が取得できます  
+
+## まとめ
+
+あまりドキュメントが充実してないところは動かすまで苦労しますね  
 
 PR
 
