@@ -1,8 +1,14 @@
 ---
 title: 'Google検索のcache:が復活'
 date: '2024-09-13'
-updated: ''
+updated: '2024-09-25'
 ---
+
+2024-09-25 update  
+Googleの `cache:` が完全終了したそうです  
+[ついにGoogle検索のキャッシュ提供が完全終了 - GIGAZINE](https://gigazine.net/news/20240925-google-cache-dead/)
+
+===
 
 消されたページとかをみるのにGoogle検索で
 
