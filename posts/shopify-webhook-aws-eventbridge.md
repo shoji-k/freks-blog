@@ -4,6 +4,17 @@ date: '2024-09-27'
 updated: ''
 ---
 
+事前準備
+
+Shopify appを作っておきます
+Shopify Partner Consoleで変更してたら、手元のShopify appに反映させたいので
+
+```bash
+npm run dev -- --reset
+```
+
+しておきます
+
 AWS Consoleにログインして、Amazon EventBridgeを開きます  
 
 Integration > Partner event sources を開いて `Shopify` を選びます
@@ -37,6 +48,8 @@ AWS Consoleに戻り、Step.3、Partner event sourcesページを開きます
 
 AWS EventBridge側が用意できました  
 
+Amazon EventBridge > Partner event sources のできたレコードを選んでPartner event source ARNを控えておいて次のaddressに使います  
+
 shopify.app.toml の設定
 
 ```toml
@@ -45,7 +58,17 @@ shopify.app.toml の設定
   address = "https://events.us-east-1.amazonaws.com/..."
 ```
 
-Ruleの作成
+手元の設定の変更をShopify Partner Consoleに反映させます
+
+```bash
+shopify app deploy
+```
+
+これでShopify AppでWebhookが動くようになりました
+
+Amazon EventBridge > Event buses で作られたレコードを選択
+
+Ruleを作ります、Create Ruleをクリック
 
 Build event pattern
 
