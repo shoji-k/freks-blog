@@ -1,10 +1,13 @@
 ---
 title: 'ShopifyのApp Proxyを使ってみる'
-date: '2024-09-26'
+date: '2024-10-01'
 updated: ''
 ---
 
-ShopifyのApp Proxyを試してみます
+Shopifyのユーザーが使う画面にShopifyの商品情報をAPI経由で表示する方法を試してみます  
+
+ShopifyのApp Proxyを使います
+theme extensionの中でApp Proxy経由でAPIエンドポイントを呼ぶ形でやってみます  
 
 [Shopify CLI](https://shopify.dev/docs/api/shopify-cli) をインストールしておきます  
 
@@ -31,7 +34,7 @@ Welcome. Let’s get started by naming your app project. You can change it later
 
 必要だったら、アプリで使うscopeを変えておきます
 
-たとえば `shopify.app.toml` を編集して `write_products` を追加    
+たとえば `shopify.app.toml` を編集して `write_products` を追加
 
 ```toml
 [scopes]
@@ -166,20 +169,21 @@ POSTは手抜きでProduct一覧を取るだけにしてます
 
 POSTで商品を追加するなら、Shopify Appのscopeに `write_products` を追加、productを追加するGraphQLクエリに変えると良いです  
 
-App Proxyの設定をします  
-Partner dashboardでApp proxyの設定が必要なのですが、`npm run dev` してるPCには外部からアクセスできるURLの指定が必要です  
+Partner dashboardでApp proxyの設定をします  
+`npm run dev` してるPCに外部からアクセスできるURLの指定が必要です  
 
-Shopify Appを `npm run dev` するとCloudflaredで外部URLが発行されていると思います  
-Shopify Appの設定でURLを毎回自動で発行するようにしてれば、`shopify.app.toml` に設定があるはずです  
+Shopify Appを `npm run dev` するとCloudflaredが使われ外部URLが発行されています  
+Shopify Appの設定でURLを毎回自動で発行するようにしてれば、  
+`shopify.app.toml` に  
 
 ```toml
 application_url = "https://who-shareholders-complications-commissioners.trycloudflare.com"
 ```
 
-といったURLが上書きされるので、これを使います  
+がURLが上書きされていくので、これを使います  
 これを Partner dashboardでApp proxyへ登録します  
 
-[Display dynamic store data with app proxies](https://shopify.dev/docs/apps/build/online-store/display-dynamic-data#example) にApp ProxyのURLがどうなるか書かれています  
+[Display dynamic store data with app proxies](https://shopify.dev/docs/apps/build/online-store/display-dynamic-data#example) にApp ProxyのURLをどう指定したらいいか書いてあります  
 
 ![App proxy](/shopify-app-proxy/app-proxy.webp)
 
@@ -195,11 +199,12 @@ Proxy URLをpublicなものにするのに `Checkout UI` extension入れる方�
 
 ここまできたら動作確認します  
 
-theme extensionで追加したブロックのClickボタンを押すと、App Proxy経由でAPIエンドポイントが呼ばれて、Product一覧が取得できます  
+theme extensionで追加したブロックのClickボタンを押すと、App Proxy経由でAPIエンドポイントが呼ばれて、Product一覧が取得できました  
 
 ## まとめ
 
-あまりドキュメントが充実してないところは動かすまで苦労しますね  
+あまりドキュメントが充実してないところは動かすまで苦労します  
+この仕組みでカスタマイズの自由度があがっていいです  
 
 PR
 
