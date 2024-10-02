@@ -201,6 +201,18 @@ Proxy URLをpublicなものにするのに `Checkout UI` extension入れる方�
 
 theme extensionで追加したブロックのClickボタンを押すと、App Proxy経由でAPIエンドポイントが呼ばれて、Product一覧が取得できました  
 
+## Shopify App ProxyのURLの自動更新
+
+`shopify.app.toml` の `application_url` をセットしてましたが手間なので回避する方法があります  
+
+一度、Shopify Appの設定を手元の `shopify.app.toml` に反映させると、`npm run dev` すると `application_url` が自動で更新されるようになります
+
+```bash
+npm run dev -- --reset
+```
+
+してあげると `shopify.app.toml` に設定が落ちてくるのでこれを使っていきましょう  
+
 ## まとめ
 
 あまりドキュメントが充実してないところは動かすまで苦労します  
