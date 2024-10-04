@@ -1,6 +1,6 @@
 ---
 title: 'Shopify FlowでProduct ListのShop metafieldを更新する'
-date: '2024-10-04'
+date: '2024-10-06'
 updated: ''
 ---
 
@@ -44,6 +44,8 @@ Liquidだと
 
 あとは、手動でOrderを作成するとShopのmetafieldが更新されるのを確認しました  
 Metafieldの定義は事前に用意してなくても作られました  
+
+Shop metafieldの確認方法は [ShopifyでShop metafieldを更新する](/shopify-update-shop-metafield) に書いてあります
 
 ## まとめ
 
