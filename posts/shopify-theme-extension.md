@@ -1,7 +1,7 @@
 ---
 title: 'shopify theme extensionを作ってみる'
 date: '2024-09-19'
-updated: ''
+updated: '2024-10-11'
 ---
 
 Shopify appで改造するときの方法はいくつかあります  
@@ -55,7 +55,7 @@ Shopifyパートナーアカウントにログインしたり指示にしたが�
 
 違いは [Theme app extension configuration](https://shopify.dev/docs/apps/build/online-store/theme-app-extensions/configuration)
 
-Productページ用のブロック `Star Rating` が用意されているので、Productページに設置します
+ブロック `Star Rating` が用意されているので、Productページに設置してみます  
 
 ![Theme app block](/shopify-theme-extension/app-blocks.webp)
 
