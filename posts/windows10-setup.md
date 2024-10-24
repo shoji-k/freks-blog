@@ -153,7 +153,7 @@ options = "metadata,uid=1000,gid=1000,umask=22"
 ## ソフトウェア on WSL
 
 - [Git](/git)
-- [Node](node-install)
+- [Node](/node-install)
 - [Neovim](/neovim)
 - [Ruby](/ruby-install)
 - [PHP](/php-install)

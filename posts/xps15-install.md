@@ -143,7 +143,7 @@ Stationに登録しすぎ感はあります..
 
 - [Git](/git) install and setting
   - gpg
-- [Node](node-install)
+- [Node](/node-install)
 - [Neovim](/neovim)
 - [Ruby](/ruby-install)
 - [PHP](/php-install)
