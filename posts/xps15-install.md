@@ -1,7 +1,7 @@
 ---
 title: "XPS 15 9570を買ったのでやったことまとめ"
 date: "2019-02-07"
-updated: ""
+updated: "2024-10-24"
 ---
 
 Dell XPS 15 9570 を年末のクーポンが出たときに買いました  
@@ -14,11 +14,10 @@ Graphic Board: GTX 1050Ti
 
 でたいていのゲームもできてしまうマシンです  
 
-
-
 開封から設定までをまとめてみました  
 
 ## 開封して
+
 PC本体と充電ケーブルのみ
 
 ## 初期設定
@@ -47,6 +46,7 @@ Dell Updateをなくなるまでする
 - OneDrive 以前から使ってなかったので削除
 
 Windows Defenderを有効にする  
+
 - 更新プログラムを更新
 
 ## CapsLockにCtrlを割り当てる
@@ -56,7 +56,7 @@ Windows Defenderを有効にする
 ダウンロードしてexeを実行する  
 管理者権限が必要なので、コマンドプロンプトを右クリック、管理者権限で実行する  
 
-```
+```sh
 > ctrl2cap.exe /install
 ```
 
@@ -89,6 +89,7 @@ Skypeはブラウザ版を使う
 企業にもらったメールは以前はThunderbirdでしたが、Windows10標準のメーラーにしてみました  
 
 FranzやめてStationにしてみた
+
 - Station
   - Toggl
   - Trello
@@ -126,27 +127,28 @@ Stationに登録しすぎ感はあります..
 
 [Install Windows Subsystem for Linux (WSL) on on Windows 10 | Microsoft Docs](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
 
-  - POWER LINE COMMANDでWSLを有効に
-  - Windows StoreからUbuntuをインストール
-    - Ubuntuは新しいLTSがでたらバージョンアップしていける
-    - 他のはバージョン固定っぽい
+- POWER LINE COMMANDでWSLを有効に
+- Windows StoreからUbuntuをインストール
+  - Ubuntuは新しいLTSがでたらバージョンアップしていける
+  - 他のはバージョン固定っぽい
 
 [Initialize a new WSL Linux distro \| Microsoft Docs](https://docs.microsoft.com/en-us/windows/wsl/initialize-distro)をしていく
-  - Start MenuからUbuntuを開く
-  - sudo apt update && sudo apt upgrade
+
+- Start MenuからUbuntuを開く
+- sudo apt update && sudo apt upgrade
 
 ### Ubuntu設定
 
-[Ubuntu設定](/ubuntu)にまとめてます
+[Ubuntu設定](/ubuntu/)にまとめてます
 
 ### ソフトウェア on WSL
 
-- [Git](/git) install and setting
+- [Git](/git/) install and setting
   - gpg
-- [Node](/node-install)
-- [Neovim](/neovim)
-- [Ruby](/ruby-install)
-- [PHP](/php-install)
+- [Node](/node-install/)
+- [Neovim](/neovim/)
+- [Ruby](/ruby-install/)
+- [PHP](/php-install/)
 - tig
 - mosh
 
@@ -159,7 +161,7 @@ C:\Tool\wsl-terminal に設置
 open-wsl.exe 実行で起動  
 アップデートは
 
-```
+```sh
 ./cmdtool update
 ```
 
@@ -167,14 +169,13 @@ open-wsl.exe 実行で起動
 
 コマンドプロンプトで
 
-```
+```sh
 wslconfig /l
 ```
 
 するとディストリビューション一覧が表示できる  
 
 右クリックのコンテキストメニューに増やすこともできるが好みじゃないのでやっていない  
-
 
 ### スタートアップ
 
@@ -190,7 +191,7 @@ AutoHotKeyをいれてキーをカスタマイズ
 
 - Ctrl+Enter -> Escに割当て(セパレートキーボード+Vim用)
 
-```
+```sh
 #NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
 ; #Warn  ; Enable warnings to assist with detecting common errors.
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
@@ -224,4 +225,3 @@ yarn installしたディレクトリはウィルススキャンすると重い�
 
 以前と同じような環境にするのに1週間かかりました  
 Ansibleとかにまとめられそうなのもあるけど、頻度が1、2年おきなので、都度ソフトウェアを入れ替えてくのがよさそう  
-

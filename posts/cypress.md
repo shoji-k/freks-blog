@@ -1,7 +1,7 @@
 ---
 title: "CUI環境にCypressを導入してみた"
 date: "2019-02-14"
-updated: ""
+updated: "2024-10-24"
 ---
 
 このブログはGatsbyでできてて、Ubuntu 18.04 の上でこのブログを作ってるのですが、Cypressを使い始めました  
@@ -9,24 +9,24 @@ UbuntuはCUIで使っていて、画面ないです
 
 yarnの導入済みなので、まずインストール
 
-```
-$ yarn add --dev cypress
+```bash
+yarn add --dev cypress
 ```
 
 いるものをインストール  
 
 [Dependencies \| Cypress Documentation](https://docs.cypress.io/guides/guides/continuous-integration.html#Advanced-setup)
 
-```
-$ sudo apt update
-$ sudo apt install xvfb libgtk2.0-0 libnotify-dev libgconf-2-4 libnss3 libxss1 libasound2
+```bash
+sudo apt update
+sudo apt install xvfb libgtk2.0-0 libnotify-dev libgconf-2-4 libnss3 libxss1 libasound2
 ```
 
 cypress.jsonがないとWarningがでるので
 
 $ vim cypress.json
 
-```
+```json
 {
   baseUrl: "http://localhost:8000"
 }
@@ -39,7 +39,7 @@ Gatsbyの開発モードのデフォルトURLです
 
 $ vim cypress/integration/sample_spec.js
 
-```
+```js
 describe('Access Test', function() {
   it('can access top page', function() {
     cy.visit('/')
@@ -51,15 +51,15 @@ describe('Access Test', function() {
 
 Gatsbyを起動しておいて
 
-```
-$ yarn start
+```bash
+yarn start
 ```
 
 画面なしで実行してみる
 
 $ yarn run cypress run
 
-```
+```bash
 yarn run v1.13.0
 $ /mnt/c/Users/shoji/ws/repos/freks-blog/node_modules/.bin/cypress run
 

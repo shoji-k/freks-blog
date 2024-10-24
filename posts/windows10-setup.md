@@ -1,11 +1,11 @@
 ---
 title: 'Windows10の環境セットアップ'
 date: '2019-01-20'
-updated: ""
+updated: "2024-10-24"
 ---
 
 ※追記  
-[XPS 15 9570 を買ったのでやったことまとめ \| freks blog](https://blog.freks.jp/xps15-install/) のほうが新しいです
+[XPS 15 9570 を買ったのでやったことまとめ \| freks blog](/xps15-install/) のほうが新しいです
 
 新しい PC を買ったのですが、届く前に今使っている PC のセットアップをまとめました
 
@@ -22,7 +22,7 @@ updated: ""
 ダウンロードして exe を実行する  
 管理者権限が必要なので、コマンドプロンプトを右クリック、管理者権限で実行する
 
-```
+```sh
 > ctrl2cap.exe /install
 ```
 
@@ -75,7 +75,7 @@ Skype はブラウザ版を使う
 
 Windows + R を押して[ファイル名を実行して起動]を起動
 
-```
+```sh
 shell:sendto
 ```
 
@@ -85,7 +85,7 @@ shell:sendto
 
 Windows + R を押して[ファイル名を実行して起動]を起動
 
-```
+```sh
 shell:startup
 ```
 
@@ -113,7 +113,7 @@ open-wsl.exe -l で起動
 
 アップデートは
 
-```
+```sh
 ./cmdtool update
 ```
 
@@ -121,7 +121,7 @@ open-wsl.exe -l で起動
 
 コマンドプロンプトで
 
-```
+```sh
 wslconfig /l
 ```
 
@@ -135,7 +135,7 @@ wslconfig /l
 
 \$ vim /etc/wsl.conf
 
-```
+```conf
 [automount]
 enable = true
 root = /mnt/
@@ -148,15 +148,15 @@ options = "metadata,uid=1000,gid=1000,umask=22"
 
 ## Ubuntu 設定
 
-[Ubuntu 設定](/ubuntu)にまとめてます
+[Ubuntu 設定](/ubuntu/)にまとめてます
 
 ## ソフトウェア on WSL
 
-- [Git](/git)
-- [Node](/node-install)
-- [Neovim](/neovim)
-- [Ruby](/ruby-install)
-- [PHP](/php-install)
+- [Git](/git/)
+- [Node](/node-install/)
+- [Neovim](/neovim/)
+- [Ruby](/ruby-install/)
+- [PHP](/php-install/)
 - tig
 
 ## キーマッピング

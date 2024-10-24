@@ -1,12 +1,12 @@
 ---
 title: "はじめてのCircleCI"
 date: "2019-02-15"
-updated: ""
+updated: "2024-10-24"
 ---
 
 [CircleCI](https://circleci.com/)を使ってみたくて、このブログのリポジトリに入れてみました
 
-前回の記事 [CUI環境にCypressを導入してみた \| freks blog](/cypress) でCypressでテスト書いたのでこれを動かしてみます  
+前回の記事 [CUI環境にCypressを導入してみた \| freks blog](/cypress/) でCypressでテスト書いたのでこれを動かしてみます  
 
 ## CircleCIを入れてみる
 
@@ -19,8 +19,8 @@ CircleCI用の設定ファイルをリポジトリに入れるのですが、設
 
 を見ると
 
-```
-$ vim .circleci/config.yml  
+```bash
+vim .circleci/config.yml  
 ```
 
 に書くようです
@@ -38,6 +38,6 @@ $ vim .circleci/config.yml
 git push するとCircleCIでCypressのテストが実行されるようになりました  
 
 GitHubのREADMEにバッチが出したかったので、
-CircleCIで、対象のリポジトリを選択、設定 > Notificatoins > Status Badges に貼り付けるコードがあるので、READMEに貼り付けました
+CircleCIで、対象のリポジトリを選択、設定 > Notifications > Status Badges に貼り付けるコードがあるので、READMEに貼り付けました
 
 一旦動いたのでまた、詳しくなろうと思います
