@@ -13,13 +13,14 @@ Remixのルーティングを理解するため、かみ砕いていきます
 
 ドットでURLが区切られ、`_` で始まるものはURLには現れません  
 
-| ファイル                          | url      | layout                                      |
+| ファイル                           | url      | layout                                      |
 |-----------------------------------|----------|---------------------------------------------|
-| app/routes/_index.tsx             | /        | --                                          |
-| app/routes/landing.tsx            | --       | --                                          |
-| app/routes/landing._index.tsx     | --       | --                                          |
-| app/routes/landing.one.tsx        | /one     | app/routes/landing.tsx                      |
-| app/routes/landing.one.two.tsx    | /one/two | app/routes/landing.tsx + app/routes/landing.one.tsx |
+| app/routes/_index.tsx             | /        | app/route.tsx                                       |
+| app/routes/landing.tsx            | --       | app/route.tsx                                       |
+| app/routes/landing._index.tsx     | /landing | app/route.tsx                                       |
+| app/routes/landing.one.tsx        | /landing/one     | app/routes/landing.tsx                      |
+| app/routes/landing.one.two.tsx    | /landing/one/two | app/routes/landing.tsx + app/routes/landing.one.tsx |
+| app/routes/landing.$number.tsx     | /landing/(number)   | app/landing.tsx |
 
 `/one/two` にアクセスしたときに  
 `app/routes/landing.one.tsx` に `<Outlet >` がなかったら、`app/routes/landing.one.two.tsx` は読み込まれません  
@@ -27,15 +28,28 @@ Remixのルーティングを理解するため、かみ砕いていきます
 `/one` にアクセスしたときに
 `app/routes/landing.one.tsx` の `<Outlet >` は無視されます  
 
-| ファイル                          | url      | layout                                      |
+`/landing/three` にアクセスしたときに `app/routes/landing.$number.tsx` が表示されます  
+`$number` に定義済の `one` 以外の文字列がなんでも入ってきます  
+
+| ファイル                           | url      | layout                                      |
 |-----------------------------------|----------|---------------------------------------------|
-| app/routes/_auth.tsx             | --       | --                                          |
-| app/routes/_auth.login.tsx       | /login       | app/routes/_auth.tsx                    |
+| app/routes/landing_.three.tsx     | /landing/three   | app/route.tsx |
+
+つづいて `landing_` とすると `landing` がLayoutにならなくなります
 
 `_` で始まるファイルはURLには現れないので、layoutファイルを変えることができます  
 
+| ファイル                          | url       | layout                                      |
+|-----------------------------------|----------|---------------------------------------------|
+| app/routes/_auth.tsx             | --        | app/route.tsx                              |
+| app/routes/_auth.login.tsx       | /login    | app/routes/_auth.tsx                       |
+
 ただし、`_index.tsx` は特殊なファイルのため、`app/routes/_index.login.tsx` はできません  
 `Index routes must not have child routes. Please remove all child routes from route path "/".` のエラーになります  
+
+| ファイル                          | url       | layout                                      |
+|-----------------------------------|----------|---------------------------------------------|
+| app/routes/($lang)._index.tsx            | --        | app/route.tsx                        |
 
 ## まとめ
 
