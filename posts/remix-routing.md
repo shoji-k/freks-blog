@@ -45,11 +45,49 @@ Remixのルーティングを理解するため、かみ砕いていきます
 | app/routes/_auth.login.tsx       | /login    | app/routes/_auth.tsx                       |
 
 ただし、`_index.tsx` は特殊なファイルのため、`app/routes/_index.login.tsx` はできません  
-`Index routes must not have child routes. Please remove all child routes from route path "/".` のエラーになります  
+`Index routes must not have child routes. Please remove all child routes from route path "/".` のエラーになります
+
+動的なURLでなくてもいけるようにするなら `($value)` の形を使います  
 
 | ファイル                          | url       | layout                                      |
 |-----------------------------------|----------|---------------------------------------------|
-| app/routes/($lang)._index.tsx            | --        | app/route.tsx                        |
+| app/routes/lang.($lang)._index.tsx    | /lang/(なんでも) | app/lang.tsx        |
+
+これで  
+
+```tsx
+export async function loader({ params }: LoaderFunctionArgs) {
+  const lang = params.lang;
+  return json({ lang });
+}
+```
+
+で `lang` にアクセスされたURLの値が入ります  
+定義済のURLがあればそっちが優先され、`app/routes/($lang)._index.tsx` へのアクセスにはなりません  
+
+`($value)` はどの位置でも使えるので `/places/($places)` とかにもできます
+
+`.` とか `_` が特別に扱われるので、URLに含めたいときは`[]` で囲むといいです  
+
+| ファイル                          | url       | layout                                      |
+|-----------------------------------|----------|---------------------------------------------|
+| app/routes/sitemap[.]xml.tsx      | /sitemap.xml | app/route.tsx        |
+| app/routes/landing.[_index].tsx      | /landing/_index | app/landing.tsx        |
+| app/routes/landing.[$money].tsx      | /landing/$money | app/landing.tsx        |
+
+ここまでだと `/routes/` にファイルを置くとルーティングに関係してしまい、コンポーネントだけのファイルがおけません  
+ディレクトリで管理する方法を使うと、ルーティングに関係ないファイルがおけるようになります
+
+ディレクトリ名がURLになって、ディレクトリ内の `route.tsx` だけが読み込まれ、他のファイルはルーティングと関係なくなります  
+なのでコンポーネントだけのファイルがおけていいです  
+
+```bash
+├── app
+│   ├── footer.tsx
+│   └── route.tsx
+```
+
+みたいにすると `/app` でアクセスしたら `app/route.tsx` が読み込まれます  
 
 ## まとめ
 
