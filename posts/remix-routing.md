@@ -197,9 +197,14 @@ export async function loader({ params }: LoaderFunctionArgs) {
 ├── app
 │   ├── footer.tsx
 │   └── route.tsx
+├── app._index
+│   └── route.tsx
+├── app.sample
+│   └── route.tsx
 ```
 
-みたいにすると `/app` でアクセスしたら `app/route.tsx` が読み込まれます  
+みたいにすると `/app` でアクセスしたら `app._index/route.tsx` が読み込まれます  
+そのLayoutが `app/route.tsx` になります　　
 `app/footer.tsx` のコンポーネントを `app/route.tsx` で読み込んで使えていい感じですね  
 
 ## まとめ
