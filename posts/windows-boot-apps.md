@@ -18,7 +18,7 @@ timeout /t 5
 start "" "C:\Program Files\Google\Chrome Beta\Application\chrome.exe" --profile-directory="Profile 1"
 timeout /t 5
 
-start "C:\Users\user\AppData\Local\slack\slack.exe"
+start "" "C:\Users\user\AppData\Local\slack\slack.exe"
 
 echo 準備ができました。Enterキーを押して終了します。
 pause
