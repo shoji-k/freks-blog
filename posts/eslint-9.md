@@ -5,7 +5,10 @@ updated: ""
 ---
 
 Remix + Viteで作ってるアプリのESLintが8系だったので9に上げてみました  
-ESLint 9はflat configとかいって、設定ファイルが `eslint.config.js` になったりしてます
+ESLint 9はflat configとかいって、設定ファイルが `eslint.config.js` になったりしてます  
+
+元の `.eslintrc.js` は [link](https://github.com/shoji-k/arekara/blob/776941a9d3aa40bc6eb85cb10a4582084eb7bc0a/.eslintrc.js)  
+変更後の `eslint.config.mjs` は [link](https://github.com/shoji-k/arekara/blob/e35f5bb28711bb5034c48956cb93707d7d1d346a/eslint.config.mjs)
 
 [Configuration Migration Guide \- ESLint \- Pluggable JavaScript Linter](https://eslint.org/docs/latest/use/configure/migration-guide) を参考にしました  
 
@@ -102,11 +105,14 @@ export default [
 ];
 ```
 
-これで無事にlintが通りました
+これで無事にlintが通りました  
+
+Flat Configに対応したプラグインであってもFlag Configの書き方になっていません  
+これらは直していったほうがよさそうです  
 
 ## まとめ
 
-ドキュメントはちゃんと読みましょう
+いったんさくっとESLint 9に上げられてよかったです  
 
 PR
 
