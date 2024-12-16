@@ -5,7 +5,7 @@ updated: ''
 ---
 
 定期購入していたサービスをまとめてみました  
-2022 年は [こちら](https://blog.freks.jp/subscription-2022)  
+2022 年は [こちら](/subscription-2022/)  
 
 - コワーキングスペース ¥11000 / month
 

@@ -6,8 +6,8 @@ updated: ""
 
 自作キーボード
 
-- [Helix keyboard \| freks blog](https://blog.freks.jp/helix/)
-- [Ergodox EZ keyboard \| freks blog](https://blog.freks.jp/ergodox_ez/)
+- [Helix keyboard \| freks blog](/helix/)
+- [Ergodox EZ keyboard \| freks blog](/ergodox_ez/)
 
 では、キーボードを動作させるのに [qmk/qmk_firmware: Open\-source keyboard firmware for Atmel AVR and Arm USB families](https://github.com/qmk/qmk_firmware) を使います
 

@@ -5,7 +5,7 @@ updated: ""
 ---
 
 このブログの Lighthouse accessibility が、97 点だったので改善してみました  
-[Gatsby theme から Google fonts を外した \| freks blog](https://blog.freks.jp/remove-google-fonts-from-gatsby-theme/) の記事の続きです
+[Gatsby theme から Google fonts を外した \| freks blog](/remove-google-fonts-from-gatsby-theme/) の記事の続きです
 
 ![Lighthouse accessibility before](/improve-lighthouse-accessibility/Lighthouse-accessibility-before.webp)
 

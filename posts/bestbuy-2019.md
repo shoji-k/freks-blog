@@ -4,7 +4,7 @@ date: "2019-12-31"
 updated: ""
 ---
 
-2018年は [こちら](https://blog.freks.jp/bestbuy-2018)  
+2018年は [こちら](/bestbuy-2018/)  
 
 2019年に買ったものをまとめました  
 
@@ -12,7 +12,7 @@ updated: ""
 
 - 超小型デスクトップPC
 
-[こちら](https://blog.freks.jp/intel-nuc-BLKNUC7I7DNKE) にまとめてます  
+[こちら](/intel-nuc-BLKNUC7I7DNKE/) にまとめてます  
 思ったよりもサイズが小さくて性能そこそこでコスパ良かったです
 
 - 窒化ガリウム充電器 Anker PowerPort Atom PD 2  

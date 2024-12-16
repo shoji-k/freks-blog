@@ -4,7 +4,7 @@ date: '2019-12-02'
 updated: ""
 ---
 
-[GitHub Actions で RSpec を動かしてみた \| freks blog](https://blog.freks.jp/github-action-rspec/) で bundle install が時間かかるのでキャッシュを使ってみました
+[GitHub Actions で RSpec を動かしてみた \| freks blog](/github-action-rspec/) で bundle install が時間かかるのでキャッシュを使ってみました
 
 環境はもちろん同じく
 
@@ -94,5 +94,3 @@ docker image layer のキャッシュをしたかったのですが、November m
 設定したリポジトリは  
 [Use cache in github actions flow by shoji\-k · Pull Request \#7 · shoji\-k/rails\-sandbox](https://github.com/shoji-k/rails-sandbox/pull/7/commits/4c8e7f5ef432dee74e97db6ee7b1c699920a05c5)  
 なので参考にしてください
-
-

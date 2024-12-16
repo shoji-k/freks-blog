@@ -5,7 +5,7 @@ updated: ""
 ---
 
 定期購入していたサービスをまとめてみました  
-2018年は [こちら](https://blog.freks.jp/subscription-2018)
+2018年は [こちら](/subscription-2018/)
 
 - コワーキングスペース ¥10000 / month
 
@@ -15,7 +15,7 @@ updated: ""
 
 お試しで2つ目契約して続いてます  
 こちらも自宅から徒歩でいけ、かつ、24時間入れるので使い分けてます  
-気分転換の効果が大きいです    
+気分転換の効果が大きいです
 
 - [G Suite Business](https://gsuite.google.co.jp/intl/ja/solutions/) ¥540/ month
 
@@ -67,7 +67,7 @@ freeeでも作れるので、毎月決まった請求はfreee側に移行しま�
 
 - [Google Music](https://play.google.com/music/) ¥780 / month
 
-去年に続き継続中 
+去年に続き継続中
 
 - [Amazon Gold card](https://www.amazon.co.jp/%E4%B8%89%E4%BA%95%E4%BD%8F%E5%8F%8B%E3%82%AB%E3%83%BC%E3%83%89%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE-Amazon-Mastercard%E3%82%B4%E3%83%BC%E3%83%AB%E3%83%89/dp/B0092VB6VK) ¥10800 / year
 
@@ -75,7 +75,7 @@ Amazon PrimeがついてくるのとAmazonでよく買い物するので作り�
 
 - [Amazon Prime](https://www.amazon.co.jp/amazonprime) ¥--- / month
 
-映画、ドラマをたまにみてます 
+映画、ドラマをたまにみてます
 
 - [Netflix](https://www.netflix.com/jp/) ¥880 / month
 
@@ -86,7 +86,7 @@ UIがこっちのほうが使いやすそうです
 - [Rebuild.fm](https://rebuild.fm/) ¥6804($60) / year
 
 テック系ポットキャストです  
-キャンペーンのときに登録した値段で面白いので続けています 
+キャンペーンのときに登録した値段で面白いので続けています
 
 - ジム ¥8000 / month
 

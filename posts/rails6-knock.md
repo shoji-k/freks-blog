@@ -4,7 +4,7 @@ date: "2019-08-19"
 updated: ""
 ---
 
-追記) 続編をかきました [Rails 6でknock gemが動かない - 続編](https://blog.freks.jp/rails6-knock-2)
+追記) 続編をかきました [Rails 6でknock gemが動かない - 続編](/rails6-knock-2/)
 
 新しく始めたプロジェクトでRails + Vue.jsの構成にしてみてて、  
 Railsはapi mode、Vue.jsがフロントエンドで組みました  
