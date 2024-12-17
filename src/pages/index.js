@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import { Link, graphql } from 'gatsby'
 import moment from 'moment'
-import Layout from '../components/Layout'
-import Seo from '../components/Seo'
+import { Layout } from '../components/Layout'
+import { Seo } from '../components/Seo'
 
 export default function Top({
   data: { site, allMarkdownRemark: posts },
