@@ -23,6 +23,14 @@ Amazon Black FridayでApple Gift Cardをちょうどの額買ってから、Mac 
 最低スペックのものを買いましたが、我が家では最速PCとなりました  
 Macになれないところがありますが、慣れればよさそうです
 
+- [Keychron Q11 QMK](https://keychron.co.jp/products/keychron-q11-qmk-custom-mechanical-keyboard-us-ansi-layout)  
+
+分割されてるキーボードです  
+KeyChronをさわってみたかったので買いました  
+設定がGUIでできるのは便利ですね  
+打ちごこちも悪くなくて全体的にはいいです  
+VとBあたりがちょっと遠くて後タッチしてしまうので慣れが必要でした  
+
 - [Anker Eufy](https://amzn.to/3OXqZLx) <small>(このリンクは、アフィリエイトリンクです)</small>
 
 スマートトラッカーです  
