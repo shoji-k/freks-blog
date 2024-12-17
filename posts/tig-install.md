@@ -47,5 +47,4 @@ set diff-highlight = true
 
 で有効になります
 
-`diff-highlight` については [Git tips \| freks blog](https://blog.freks.jp/git/) に少し書いています
-
+`diff-highlight` については [Git tips \| freks blog](/git/) に少し書いています

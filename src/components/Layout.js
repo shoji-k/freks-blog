@@ -11,7 +11,11 @@ const Header = ({ location, title }) => {
           <h1 style={{ margin: 0 }}>{title}</h1>
         </div>
         <div style={{ gridRow: 1, gridColumn: 2, paddingTop: '.2rem' }}>
-          <Link to="/about" style={{ textAlign: 'right' }} className="no-decoration">
+          <Link
+            to="/about"
+            style={{ textAlign: 'right' }}
+            className="no-decoration"
+          >
             <div style={{ fontSize: '1rem' }}>about</div>
           </Link>
         </div>
@@ -28,7 +32,11 @@ const Header = ({ location, title }) => {
       </div>
       {location.pathname != '/about' && (
         <div style={{ gridRow: 1, gridColumn: 2, paddingTop: '1.2rem' }}>
-          <Link to="/about" style={{ textAlign: 'right' }} className="no-decoration">
+          <Link
+            to="/about"
+            style={{ textAlign: 'right' }}
+            className="no-decoration"
+          >
             <div style={{ fontSize: '1rem' }}>about</div>
           </Link>
         </div>
@@ -37,7 +45,7 @@ const Header = ({ location, title }) => {
   )
 }
 
-class Layout extends Component {
+export class Layout extends Component {
   render() {
     const { location, title, children } = this.props
     return (
@@ -55,5 +63,3 @@ class Layout extends Component {
     )
   }
 }
-
-export default Layout

@@ -4,7 +4,7 @@ date: '2019-12-01'
 updated: ""
 ---
 
-[GitHub Actions で Cypress を動かしてみた \| freks blog](https://blog.freks.jp/github-action-cypress/) に続いて、RSpec を動かしてみました
+[GitHub Actions で Cypress を動かしてみた \| freks blog](/github-action-cypress/) に続いて、RSpec を動かしてみました
 
 Ruby 2.6.5  
 Rails 6.0.1  
@@ -86,5 +86,3 @@ docker-compose のようにサービス名がつくようです
 設定したリポジトリは  
 [Prepare RSpec GitHub Action by shoji\-k · Pull Request \#5 · shoji\-k/rails\-sandbox](https://github.com/shoji-k/rails-sandbox/pull/5/commits/803d66cf95ecd40089af736386e299555a4bd218)
 なので参考にしてください
-
-

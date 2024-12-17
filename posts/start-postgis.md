@@ -86,7 +86,7 @@ psql (PostgreSQL) 11.2 (Debian 11.2-1.pgdg90+1)
 
 ## Shapefile を取り込んでみる
 
-PostGIS には [Shapefile](https://blog.freks.jp/geospatial-data/) を取り込む shp2pgsql というツールがついているので取り込んでみます
+PostGIS には [Shapefile](/geospatial-data/) を取り込む shp2pgsql というツールがついているので取り込んでみます
 
 shp2pgsql の使い方は
 

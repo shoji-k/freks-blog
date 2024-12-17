@@ -166,7 +166,7 @@ AppImage -> 実行権限つけて起動した
 - Vim
   - GitHub から clone して build した
 - nvm, node
-  - [Node らへんのインストール \| freks blog](https://blog.freks.jp/node-install/) を見てインストール
+  - [Node らへんのインストール \| freks blog](/node-install/) を見てインストール
 - Gyazo
   - [gyazo/Gyazo\-for\-Linux: Gyazo for Linux](https://github.com/gyazo/Gyazo-for-Linux) を見てインストール
 - docker
@@ -177,6 +177,6 @@ AppImage -> 実行権限つけて起動した
   - [Command\-line completion \| Docker Documentation](https://docs.docker.com/compose/completion/)
 - tig
   - apt installだと古いので <https://github.com/jonas/tig.git> からmakeした
-  - [日本語環境で最新のTigを使う](https://blog.freks.jp/tig-install) にまとめてます
+  - [日本語環境で最新のTigを使う](/tig-install/) にまとめてます
 
 なかなか快適に使えています

@@ -56,6 +56,4 @@ REAEME にバッチを表示するには
 なので参考にしてください
 
 追記)  
-[GitHub Actions で RSpec を動かしてみた \| freks blog](https://blog.freks.jp/github-action-rspec/) を後日やってみました
-
-
+[GitHub Actions で RSpec を動かしてみた \| freks blog](/github-action-rspec/) を後日やってみました

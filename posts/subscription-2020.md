@@ -5,7 +5,7 @@ updated: ""
 ---
 
 定期購入していたサービスをまとめてみました  
-2019年は [こちら](https://blog.freks.jp/subscription-2019)  
+2019年は [こちら](/subscription-2019/)  
 年末時点で使っているものに絞りました  
 
 - コワーキングスペース ¥10000 / month
@@ -76,7 +76,7 @@ Amazon PrimeがついてくるのとAmazonでよく買い物するので作り�
 
 - [Amazon Prime](https://www.amazon.co.jp/amazonprime) ¥--- / month
 
-映画、ドラマをたまにみてます 
+映画、ドラマをたまにみてます
 
 - [Netflix](https://www.netflix.com/jp/) ¥880 / month
 
@@ -87,7 +87,7 @@ UIがこっちのほうが使いやすそうです
 - [Rebuild.fm](https://rebuild.fm/) ¥6666($60) / year
 
 テック系ポットキャストです  
-キャンペーンのときに登録した値段で面白いので続けています 
+キャンペーンのときに登録した値段で面白いので続けています
 
 - ジム ¥8000 / month
 

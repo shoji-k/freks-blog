@@ -4,7 +4,7 @@ date: "2021-02-11"
 updated: ""
 ---
 
-[JavascriptのMapを使う](https://blog.freks.jp/javascript-map)で紹介したMapも便利ですが、Setも便利なので紹介します
+[JavascriptのMapを使う](/javascript-map/)で紹介したMapも便利ですが、Setも便利なので紹介します
 
 詳しくは
 [Set \- JavaScript \| MDN](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Set)
@@ -33,4 +33,3 @@ console.log([...new Set(numbers)])
 
 あとは、集合演算に使えるのが便利そうです  
 [Set \- JavaScript \| MDN](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Set#implementing_basic_set_operations)
-

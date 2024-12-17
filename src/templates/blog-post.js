@@ -1,13 +1,13 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
-import Layout from '../components/Layout'
-import Seo from '../components/Seo'
+import { Layout } from '../components/Layout'
+import { Seo } from '../components/Seo'
 
 export default function OneBlog({
   data: { site, markdownRemark: post },
   location,
 }) {
-  console.log(location, location.pathname === "/programmer_books/")
+  console.log(location, location.pathname === '/programmer_books/')
   return (
     <Layout location={location} title={site.siteMetadata.title}>
       <Seo title={post.frontmatter.title} description={post.excerpt} />
