@@ -1,8 +1,11 @@
 ---
 title: 'GitHub Copilotの使い方をおさらい'
 date: '2024-03-28'
-updated: ''
+updated: '2025-01-10'
 ---
+
+追記)  
+[GitHub Copilotの使い方をおさらい 2](/github-copilot-2/) も書きました  
 
 GitHub Copilotの使い方をおさらいしてみます  
 手になじませたいですね
