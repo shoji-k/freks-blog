@@ -118,6 +118,12 @@ Runボタンを押すと、ターミナルで実行されます
 
 [shoji\-k/cline\-todo at cline\-sample](https://github.com/shoji-k/cline-todo/tree/cline-sample)  
 
+## 失敗例
+
+Azure OpenAI のモデルを使ってTodo生成ボタンを作って  
+の命令は微妙に古い情報を参照してくるとかで、うまく動くコードになりませんでした  
+情報量が少ないものは苦手かもです
+
 ## まとめ
 
 AIエージェントの威力を感じました  
