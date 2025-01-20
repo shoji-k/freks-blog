@@ -70,6 +70,7 @@ sudo service docker start
 ```
 
 Hello Worldしてみます  
+既に [Post\-installation steps \| Docker Docs](https://docs.docker.com/engine/install/linux-postinstall/) あたりをやっていたからか、sudoなしで動きました
 
 ```bash
 $ docker run hello-world
