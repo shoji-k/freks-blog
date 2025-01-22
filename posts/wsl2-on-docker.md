@@ -29,13 +29,13 @@ $ sudo apt-get install docker-ce docker-ce-cli containerd.io
 といったコマンドで入れました
 Docker起動して  
 
-```
+```bash
 sudo service docker start
 ```
 
 試しに
 
-```
+```bash
 sudo docker run hello-world
 ```
 
@@ -43,7 +43,7 @@ sudo docker run hello-world
 
 sudoなくて動かせるように
 
-```
+```bash
 sudo usermod -aG docker $USER
 ```
 

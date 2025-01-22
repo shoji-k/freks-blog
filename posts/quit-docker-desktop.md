@@ -7,11 +7,12 @@ updated: ""
 Windows 11でDocker Desktopを使っていたら、ディスクがいっぱいになりました  
 調べてみると
 
-C:\Users\(username)\AppData\Local\Docker\wsl\data\ext4.vhdx 97.13GB  
+C:\Users\\(username)\AppData\Local\Docker\wsl\data\ext4.vhdx 97.13GB  
 が膨れていくみたいです  
 
-C:\Users\(username)\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu_79rhkp1fndgsc\LocalState\ext4.vhdx 66.17GB  
-は、使ってるWSLのUbuntuのディスクイメージっぽい
+C:\Users\\(username)\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu_79rhkp1fndgsc\LocalState\ext4.vhdx 66.17GB  
+は、使ってるWSLのUbuntuのディスクイメージっぽい  
+
 PowerShellで  
 
 ```powershell
