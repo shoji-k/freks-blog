@@ -38,6 +38,8 @@ export const links: LinksFunction = () => {
 [Route File Naming \| Remix](https://remix.run/docs/en/main/file-conventions/routes)  
 を読むのがいいです
 
+[Remixのルーティングを理解する | freks blog](/remix-routing) にもまとめました
+
 ## 全体のレイアウト
 
 [root \| Remix](https://remix.run/docs/en/main/file-conventions/root)
