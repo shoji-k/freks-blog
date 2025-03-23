@@ -5,12 +5,11 @@
     "ecmaFeatures": {
       "jsx": true
     },
-    "ecmaVersion": 2018,
+    "ecmaVersion": "latest",
     "sourceType": "module"
   },
   "env": {
-    "browser": true,
-    "es6": true
+    "browser": true
   },
   "settings": {
     "react": {
