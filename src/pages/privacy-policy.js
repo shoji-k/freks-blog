@@ -6,7 +6,6 @@ import { Seo } from '../components/Seo'
 export default function About({ data: { site }, location }) {
   return (
     <Layout location={location} title={site.siteMetadata.title}>
-      <Seo title="Privacy Policy" />
       <h2>プライバシーポリシー</h2>
       <p>
         本ウェブサイト上で提供するサービスにおけるユーザーの個人情報の取扱いについて以下のとおりプライバシーポリシーを定めます。
@@ -74,3 +73,7 @@ export const query = graphql`
     }
   }
 `
+
+export const Head = () => (
+  <Seo title="Privacy Policy" />
+)

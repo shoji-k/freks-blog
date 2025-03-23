@@ -1,13 +1,10 @@
 import React from 'react'
 import './drag.css'
-import { Helmet } from 'react-helmet'
 
 export default function Drag() {
   return (
     <>
-      <Helmet>
-        <script src={'/samples/drag.js'} type="text/javascript" />
-      </Helmet>
+      <script src={'/samples/drag.js'} type="text/javascript" />
       <div className="sample-drag">
         <ul>
           <li id="test1" draggable="true">

@@ -1,9 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 
-export function Seo({ description, lang = 'ja', meta = [], keywords = [], title }) {
+export function Seo({ description, meta = [], keywords = [], title }) {
   return (
     <StaticQuery
       query={detailsQuery}
@@ -18,72 +17,27 @@ export function Seo({ description, lang = 'ja', meta = [], keywords = [], title 
         const author = 'kobayashi_shoji'
 
         return (
-          <Helmet
-            htmlAttributes={{
-              lang,
-            }}
-            title={title}
-            titleTemplate={titleTemplate}
-            meta={[
-              {
-                name: 'description',
-                content: metaDescription,
-              },
-              {
-                property: 'og:title',
-                content: title,
-              },
-              {
-                property: 'og:description',
-                content: metaDescription,
-              },
-              {
-                property: 'og:type',
-                content: 'website',
-              },
-              {
-                property: 'og:image',
-                content: `${siteUrl}/logo.png`,
-              },
-              {
-                property: 'og:image:width',
-                content: 498,
-              },
-              {
-                property: 'og:image:height',
-                content: 484,
-              },
-              {
-                name: 'twitter:card',
-                content: 'summary',
-              },
-              {
-                name: 'twitter:creator',
-                content: author,
-              },
-              {
-                name: 'twitter:title',
-                content: title,
-              },
-              {
-                name: 'twitter:description',
-                content: metaDescription,
-              },
-              {
-                property: 'twitter:image',
-                content: `${siteUrl}/logo.png`,
-              },
-            ]
-              .concat(
-                keywords.length > 0
-                  ? {
-                      name: 'keywords',
-                      content: keywords.join(', '),
-                    }
-                  : []
-              )
-              .concat(meta)}
-          />
+          <>
+            <title>{titleTemplate}</title>
+            <meta name="description" content={metaDescription} />
+            <meta property="og:title" content={title} />
+            <meta property="og:description" content={metaDescription} />
+            <meta property="og:type" content="website" />
+            <meta property="og:image" content={`${siteUrl}/logo.png`} />
+            <meta property="og:image:width" content="498" />
+            <meta property="og:image:height" content="484" />
+            <meta name="twitter:card" content="summary" />
+            <meta name="twitter:creator" content={author} />
+            <meta name="twitter:title" content={title} />
+            <meta name="twitter:description" content={metaDescription} />
+            <meta property="twitter:image" content={`${siteUrl}/logo.png`} />
+            {keywords.length > 0 && (
+              <meta name="keywords" content={keywords.join(', ')} />
+            )}
+            {meta.map((m, i) => (
+              <meta key={i} {...m} />
+            ))}
+          </>
         )
       }}
     />
@@ -92,7 +46,6 @@ export function Seo({ description, lang = 'ja', meta = [], keywords = [], title 
 
 Seo.propTypes = {
   description: PropTypes.string,
-  lang: PropTypes.string,
   meta: PropTypes.array,
   keywords: PropTypes.arrayOf(PropTypes.string),
   title: PropTypes.string.isRequired,

@@ -7,10 +7,8 @@ export default function OneBlog({
   data: { site, markdownRemark: post },
   location,
 }) {
-  console.log(location, location.pathname === '/programmer_books/')
   return (
     <Layout location={location} title={site.siteMetadata.title}>
-      <Seo title={post.frontmatter.title} description={post.excerpt} />
       <div style={{ minHeight: 'calc(100vh - 220px)', paddingBottom: '1rem' }}>
         <h2 style={{ fontSize: '2rem' }}>{post.frontmatter.title}</h2>
         <div
@@ -79,3 +77,7 @@ export const query = graphql`
     }
   }
 `
+
+export const Head = ({ data: { markdownRemark: post } }) => (
+  <Seo title={post.frontmatter.title} description={post.excerpt} />
+)

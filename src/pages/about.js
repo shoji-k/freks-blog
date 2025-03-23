@@ -6,7 +6,6 @@ import { Seo } from '../components/Seo'
 export default function About({ data: { site }, location }) {
   return (
     <Layout location={location} title={site.siteMetadata.title}>
-      <Seo title="about" />
       <p>
         このブログは{' '}
         <a href="https://twitter.com/kobayashi_shoji">@kobayashi_shoji</a>{' '}
@@ -61,3 +60,7 @@ export const query = graphql`
     }
   }
 `
+
+export const Head = () => (
+  <Seo title="about" />
+)

@@ -21,7 +21,6 @@ export default function Top({
 
   return (
     <Layout location={location} title={site.siteMetadata.title}>
-      <Seo title={site.siteMetadata.title} />
       <p>
         <input
           type="text"
@@ -96,3 +95,7 @@ export const query = graphql`
     }
   }
 `
+
+export const Head = ({ data: { site } }) => (
+  <Seo title={site.siteMetadata.title} />
+)
