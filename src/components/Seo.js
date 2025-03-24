@@ -7,7 +7,7 @@ export function Seo({ description, meta = [], keywords = [], title }) {
   const titleTemplate =
     title === data.site.siteMetadata.title
       ? title
-      : `%s | ${data.site.siteMetadata.title}`
+      : `${title} | ${data.site.siteMetadata.title}`
   const metaDescription =
     description || data.site.siteMetadata.description
   const siteUrl = data.site.siteMetadata.siteUrl || 'https://blog.freks.jp'
