@@ -1,7 +1,7 @@
 ---
 title: 'Dev ContainerからGitHubにpushする'
 date: '2024-04-11'
-updated: '2024-05-13'
+updated: '2025-05-15'
 ---
 
 VSCode Dev Containerで開発しているときに `git push` すると
@@ -69,6 +69,32 @@ git push origin HEAD
 ```bash
 eval `ssh-add ~/.ssh/github_rsa > /dev/null 2>&1`
 ```
+
+追記2)  
+
+新しいMacを買ったので設定したらできなくなりました  
+Dev Containerでキーを確認すると...ない
+
+```bash
+ssh-add -l
+```
+
+ホストPCでssh forwardができてませんでした
+
+`.ssh/config` の GitHub用の設定を変更
+
+```txt
+Host github.com
+  Hostname github.com
+  User git
+  IdentityFile ~/.ssh/githubkey
+  ForwardAgent yes
+  AddKeysToAgent yes
+```
+
+最後の2行がないとssh forwardされません  
+
+これで動くようになりました
 
 ## まとめ
 
