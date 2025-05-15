@@ -79,6 +79,9 @@ Dev Containerでキーを確認すると...ない
 ssh-add -l
 ```
 
+おさらいするとホストPCの .gitconfig と ssh agent に登録されたキーは共有される  
+ssh forwardされてDev Containerで使えるようになる  
+
 ホストPCでssh forwardができてませんでした
 
 `.ssh/config` の GitHub用の設定を変更
