@@ -82,6 +82,8 @@ ssh-add -l
 おさらいするとホストPCの .gitconfig と ssh agent に登録されたキーは共有される  
 ssh forwardされてDev Containerで使えるようになる  
 
+[Sharing Git credentials with your container](https://code.visualstudio.com/remote/advancedcontainers/sharing-git-credentials) あたりが公式ドキュメント  
+
 ホストPCでssh forwardができてませんでした
 
 `.ssh/config` の GitHub用の設定を変更
