@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link, graphql } from 'gatsby'
 import moment from 'moment'
 import { Layout } from '../components/Layout'
@@ -12,7 +12,36 @@ export default function Top({
     process.env.NODE_ENV === 'development' || location.search === '?all'
   const today = moment().startOf('day')
 
-  const [filter, setFilter] = useState('')
+  // クエリパラメータから初期値を取得
+  function getFilterFromQuery() {
+    if (typeof window === 'undefined') return ''
+    const params = new URLSearchParams(window.location.search)
+    return params.get('filter') || ''
+  }
+
+  const [filter, setFilter] = useState(getFilterFromQuery())
+
+  // フィルタ変更時にURLを書き換え
+  useEffect(() => {
+    if (typeof window === 'undefined') return
+    const params = new URLSearchParams(window.location.search)
+    if (filter) {
+      params.set('filter', filter)
+    } else {
+      params.delete('filter')
+    }
+    const newUrl = `${window.location.pathname}${params.toString() ? '?' + params.toString() : ''}`
+    window.history.replaceState(null, '', newUrl)
+  }, [filter])
+
+  // 戻るボタンなどでURLが変わったときにfilterを復元
+  useEffect(() => {
+    const onPopState = () => {
+      setFilter(getFilterFromQuery())
+    }
+    window.addEventListener('popstate', onPopState)
+    return () => window.removeEventListener('popstate', onPopState)
+  }, [])
 
   const onChangeFilter = (e) => {
     const f = e.target.value
@@ -26,6 +55,7 @@ export default function Top({
           type="text"
           placeholder="Filter title"
           className="input-filter"
+          value={filter}
           onChange={onChangeFilter}
         />
       </p>

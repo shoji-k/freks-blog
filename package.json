@@ -9,7 +9,7 @@
     "lint": "eslint 'src/**/*.js'",
     "lintfix": "eslint --fix 'src/**/*.js' && prettier --write 'src/**/*.js'",
     "eslint-check": "eslint --print-config . | eslint-config-prettier-check",
-    "test": "cypress run",
+    "test": "cypress run --headless",
     "ci": "start-server-and-test start http://localhost:8000 test"
   },
   "dependencies": {
