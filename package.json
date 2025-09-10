@@ -25,7 +25,7 @@
     "react-dom": "18.3.1"
   },
   "devDependencies": {
-    "cypress": "15.1.0",
+    "cypress": "15.2.0",
     "eslint": "8.57.1",
     "eslint-config-prettier": "10.1.8",
     "eslint-plugin-react": "7.37.5",
