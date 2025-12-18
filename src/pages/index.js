@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import { Link, graphql } from 'gatsby'
-import moment from 'moment'
 import { Layout } from '../components/Layout'
 import { Seo } from '../components/Seo'
 
@@ -10,7 +9,8 @@ export default function Top({
 }) {
   const showAll =
     process.env.NODE_ENV === 'development' || location.search === '?all'
-  const today = moment().startOf('day')
+  const today = new Date()
+  today.setHours(0, 0, 0, 0)
 
   // クエリパラメータから初期値を取得
   function getFilterFromQuery() {
@@ -76,10 +76,11 @@ export default function Top({
         </Link>
       </div>
       {posts.edges
-        .filter(
-          ({ node }) =>
-            showAll || today.diff(node.frontmatter.date, 'days') >= 0
-        )
+        .filter(({ node }) => {
+          if (showAll) return true
+          const postDate = new Date(node.frontmatter.date)
+          return postDate <= today
+        })
         .filter(({ node }) => {
           return (
             filter === '' ||
