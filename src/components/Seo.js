@@ -1,5 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import { useStaticQuery, graphql } from 'gatsby'
 
 export function Seo({ description, meta = [], keywords = [], title }) {
@@ -36,13 +35,6 @@ export function Seo({ description, meta = [], keywords = [], title }) {
       ))}
     </>
   )
-}
-
-Seo.propTypes = {
-  description: PropTypes.string,
-  meta: PropTypes.array,
-  keywords: PropTypes.arrayOf(PropTypes.string),
-  title: PropTypes.string.isRequired,
 }
 
 const detailsQuery = graphql`
