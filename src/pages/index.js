@@ -7,11 +7,6 @@ export default function Top({
   data: { site, allMarkdownRemark: posts },
   location,
 }) {
-  const showAll =
-    process.env.NODE_ENV === 'development' || location.search === '?all'
-  const today = new Date()
-  today.setHours(0, 0, 0, 0)
-
   // クエリパラメータから初期値を取得
   function getFilterFromQuery() {
     if (typeof window === 'undefined') return ''
@@ -76,11 +71,6 @@ export default function Top({
         </Link>
       </div>
       {posts.edges
-        .filter(({ node }) => {
-          if (showAll) return true
-          const postDate = new Date(node.frontmatter.date)
-          return postDate <= today
-        })
         .filter(({ node }) => {
           return (
             filter === '' ||
