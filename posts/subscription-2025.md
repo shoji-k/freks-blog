@@ -17,7 +17,7 @@ AIサービス使い始めました
 - コワーキングスペース \11000 / month
 
 引っ越してちょっと遠くなりましたが借りたままです  
-月に2回くらいしか行かなくなったので割高な作業スペースになってしまっています   
+月に2回くらいしか行かなくなったので割高な作業スペースになってしまっています
 
 - [G Suite Business](https://gsuite.google.co.jp/intl/ja/solutions/) \748/ month
 
@@ -25,10 +25,10 @@ Google のビジネス用アカウントです
 主には仕事用のメールサーバーとして使ってます  
 Gmail に独自ドメインをあててます
 
-- [Office 365](https://www.office.com/?omkt=ja-jp) \13,410 / year
+- [Microsoft 365 Personal 1年版 サブスクリプション](https://amzn.to/4pUawsi) \16,870 / year
 
-サブスクリプションの代わりにAmazon Black Friday Saleで買いました  
-ちょっと安く買えてます  
+Amazon Black Fridayで買いました  
+サブスクリプション版しかなくて、購入後、すぐに自動更新を止めました  
 
 - [さくらインターネット VPS](https://vps.sakura.ad.jp/) 1つ \1,738 / month
 
@@ -38,24 +38,23 @@ Gmail に独自ドメインをあててます
 
 Pixel 8a の dual sim の 1 つに使ってます  
 
-- LINEMO 電話料金 約 \1200 / month
+- LINEMO 電話料金 約 \990 / month
 
 Pixel 8a の dual sim の esim に使ってます  
 電話とSMS、データ通信1G以内で使ってます  
-Perplexity Proが1年無料で使えたので始めて見ました  
+Perplexity Proが1年無料で使えたので始めてみました  
 Perplexityはヘビーユーズしてていいです  
 電話代で毎月追加でかかります  
 
-- インターネット回線 enひかり \0 / month
+- インターネット回線 enひかり \3270 / month
 
 引っ越したのでインターネットを引きました  
 iPv6しか使えない攻めたものにしましたが特に問題ないです  
 たまに不安定になるのですがルーター設定見直したり、たまに戦っています  
 
-- [freee](https://www.freee.co.jp/) スタータープラン \26,136 / year
+- [freee](https://www.freee.co.jp/) スタンダード \23,760 / year
 
-年末にだいぶ値上がりしました  
-他も検討したんですが、たいして金額変わらないので続けてます  
+引き続き利用
 
 - [Youtube Music](https://play.google.com/music/) \1080 / month
 
@@ -65,14 +64,14 @@ iPv6しか使えない攻めたものにしましたが特に問題ないです
 
 映画、ドラマをたまにみてます
 
-- [Rebuild.fm](https://rebuild.fm/) $60 = \9497 / year
+- [Rebuild.fm](https://rebuild.fm/) $66 / year
 
 テック系ポットキャストです  
 キャンペーンのときに登録した値段で面白いので続けています
 
 - [Nintendo Switch Online](https://www.nintendo.com/jp/hardware/switch/onlineservice/pricing/index.html) \2400 / year
 
-去年はファミリープランですが、一つしかアカウント使わなかったので、個人プランに変更しました
+個人プランで利用中
 
 - UNHCR協会 \1000 / month
 
@@ -115,8 +114,14 @@ Pixel 8a の dual sim の esim に使ってます
 
 ## まとめ
 
+77259
+
+1ヶ月の平均が \32,407 でした
+
 1ヶ月の平均が \40,651 でした  
-去年より \1167 減りました
+去年より \8244 減りました  
+
+ジムが安くなった分くらいで変わってないです
 
 PR
 
