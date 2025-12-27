@@ -1,12 +1,33 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link, graphql } from 'gatsby'
 import { Layout } from '../components/Layout'
 import { Seo } from '../components/Seo'
+import { CodeCopyButton } from '../components/CodeCopyButton'
+import { createRoot } from 'react-dom/client'
 
 export default function OneBlog({
   data: { site, markdownRemark: post },
   location,
 }) {
+  useEffect(() => {
+    const codeBlocks = document.querySelectorAll('pre > code')
+
+    codeBlocks.forEach((codeBlock) => {
+      const pre = codeBlock.parentElement
+
+      if (pre.querySelector('.code-copy-button')) {
+        return
+      }
+
+      const code = codeBlock.textContent
+      const buttonContainer = document.createElement('div')
+      pre.appendChild(buttonContainer)
+
+      const root = createRoot(buttonContainer)
+      root.render(<CodeCopyButton code={code} />)
+    })
+  }, [post.html])
+
   return (
     <Layout location={location} title={site.siteMetadata.title}>
       <div style={{ minHeight: 'calc(100vh - 220px)', paddingBottom: '1rem' }}>
