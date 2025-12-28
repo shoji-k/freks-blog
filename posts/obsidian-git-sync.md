@@ -35,6 +35,14 @@ Obsidianを開いて、さっき用意したレポジトリのディレクトリ
 これでObsidianでメモしたら、terminalでgit add, git commit, git pushします  
 Obsidian pluginで `Git` を入れてもいいですが後回し  
 
+bashrcに  
+
+```bash
+alias gitsync='git pull origin --prune && git add . && git commit -m "$(date +"%Y-%m-%d %H:%M:%S")" && git push origin HEAD'
+```
+
+を用意、terminalで `gitsync` でpushされるようにしておきました  
+
 ## Android side
 
 Androidでもgitを使えるようにします
