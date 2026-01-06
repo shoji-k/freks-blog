@@ -45,8 +45,8 @@ importers:
         version: 18.3.1(react@18.3.1)
     devDependencies:
       cypress:
-        specifier: 15.8.1
-        version: 15.8.1
+        specifier: 15.8.2
+        version: 15.8.2
       eslint:
         specifier: 9.39.2
         version: 9.39.2
@@ -722,8 +722,8 @@ packages:
     deprecated: Use @qwik.dev/partytown instead
     hasBin: true
 
-  '@cypress/request@3.0.9':
-    resolution: {integrity: sha512-I3l7FdGRXluAS44/0NguwWlO83J18p0vlr2FYHrJkWdNYhgVoiYo61IXPqaOsL+vNxU1ZqMACzItGK3/KKDsdw==}
+  '@cypress/request@3.0.10':
+    resolution: {integrity: sha512-hauBrOdvu08vOsagkZ/Aju5XuiZx6ldsLfByg1htFeldhex+PeMrYauANzFsMJeAA0+dyPLbDoX2OYuvVoLDkQ==}
     engines: {node: '>= 6'}
 
   '@cypress/xvfb@1.2.4':
@@ -2396,8 +2396,8 @@ packages:
   csstype@3.2.3:
     resolution: {integrity: sha512-z1HGKcYy2xA8AGQfwrn0PAy+PB7X/GSj3UVJW9qKyn43xWa+gl5nXmU4qqLMRzWVLFC8KusUX8T/0kCiOYpAIQ==}
 
-  cypress@15.8.1:
-    resolution: {integrity: sha512-ogc62stTQGh1395ipKxfCE5hQuSApTzeH5e0d9U6m7wYO9HQeCpgnkYtBtd0MbkN2Fnch5Od2mX9u4hoTlrH4Q==}
+  cypress@15.8.2:
+    resolution: {integrity: sha512-KGpuiE8o9l9eyVLPkig574t8zOXkEDKzI0a+RQwy4cfXzpaLipvTOv0t+QEEkLiw/8HbgMNZ0fbPKakJAB3USA==}
     engines: {node: ^20.1.0 || ^22.0.0 || >=24.0.0}
     hasBin: true
 
@@ -5057,6 +5057,10 @@ packages:
     resolution: {integrity: sha512-YWWTjgABSKcvs/nWBi9PycY/JiPJqOD4JA6o9Sej2AtvSGarXxKC3OQSk4pAarbdQlKAh5D4FCQkJNkW+GAn3w==}
     engines: {node: '>=0.6'}
 
+  qs@6.14.1:
+    resolution: {integrity: sha512-4EK3+xJl8Ts67nLYNwqw/dsFVnCf+qR7RgXSK9jEEm9unao3njwMDdmsdvoKBKHzxd7tCYz5e5M+SnMjdtXGQQ==}
+    engines: {node: '>=0.6'}
+
   query-string@6.14.1:
     resolution: {integrity: sha512-XDxAeVmpfu1/6IjyT/gXHOl+S0vQ9owggJ30hhWKdHAsNPOcasn5o9BW0eejZqL2e4vMjhAxoW3jVHcD6mbcYw==}
     engines: {node: '>=6'}
@@ -7136,7 +7140,7 @@ snapshots:
 
   '@builder.io/partytown@0.7.6': {}
 
-  '@cypress/request@3.0.9':
+  '@cypress/request@3.0.10':
     dependencies:
       aws-sign2: 0.7.0
       aws4: 1.13.2
@@ -7151,7 +7155,7 @@ snapshots:
       json-stringify-safe: 5.0.1
       mime-types: 2.1.35
       performance-now: 2.1.0
-      qs: 6.14.0
+      qs: 6.14.1
       safe-buffer: 5.2.1
       tough-cookie: 5.1.2
       tunnel-agent: 0.6.0
@@ -7379,14 +7383,14 @@ snapshots:
   '@graphql-tools/optimize@1.4.0(graphql@16.12.0)':
     dependencies:
       graphql: 16.12.0
-      tslib: 2.4.1
+      tslib: 2.8.1
 
   '@graphql-tools/relay-operation-optimizer@6.5.18(graphql@16.12.0)':
     dependencies:
       '@ardatan/relay-compiler': 12.0.0(graphql@16.12.0)
       '@graphql-tools/utils': 9.2.1(graphql@16.12.0)
       graphql: 16.12.0
-      tslib: 2.4.1
+      tslib: 2.8.1
     transitivePeerDependencies:
       - encoding
       - supports-color
@@ -8774,7 +8778,7 @@ snapshots:
   camel-case@4.1.2:
     dependencies:
       pascal-case: 3.1.2
-      tslib: 2.4.1
+      tslib: 2.8.1
 
   camelcase@5.3.1: {}
 
@@ -8792,7 +8796,7 @@ snapshots:
   capital-case@1.0.4:
     dependencies:
       no-case: 3.0.4
-      tslib: 2.4.1
+      tslib: 2.8.1
       upper-case-first: 2.0.2
 
   caseless@0.12.0: {}
@@ -9017,7 +9021,7 @@ snapshots:
   constant-case@3.0.4:
     dependencies:
       no-case: 3.0.4
-      tslib: 2.4.1
+      tslib: 2.8.1
       upper-case: 2.0.2
 
   content-disposition@0.5.4:
@@ -9187,9 +9191,9 @@ snapshots:
 
   csstype@3.2.3: {}
 
-  cypress@15.8.1:
+  cypress@15.8.2:
     dependencies:
-      '@cypress/request': 3.0.9
+      '@cypress/request': 3.0.10
       '@cypress/xvfb': 1.2.4(supports-color@8.1.1)
       '@types/sinonjs__fake-timers': 8.1.1
       '@types/sizzle': 2.3.10
@@ -9396,7 +9400,7 @@ snapshots:
   dot-case@3.0.4:
     dependencies:
       no-case: 3.0.4
-      tslib: 2.4.1
+      tslib: 2.8.1
 
   dot-prop@5.3.0:
     dependencies:
@@ -11024,7 +11028,7 @@ snapshots:
   header-case@2.0.4:
     dependencies:
       capital-case: 1.0.4
-      tslib: 2.4.1
+      tslib: 2.8.1
 
   hosted-git-info@3.0.8:
     dependencies:
@@ -11970,7 +11974,7 @@ snapshots:
   no-case@3.0.4:
     dependencies:
       lower-case: 2.0.2
-      tslib: 2.4.1
+      tslib: 2.8.1
 
   node-abi@3.85.0:
     dependencies:
@@ -12170,7 +12174,7 @@ snapshots:
   param-case@3.0.4:
     dependencies:
       dot-case: 3.0.4
-      tslib: 2.4.1
+      tslib: 2.8.1
 
   parent-module@1.0.1:
     dependencies:
@@ -12222,12 +12226,12 @@ snapshots:
   pascal-case@3.1.2:
     dependencies:
       no-case: 3.0.4
-      tslib: 2.4.1
+      tslib: 2.8.1
 
   path-case@3.0.4:
     dependencies:
       dot-case: 3.0.4
-      tslib: 2.4.1
+      tslib: 2.8.1
 
   path-exists@3.0.0: {}
 
@@ -12566,6 +12570,10 @@ snapshots:
       side-channel: 1.1.0
 
   qs@6.14.0:
+    dependencies:
+      side-channel: 1.1.0
+
+  qs@6.14.1:
     dependencies:
       side-channel: 1.1.0
 
@@ -12994,7 +13002,7 @@ snapshots:
   sentence-case@3.0.4:
     dependencies:
       no-case: 3.0.4
-      tslib: 2.4.1
+      tslib: 2.8.1
       upper-case-first: 2.0.2
 
   serialize-javascript@5.0.1:
@@ -13145,7 +13153,7 @@ snapshots:
   snake-case@3.0.4:
     dependencies:
       dot-case: 3.0.4
-      tslib: 2.4.1
+      tslib: 2.8.1
 
   socket.io-adapter@2.5.5:
     dependencies:
