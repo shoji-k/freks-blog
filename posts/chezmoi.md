@@ -1,6 +1,6 @@
 ---
 title: 'dotfiles管理でchezmoiを使う'
-date: '2026-02-03'
+date: '2026-02-09'
 updated: ''
 ---
 
@@ -47,6 +47,35 @@ git push -u origin main
 
 これでGitHub repositoryへ登録できました  
 
+## dotfilesを編集する
+
+### chezmoi内のファイルを編集する方法
+
+```bash
+chezmoi edit ~/.bashrc
+# or edit(like vim) $FILE chezmoi merge $FILE
+chezmoi diff
+chezmoi apply # ~/.local/share/chezmoi/.bashrc to ~/.bashrc
+```
+
+### 後でchezmoiへ適用する
+
+```bash
+vim ~/.bashrc
+chezmoi diff
+chezmoi merge ~/.bashrc # ~/.bashrc to ~/.local/share/chezmoi/.bashrc
+```
+
+## 設定をGitHub repositoryへpush
+
+```bash
+chezmoi cd
+git status
+git add .
+git commit -m "Update"
+git push
+```
+
 ## MacとWindowsで設定が違うところ
 
 設定をテンプレートというのにします
@@ -70,34 +99,18 @@ chezmoi add --template ~/.claude/settings.json
 {{ end -}}
 ```
 
-こうやって環境によって設定が変えられます
+環境によって設定が変えられます
 
 ## 新しい環境で設定する
 
 ```bash
-chezmoi init --apply https://github.com/$GITHUB_USERNAME/dotfiles.git
-chezmoi init --apply https://github.com/shoji-k/dotfiles.git
+chezmoi init --apply git@github.com:$GITHUB_USERNAME/dotfiles.git
 ```
 
-## dotfilesを編集する
+## まとめ
 
-```bash
-chezmoi edit ~/.bashrc
-# or edit(like vim) $FILE chezmoi merge $FILE
-chezmoi diff
-chezmoi -v apply # ~/.local/share/chezmoi/.bashrc to ~/.bashrc
-chezmoi update -v
-```
-
-## 設定をGitHub repositoryへpush
-
-```bash
-chezmoi cd
-git status
-git add .
-git commit -m "Update"
-git push
-```
+これで最低限使えるようになりました  
+色々できそうです  
 
 PR
 
