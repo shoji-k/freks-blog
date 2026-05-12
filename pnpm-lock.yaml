@@ -45,8 +45,8 @@ importers:
         version: 19.2.6(react@19.2.6)
     devDependencies:
       cypress:
-        specifier: 15.14.2
-        version: 15.14.2
+        specifier: 15.15.0
+        version: 15.15.0
       eslint:
         specifier: 10.3.0
         version: 10.3.0
@@ -747,9 +747,9 @@ packages:
     deprecated: Use @qwik.dev/partytown instead
     hasBin: true
 
-  '@cypress/request@3.0.10':
-    resolution: {integrity: sha512-hauBrOdvu08vOsagkZ/Aju5XuiZx6ldsLfByg1htFeldhex+PeMrYauANzFsMJeAA0+dyPLbDoX2OYuvVoLDkQ==}
-    engines: {node: '>= 6'}
+  '@cypress/request@4.0.0':
+    resolution: {integrity: sha512-wGTQfwDMMMiz/muFw4YbCLwTh0uZsXKK+6zWBzftADpitSi6iM62C8GzEhNcng2srUiGPksOriQkA8zakW2R0g==}
+    engines: {node: '>= 14.17.0'}
 
   '@cypress/xvfb@1.2.4':
     resolution: {integrity: sha512-skbBzPggOVYCbnGgV+0dmBdW/s77ZkAOXIC1knS8NagwDjBrNC1LuXtQJeiN6l+m7lzmHtaoUw/ctJKdqkG57Q==}
@@ -2443,8 +2443,8 @@ packages:
   csstype@3.2.3:
     resolution: {integrity: sha512-z1HGKcYy2xA8AGQfwrn0PAy+PB7X/GSj3UVJW9qKyn43xWa+gl5nXmU4qqLMRzWVLFC8KusUX8T/0kCiOYpAIQ==}
 
-  cypress@15.14.2:
-    resolution: {integrity: sha512-xMWg/iEImeIThRQZdnf3BFJT1a84apM/R91Feoa4vVWGuYWDphMT5jLhRVTBVlCgi+6axegF1zqhNyjhug2SsQ==}
+  cypress@15.15.0:
+    resolution: {integrity: sha512-N8qBv3AUYn6xfIG73O5O58kTClUBSZ7a3C08IQFkSGTUdEauJ3BqwTFb/f9KPZgadftoZjllC0XSwD7xNNolbA==}
     engines: {node: ^20.1.0 || ^22.0.0 || >=24.0.0}
     hasBin: true
 
@@ -7279,7 +7279,7 @@ snapshots:
 
   '@builder.io/partytown@0.7.6': {}
 
-  '@cypress/request@3.0.10':
+  '@cypress/request@4.0.0':
     dependencies:
       aws-sign2: 0.7.0
       aws4: 1.13.2
@@ -7298,7 +7298,6 @@ snapshots:
       safe-buffer: 5.2.1
       tough-cookie: 5.1.2
       tunnel-agent: 0.6.0
-      uuid: 8.3.2
 
   '@cypress/xvfb@1.2.4(supports-color@8.1.1)':
     dependencies:
@@ -7506,14 +7505,14 @@ snapshots:
   '@graphql-tools/optimize@1.4.0(graphql@16.12.0)':
     dependencies:
       graphql: 16.12.0
-      tslib: 2.4.1
+      tslib: 2.8.1
 
   '@graphql-tools/relay-operation-optimizer@6.5.18(graphql@16.12.0)':
     dependencies:
       '@ardatan/relay-compiler': 12.0.0(graphql@16.12.0)
       '@graphql-tools/utils': 9.2.1(graphql@16.12.0)
       graphql: 16.12.0
-      tslib: 2.4.1
+      tslib: 2.8.1
     transitivePeerDependencies:
       - encoding
       - supports-color
@@ -7529,7 +7528,7 @@ snapshots:
   '@graphql-tools/utils@8.13.1(graphql@16.12.0)':
     dependencies:
       graphql: 16.12.0
-      tslib: 2.4.1
+      tslib: 2.8.1
 
   '@graphql-tools/utils@9.2.1(graphql@16.12.0)':
     dependencies:
@@ -8026,7 +8025,7 @@ snapshots:
       '@babel/helper-module-imports': 7.27.1
       '@babel/types': 7.28.5
       glob: 7.2.3
-      lodash: 4.17.23
+      lodash: 4.18.1
       require-package-name: 2.0.1
     transitivePeerDependencies:
       - supports-color
@@ -8932,7 +8931,7 @@ snapshots:
   camel-case@4.1.2:
     dependencies:
       pascal-case: 3.1.2
-      tslib: 2.4.1
+      tslib: 2.8.1
 
   camelcase@5.3.1: {}
 
@@ -8950,7 +8949,7 @@ snapshots:
   capital-case@1.0.4:
     dependencies:
       no-case: 3.0.4
-      tslib: 2.4.1
+      tslib: 2.8.1
       upper-case-first: 2.0.2
 
   caseless@0.12.0: {}
@@ -9007,7 +9006,7 @@ snapshots:
       path-case: 3.0.4
       sentence-case: 3.0.4
       snake-case: 3.0.4
-      tslib: 2.4.1
+      tslib: 2.8.1
 
   character-entities-html4@1.1.4: {}
 
@@ -9177,7 +9176,7 @@ snapshots:
   constant-case@3.0.4:
     dependencies:
       no-case: 3.0.4
-      tslib: 2.4.1
+      tslib: 2.8.1
       upper-case: 2.0.2
 
   content-disposition@0.5.4:
@@ -9347,9 +9346,9 @@ snapshots:
 
   csstype@3.2.3: {}
 
-  cypress@15.14.2:
+  cypress@15.15.0:
     dependencies:
-      '@cypress/request': 3.0.10
+      '@cypress/request': 4.0.0
       '@cypress/xvfb': 1.2.4(supports-color@8.1.1)
       '@types/sinonjs__fake-timers': 8.1.1
       '@types/sizzle': 2.3.10
@@ -9554,7 +9553,7 @@ snapshots:
   dot-case@3.0.4:
     dependencies:
       no-case: 3.0.4
-      tslib: 2.4.1
+      tslib: 2.8.1
 
   dot-prop@5.3.0:
     dependencies:
@@ -9833,7 +9832,7 @@ snapshots:
   eslint-plugin-flowtype@5.10.0(eslint@10.3.0):
     dependencies:
       eslint: 10.3.0
-      lodash: 4.17.23
+      lodash: 4.18.1
       string-natural-compare: 3.0.1
 
   eslint-plugin-import@2.32.0(@typescript-eslint/parser@5.62.0(eslint@7.32.0)(typescript@5.9.3))(eslint@10.3.0):
@@ -10381,7 +10380,7 @@ snapshots:
       asynckit: 0.4.0
       combined-stream: 1.0.8
       es-set-tostringtag: 2.1.0
-      hasown: 2.0.2
+      hasown: 2.0.3
       mime-types: 2.1.35
 
   forwarded@0.2.0: {}
@@ -10422,7 +10421,7 @@ snapshots:
       call-bound: 1.0.4
       define-properties: 1.2.1
       functions-have-names: 1.2.3
-      hasown: 2.0.2
+      hasown: 2.0.3
       is-callable: 1.2.7
 
   functional-red-black-tree@1.0.1: {}
@@ -10456,7 +10455,7 @@ snapshots:
       hosted-git-info: 3.0.8
       is-valid-path: 0.1.1
       joi: 17.13.3
-      lodash: 4.17.23
+      lodash: 4.18.1
       node-fetch: 2.7.0
       opentracing: 0.14.7
       pretty-error: 2.1.2
@@ -10518,7 +10517,7 @@ snapshots:
       fs-exists-cached: 1.0.0
       gatsby-core-utils: 4.16.0
       glob: 7.2.3
-      lodash: 4.17.23
+      lodash: 4.18.1
       micromatch: 4.0.8
 
   gatsby-parcel-config@1.16.0(@parcel/core@2.8.3):
@@ -10575,7 +10574,7 @@ snapshots:
       gatsby-page-utils: 3.16.0
       gatsby-plugin-utils: 4.16.0(gatsby@5.16.1(babel-eslint@10.1.0(eslint@10.3.0))(react-dom@19.2.6(react@19.2.6))(react@19.2.6)(type-fest@0.21.3)(typescript@5.9.3))(graphql@16.12.0)
       globby: 11.1.0
-      lodash: 4.17.23
+      lodash: 4.18.1
     transitivePeerDependencies:
       - bare-abort-controller
       - bare-buffer
@@ -11178,7 +11177,7 @@ snapshots:
   header-case@2.0.4:
     dependencies:
       capital-case: 1.0.4
-      tslib: 2.4.1
+      tslib: 2.8.1
 
   hosted-git-info@3.0.8:
     dependencies:
@@ -11294,7 +11293,7 @@ snapshots:
       cli-width: 3.0.0
       external-editor: 3.1.0
       figures: 3.2.0
-      lodash: 4.17.23
+      lodash: 4.18.1
       mute-stream: 0.0.8
       run-async: 2.4.1
       rxjs: 6.6.7
@@ -11441,7 +11440,7 @@ snapshots:
 
   is-lower-case@2.0.2:
     dependencies:
-      tslib: 2.4.1
+      tslib: 2.8.1
 
   is-map@2.0.3: {}
 
@@ -11473,7 +11472,7 @@ snapshots:
       call-bound: 1.0.4
       gopd: 1.2.0
       has-tostringtag: 1.0.2
-      hasown: 2.0.2
+      hasown: 2.0.3
 
   is-relative-url@3.0.0:
     dependencies:
@@ -11520,7 +11519,7 @@ snapshots:
 
   is-upper-case@2.0.2:
     dependencies:
-      tslib: 2.4.1
+      tslib: 2.8.1
 
   is-valid-path@0.1.1:
     dependencies:
@@ -11803,11 +11802,11 @@ snapshots:
 
   lower-case-first@2.0.2:
     dependencies:
-      tslib: 2.4.1
+      tslib: 2.8.1
 
   lower-case@2.0.2:
     dependencies:
-      tslib: 2.4.1
+      tslib: 2.8.1
 
   lowercase-keys@2.0.0: {}
 
@@ -12141,7 +12140,7 @@ snapshots:
   no-case@3.0.4:
     dependencies:
       lower-case: 2.0.2
-      tslib: 2.4.1
+      tslib: 2.8.1
 
   node-abi@3.85.0:
     dependencies:
@@ -12341,7 +12340,7 @@ snapshots:
   param-case@3.0.4:
     dependencies:
       dot-case: 3.0.4
-      tslib: 2.4.1
+      tslib: 2.8.1
 
   parent-module@1.0.1:
     dependencies:
@@ -12393,12 +12392,12 @@ snapshots:
   pascal-case@3.1.2:
     dependencies:
       no-case: 3.0.4
-      tslib: 2.4.1
+      tslib: 2.8.1
 
   path-case@3.0.4:
     dependencies:
       dot-case: 3.0.4
-      tslib: 2.4.1
+      tslib: 2.8.1
 
   path-exists@3.0.0: {}
 
@@ -12670,7 +12669,7 @@ snapshots:
 
   pretty-error@2.1.2:
     dependencies:
-      lodash: 4.17.23
+      lodash: 4.18.1
       renderkid: 2.0.7
 
   prismjs@1.30.0: {}
@@ -12982,7 +12981,7 @@ snapshots:
       css-select: 4.3.0
       dom-converter: 0.2.0
       htmlparser2: 6.1.0
-      lodash: 4.17.23
+      lodash: 4.18.1
       strip-ansi: 3.0.1
 
   repeat-string@1.6.1: {}
@@ -13173,7 +13172,7 @@ snapshots:
   sentence-case@3.0.4:
     dependencies:
       no-case: 3.0.4
-      tslib: 2.4.1
+      tslib: 2.8.1
       upper-case-first: 2.0.2
 
   serialize-javascript@5.0.1:
@@ -13328,7 +13327,7 @@ snapshots:
   snake-case@3.0.4:
     dependencies:
       dot-case: 3.0.4
-      tslib: 2.4.1
+      tslib: 2.8.1
 
   socket.io-adapter@2.5.5:
     dependencies:
@@ -13390,7 +13389,7 @@ snapshots:
 
   sponge-case@1.0.1:
     dependencies:
-      tslib: 2.4.1
+      tslib: 2.8.1
 
   sprintf-js@1.0.3: {}
 
@@ -13615,7 +13614,7 @@ snapshots:
 
   swap-case@2.0.2:
     dependencies:
-      tslib: 2.4.1
+      tslib: 2.8.1
 
   system-architecture@0.1.0: {}
 
@@ -13704,7 +13703,7 @@ snapshots:
 
   title-case@3.0.3:
     dependencies:
-      tslib: 2.4.1
+      tslib: 2.8.1
 
   tldts-core@6.1.86: {}
 
@@ -13934,11 +13933,11 @@ snapshots:
 
   upper-case-first@2.0.2:
     dependencies:
-      tslib: 2.4.1
+      tslib: 2.8.1
 
   upper-case@2.0.2:
     dependencies:
-      tslib: 2.4.1
+      tslib: 2.8.1
 
   uri-js@4.4.1:
     dependencies:
