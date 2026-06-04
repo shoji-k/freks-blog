@@ -61,7 +61,7 @@ importers:
         version: 3.8.3
       start-server-and-test:
         specifier: ^3.0.0
-        version: 3.0.6
+        version: 3.0.7
 
 packages:
 
@@ -1855,8 +1855,8 @@ packages:
   axios@1.13.2:
     resolution: {integrity: sha512-VPk9ebNqPcy5lRGuSlKx752IlDatOjT9paPlm8A7yOuW2Fbvp4X3JznJtT4f0GzGLLiWE9W8onz51SqLYwzGaA==}
 
-  axios@1.16.1:
-    resolution: {integrity: sha512-caYkukvroVPO8KrzuJEb50Hm07KwfBZPEC3VeFHTsqWHvKTsy54hjJz9BS/cdaypROE2rH6xvm9mHX4fgWkr3A==}
+  axios@1.17.0:
+    resolution: {integrity: sha512-J8SwNxprqqpbfenehxWYXE7CW+wM1BB4w3+N+g+/Wx40xM4rsLrfPmHHxSWIxJLYDgSY/HqlFPIYb2/S3rxafw==}
 
   axobject-query@4.1.0:
     resolution: {integrity: sha512-qIj0G9wZbMGNLjLmg1PT6v2mE9AH2zlnADJD/2tC6E00hgmhUOfEB6greHPAfLRSufHqROIUTkw6E+M3lH0PTQ==}
@@ -4110,8 +4110,8 @@ packages:
     resolution: {integrity: sha512-KvNT4XqAMzdcL6ka6Tl3i2lYeFDgXNCuIX+xNx6ZMVR1dFq+idXd9FLKNMOIx0t9mJ9/HudyX4oZWXZQ0UJHeg==}
     engines: {node: '>=14.16'}
 
-  lazy-ass@1.6.0:
-    resolution: {integrity: sha512-cc8oEVoctTvsFZ/Oje/kGnHbpWHYBe8IAJe4C0QNc3t8uM/0Y8+erSz/7Y1ALuXTEZTMvxXwO6YbX1ey3ujiZw==}
+  lazy-ass@2.0.3:
+    resolution: {integrity: sha512-/O3/DoQmI1XAhklDvF1dAjFf/epE8u3lzOZegQfLZ8G7Ud5bTRSZiFOpukHCu6jODrCA4gtIdwUCC7htxcDACA==}
     engines: {node: '> 0.8'}
 
   levn@0.4.1:
@@ -5668,8 +5668,8 @@ packages:
   stackframe@1.3.4:
     resolution: {integrity: sha512-oeVtt7eWQS+Na6F//S4kJ2K2VbRlS9D43mAlMyVpVWovy9o+jfgH8O9agzANzaiLjclA0oYzUXEM4PurhSUChw==}
 
-  start-server-and-test@3.0.6:
-    resolution: {integrity: sha512-rgEVH+MKOCVB63R50WS1DXD/fJ4A07aGw/9J6MxkO88ZPOewa4VukGEuayinTdt+feKefeynw/iDJBzn+tW4Jw==}
+  start-server-and-test@3.0.7:
+    resolution: {integrity: sha512-bREV2smSYwybdmnkNUjzoL7WTolg+6MN7sXaZC2/JB7zZSUKmkcqQ3eaRX2yoL+ZnrUMk2FRHMwmmD9LPwKGzg==}
     engines: {node: ^22 || >=24}
     hasBin: true
 
@@ -8596,7 +8596,7 @@ snapshots:
     transitivePeerDependencies:
       - debug
 
-  axios@1.16.1(debug@4.4.3):
+  axios@1.17.0(debug@4.4.3):
     dependencies:
       follow-redirects: 1.16.0(debug@4.4.3)
       form-data: 4.0.5
@@ -11691,7 +11691,7 @@ snapshots:
     dependencies:
       package-json: 8.1.1
 
-  lazy-ass@1.6.0: {}
+  lazy-ass@2.0.3: {}
 
   levn@0.4.1:
     dependencies:
@@ -13432,13 +13432,13 @@ snapshots:
 
   stackframe@1.3.4: {}
 
-  start-server-and-test@3.0.6:
+  start-server-and-test@3.0.7:
     dependencies:
       arg: 5.0.2
       check-more-types: 2.24.0
       debug: 4.4.3(supports-color@8.1.1)
       execa: 5.1.1
-      lazy-ass: 1.6.0
+      lazy-ass: 2.0.3
       tree-kill: 1.2.2
       wait-on: 9.0.10(debug@4.4.3)
     transitivePeerDependencies:
@@ -14010,7 +14010,7 @@ snapshots:
 
   wait-on@9.0.10(debug@4.4.3):
     dependencies:
-      axios: 1.16.1(debug@4.4.3)
+      axios: 1.17.0(debug@4.4.3)
       joi: 18.2.1
       lodash: 4.18.1
       minimist: 1.2.8
