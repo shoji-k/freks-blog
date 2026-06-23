@@ -7,13 +7,13 @@ updated: ''
 PythonでPoetryでモジュール管理してるのですが、[microsoft/autogen](https://github.com/microsoft/autogen) を試してみたくて
 
 ```bash
-poetry add pyautogen
+poetry add ag2
 ```
 
 するとエラーが
 
 ```bash
-The current project's supported Python range (>=3.12,<4.0) is not compatible with some of the required packages Python requirement: - pyautogen requires Python <3.13,>=3.8, so it will not be satisfied for Python >=3.13,<4.0
+The current project's supported Python range (>=3.12,<4.0) is not compatible with some of the required packages Python requirement: - ag2 requires Python <3.13,>=3.8, so it will not be satisfied for Python >=3.13,<4.0
 ```
 
 ```bash
@@ -21,7 +21,7 @@ $ python --version
 Python 3.12.2
 ```
 
-Pythonは3.12.2で、pyautogenは3.8以上3.13未満にはあてはまってます
+Pythonは3.12.2で、ag2は3.8以上3.13未満にはあてはまってます
 
 原因は`pyproject.toml`の記載でした
 
@@ -31,7 +31,7 @@ python = "^3.12"
 ```
 
 と書いてたので、Python >=3.12,<4.0 が条件になっていました  
-pyautogenは3.13未満にしないとだめなので
+ag2は3.13未満にしないとだめなので
 
 ```toml
 [tool.poetry.dependencies]
@@ -43,7 +43,7 @@ python = "^3.12,<3.13"
 これで
 
 ```bash
-poetry add pyautogen
+poetry add ag2
 ```
 
 成功しました
