@@ -14,7 +14,7 @@ AutogenでRAGをAzure OpenAIを使って動かしてみました
 必要なPythonモジュールをインストールします  
 
 ```bash
-pip install "pyautogen[retrievechat]"
+pip install "ag2[retrievechat]"
 ```
 
 結構時間がかかりました  
